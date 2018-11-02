@@ -1,15 +1,15 @@
 Package: singleCellTools
 Type: Package
-Title: singleCellTools (SCT)
-Version: 0.1.0
-Date:  2018-11-01
-Depends:  R (>= 3.0.0)
+Title: singleCellTools
+Version: 0.10.0
+Date: 2018-11-01
 Author: Zhixin Li
-Maintainer: Zhixin Li <zxlee@hku.hk>
-Description: my personal single cell RNA-seq analysis script R package
-    is it cool?
+Maintainer: Zhixin Li <ZhixinLi@broadinstitute.org>
+Description: singleCellTools
 License: GPL (>= 2)
-Encoding: UTF-8
+Depends: R (>= 2.10), Biobase, VGAM, irlba, matrixStats, igraph,
+        combinat, fastICA, grid, ggplot2, reshape2, plyr, parallel,
+        methods
 LazyData: true
+Encoding: UTF-8
 RoxygenNote: 6.1.0
-URL: https://github.com/leezx/singleCellTools
