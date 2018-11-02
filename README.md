@@ -3,53 +3,89 @@ my personal single cell RNA-seq analysis script R package
 
 # script
 prepare_smart_seq_data
+
 prepare_10x_data
 
 filtering_matrix
+
 normalizing_matrix
+
 feature_selection
+
 Highly_variable_genes_selection
+
 batch_effect_correction
 
 dimension_reduction_by_PCA
+
 dimension_reduction_by_diffusionMap
 
+
+
 clustering_by_SC3
+
 clustering_by_SIMLR
+
 clustering_by_seurat
+
 clustering_by_monocle
 
 marker_identification_by_SC3
 
 pseudotime_by_monocle1
+
 pseudotime_by_monocle2
+
 pseudotime_by_SLICER
 
 module_identification_by_WGCNA
+
 module_identification_by_MSIC
 
+
+
 plotting_boxplot
+
 plotting_violin_plot
+
 plotting_barplot
+
 plotting_volcano_plot
+
 plotting_heatmap
 
+
+
 DEG_by_scde
+
 DEG_by_edgeR
 
 scoring_model_by_LR
 
+
+
 dataset_human_TFs
+
 dataset_mouse_TFs
+
 dataset_human_Y_chromsome_genes
+
 dataset_mouse_Y_chromsome_genes
+
 dataset_human_to_mouse_genes
+
 dataset_cell_cycle_genes
+
 dataset_cell_cycle_phase_genes
+
 dataset_migration_genes
+
 dataset_ENS_markers
 
+
+
 show_notes
+
 tools_study_conclusion
 
 
