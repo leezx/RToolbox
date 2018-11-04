@@ -52,11 +52,17 @@ clustering_by_monocle
 
 marker_identification_by_SC3
 
+
+
+pseudotime_based_on_clustering
+
 pseudotime_by_monocle1
 
 pseudotime_by_monocle2
 
 pseudotime_by_SLICER
+
+
 
 module_identification_by_WGCNA
 
@@ -97,6 +103,8 @@ show_notes
 tools_study_test
 
 
+
+plotting_modules_smooth_curve_across_pseudotime
 
 plotting_boxplot
 
