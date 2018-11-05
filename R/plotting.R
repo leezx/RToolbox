@@ -12,12 +12,15 @@
 #' @export
 #' @examples
 #' load("/Users/surgery/Project/HOME/1-projects/1.scRNA-seq/3-10x/Aug_30/analysis_4/Ctrl_YFP_ENCC.Rdata")
-#' exprM <- seuset@scale.data; annoDf <- all_tsne; moduleDf <- markers
+#' exprM <- seuset@scale.data; annoDf <- all_tsne
 #' startCluster<-"Cluster1"; endCluster<-"Cluster6"
-#' result <- pseudotime_based_on_clustering(exprM, annoDf, startCluster, endCluster)
-#' annoDf <- result
-#' plotting_modules_smooth_curve_across_pseudotime()
-plotting_modules_smooth_curve_across_pseudotime <- function(exprM, annoDf, moduleDf, sampleCol=NULL) {
+#' new_annoDf <- pseudotime_based_on_clustering(exprM, annoDf, startCluster, endCluster)
+#' annoDf <- new_annoDf
+#' moduleDf <- markers
+#' plotting_modules_smooth_curve_across_pseudotime(exprM, annoDf, moduleDf)
+#'
+#' exprM <- exprM_all; annoDf <- new_annoDf; moduleDf <- markers; annoDf$cellGroup <- substr(rownames(annoDf), 1, 4)
+plotting_modules_smooth_curve_across_pseudotime <- function(exprM, annoDf, moduleDf) {
   # exprM <- exprM[,rownames(annoDf)]
   all_modules_exprM <- exprM[markers$gene,]
   module_mean_expr <- data.frame()
@@ -30,13 +33,65 @@ plotting_modules_smooth_curve_across_pseudotime <- function(exprM, annoDf, modul
   rownames(module_mean_expr) <- unique(annoDf$cluster)
   module_mean_expr <- as.data.frame(t(module_mean_expr))
   module_mean_expr$pseudotime <- annoDf[rownames(module_mean_expr),]$pseudotime
-  #library(reshape)
-  module_mean_expr_melt <- melt(module_mean_expr, id.vars=c("pseudotime"))
+  module_mean_expr$cellGroup <- annoDf[rownames(module_mean_expr),]$cellGroup
+  # module_mean_expr$gender <- annoDf[rownames(module_mean_expr),]$gender
+  #
+  module_mean_expr_melt <- melt(module_mean_expr, id.vars=c("pseudotime", "cellGroup"))
   # smooth line
-  ggplot(data=module_mean_expr_melt, aes(x=pseudotime, y=value)) +
+  subset1 <- subset(module_mean_expr_melt, cellGroup%in%c("ctrl", "post", "negt"))
+  subset2 <- subset(module_mean_expr_melt, cellGroup%in%c("ctrl", "kif7"))
+  ggplot(data=subset2, aes(x=pseudotime, y=value)) +
     # geom_point(size=0.1, alpha=0.1) +
     facet_wrap( ~ variable, ncol=1) +
     labs(x = "Pseudotime", y = "Log2(expr+1)") +
-    geom_smooth(method = 'loess', se=T, alpha=0.2, size=0.5, weight=1, span = 0.1)
+    geom_smooth(method = 'loess', se=T, alpha=0.2, size=0.5, weight=1, span = 0.3, aes(color=cellGroup, fill=cellGroup))
   # end
 }
+
+#' plotting smooth curve of different modules across pseudotime (in multiple samples)
+#'
+#' @param exprM normalized expression matrix
+#' @param annoDf the annotation of the cells (columns) of the exprM
+#' @param moduleDf the marker genes (modules) dataframe
+#' @param sampleCol sample column (for comparison)
+#' @return a ggplot object
+#' @export
+#' @examples
+#' HH_genes <- c("Smo", "Arrb2", "Smurf1", "Btrc", "Csnk1g3", "Evc2","Spopl", "Ptch1", "Csnk1g1", "Ccnd2", "Spop", "Prkaca", "Prkacb", "Kif2a", "Gpr161", "Sufu", "Gli2", "Cul1","Csnk1g2", "Csnk1a1", "Cul3","Fbxw11", "Csnk1d","Csnk1e","Gsk3b","Kif7","Boc","Cdon","Gli3","Evc","Bcl2","Arrb1","Hhip","Gas1", "Gli1", "Dhh","Shh","Ccnd1","Smurf2")
+#' genes <- HH_genes
+plotting_genes_smooth_curve_across_pseudotime <- function(exprM, annoDf, genes) {
+  # exprM <- exprM[,rownames(annoDf)]
+  all_genes_exprM <- exprM[genes,]
+  gene_expr <- as.data.frame(t(all_genes_exprM))
+  gene_expr$pseudotime <- annoDf[rownames(gene_expr),]$pseudotime
+  gene_expr$cellGroup <- annoDf[rownames(gene_expr),]$cellGroup
+  # module_mean_expr$gender <- annoDf[rownames(module_mean_expr),]$gender
+  #
+  genes_expr_melt <- melt(gene_expr, id.vars=c("pseudotime", "cellGroup"))
+  # smooth line
+  subset1 <- subset(genes_expr_melt, cellGroup%in%c("ctrl", "post", "negt"))
+  subset2 <- subset(genes_expr_melt, cellGroup%in%c("ctrl", "kif7"))
+  ggplot(data=subset2, aes(x=pseudotime, y=value)) +
+    # geom_point(size=0.1, alpha=0.1) +
+    facet_wrap( ~ variable, ncol=8) +
+    labs(x = "Pseudotime", y = "Log2(expr+1)") +
+    geom_smooth(method = 'loess', se=T, alpha=0.2, size=0.5, weight=1, span = 0.3, aes(color=cellGroup, fill=cellGroup))
+  # end
+}
+
+#' plotting violin plot of markers across clusters
+#'
+#' @param exprM normalized expression matrix
+#' @param annoDf the annotation of the cells (columns) of the exprM
+#' @param moduleDf the marker genes (modules) dataframe
+#' @param sampleCol sample column (for comparison)
+#' @return a ggplot object
+#' @export
+#' @examples
+#' cols.use <- mycolors
+#' plotting_violin_plot_of_markers_across_clusters_by_seurat(seuset, markers, topNum=3, cols.use=brewer.pal(8,"Set2"))
+plotting_violin_plot_of_markers_across_clusters_by_seurat <- function(seuset, markers, topNum=3, cols.use=NULL) {
+  topMarkers <- markers %>% group_by(cluster) %>% top_n(topNum, avg_logFC) #
+  VlnPlot(object = seuset, features.plot = topMarkers$gene, nCol=topNum, point.size.use=0, cols.use=cols.use, size.x.use=0, size.y.use=0, size.title.use=12, single.legend=T, x.lab.rot=T)
+}
+

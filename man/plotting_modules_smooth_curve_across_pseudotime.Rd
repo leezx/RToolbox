@@ -24,9 +24,10 @@ plotting smooth curve of different modules across pseudotime (in multiple sample
 }
 \examples{
 load("/Users/surgery/Project/HOME/1-projects/1.scRNA-seq/3-10x/Aug_30/analysis_4/Ctrl_YFP_ENCC.Rdata")
-exprM <- seuset@scale.data; annoDf <- all_tsne; moduleDf <- markers
+exprM <- seuset@scale.data; annoDf <- all_tsne
 startCluster<-"Cluster1"; endCluster<-"Cluster6"
-result <- pseudotime_based_on_clustering(exprM, annoDf, startCluster, endCluster)
-annoDf <- result
-plotting_modules_smooth_curve_across_pseudotime()
+new_annoDf <- pseudotime_based_on_clustering(exprM, annoDf, startCluster, endCluster)
+annoDf <- new_annoDf
+moduleDf <- markers
+plotting_modules_smooth_curve_across_pseudotime(exprM, annoDf, moduleDf)
 }
