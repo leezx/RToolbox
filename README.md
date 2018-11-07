@@ -76,9 +76,13 @@ module_detection_by_MSIC
 
 
 
+DEG_pseudotime
+
 DEG_by_scde
 
 DEG_by_edgeR
+
+
 
 scoring_model_by_LR
 

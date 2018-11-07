@@ -69,9 +69,9 @@ plotting_genes_smooth_curve_across_pseudotime <- function(exprM, annoDf, genes) 
   #
   genes_expr_melt <- melt(gene_expr, id.vars=c("pseudotime", "cellGroup"))
   # smooth line
-  subset1 <- subset(genes_expr_melt, cellGroup%in%c("ctrl", "post", "negt"))
+  subset1 <- subset(genes_expr_melt, cellGroup%in%c("post", "negt"))
   subset2 <- subset(genes_expr_melt, cellGroup%in%c("ctrl", "kif7"))
-  ggplot(data=subset2, aes(x=pseudotime, y=value)) +
+  ggplot(data=subset1, aes(x=pseudotime, y=value)) +
     # geom_point(size=0.1, alpha=0.1) +
     facet_wrap( ~ variable, ncol=8) +
     labs(x = "Pseudotime", y = "Log2(expr+1)") +

@@ -4,8 +4,7 @@
 \alias{plotting_modules_smooth_curve_across_pseudotime}
 \title{plotting smooth curve of different modules across pseudotime (in multiple samples)}
 \usage{
-plotting_modules_smooth_curve_across_pseudotime(exprM, annoDf, moduleDf,
-  sampleCol = NULL)
+plotting_modules_smooth_curve_across_pseudotime(exprM, annoDf, moduleDf)
 }
 \arguments{
 \item{exprM}{normalized expression matrix}
@@ -30,4 +29,6 @@ new_annoDf <- pseudotime_based_on_clustering(exprM, annoDf, startCluster, endClu
 annoDf <- new_annoDf
 moduleDf <- markers
 plotting_modules_smooth_curve_across_pseudotime(exprM, annoDf, moduleDf)
+
+exprM <- exprM_all; annoDf <- new_annoDf; moduleDf <- markers; annoDf$cellGroup <- substr(rownames(annoDf), 1, 4)
 }

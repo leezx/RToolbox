@@ -5,7 +5,7 @@
 \title{pseudotime analysis based on control clustering result.}
 \usage{
 pseudotime_based_on_clustering2(exprM_ctrl, exprM_all, annoDf,
-  startCluster, endCluster, threads = 3)
+  threads = 3)
 }
 \arguments{
 \item{exprM_ctrl}{normalized expression matrix}
@@ -25,8 +25,10 @@ a new annoDf with pseudotime value for each cell
 pseudotime analysis based on control clustering result.
 }
 \examples{
-load("")
-exprM_ctrl <- seuset@scale.data; exprM_all <- scale_data_by_seurat(merged_five_mouse_ENCC); annoDf <- new_annoDf
+load("/Users/surgery/Project/HOME/1-projects/1.scRNA-seq/3-10x/result1/control_all.Rdata")
+exprM_all <- scale_data_by_seurat(merged_five_mouse_ENCC)
+exprM_ctrl <- seuset@scale.data; annoDf <- new_annoDf
 startCluster<-"Cluster1"; endCluster<-"Cluster6"
 new_annoDf <- pseudotime_based_on_clustering(exprM, annoDf, startCluster, endCluster)
+new_annoDf <- pseudotime_based_on_clustering2(exprM_ctrl, exprM_all, annoDf)
 }
