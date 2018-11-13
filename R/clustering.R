@@ -105,6 +105,8 @@ clustering_by_seurat <- function(rawCountM, clusterNum=5, colors.use=NULL, genes
 #' @export
 #' @examples
 #' markers <- marker_identification_by_seurat(seuset, topNum=10, plotHeatmap=T, group.order=NULL)
+#' seuset_2 <- SubsetData(object = seuset, ident.use = c("Cluster1", "Cluster3"))
+#' markers_2 <- marker_identification_by_seurat(seuset_2)
 marker_identification_by_seurat <- function(seuset, topNum=10, plotHeatmap=T, group.order=NULL) {
   markers <- FindAllMarkers(object = seuset, only.pos = TRUE, min.pct = 0.25, thresh.use = 0.25)
   if (!is.null(group.order)) {
@@ -119,4 +121,23 @@ marker_identification_by_seurat <- function(seuset, topNum=10, plotHeatmap=T, gr
   # return
   markers
   # end
+}
+
+#' marker identification by correlation
+#'
+#' @param seuset a seurat object after clustering
+#' @param topNum top X markers
+#' @param plotHeatmap whether to plot heatmap or not (default yes)
+#' @param group.order specify the cluster order (after pseudotime)
+#' @return a marker dataframe and the heatmap
+#' @export
+#' @examples
+#' exprM <- seuset_2@scale.data; anno <- seuset_2@ident
+marker_identification_by_correlation <- function(exprM, topNum=10, plotHeatmap=T, group.order=NULL) {
+  simulated_anno <- as.integer(anno)
+  corM <- cor(t(exprM), simulated_anno)
+  markerList <- c()
+  markerList[[levels(anno)[1]]] <- rownames(corM)[order(corM, decreasing = F)][1:100]
+  markerList[[levels(anno)[2]]] <- rownames(corM)[order(corM, decreasing = T)][1:100]
+  markerList
 }

@@ -10,7 +10,12 @@
 #' @export
 #' @examples
 #' load("/Users/surgery/Project/HOME/1-projects/1.scRNA-seq/3-10x/Aug_30/analysis_4/Ctrl_YFP_ENCC.Rdata")
-#' exprM <- seuset@scale.data; annoDf <- all_tsne
+#' exprM <- seuset@scale.data
+#' all_tsne <- TSNEPlot(object = seuset)$data[[1]]
+#' rownames(all_tsne) <- colnames(seuset@data)
+#' all_tsne$cluster <- as.character(seuset@ident[rownames(all_tsne)])
+#' all_tsne$cellGroup <- substr(rownames(all_tsne), 1, 4)
+#' annoDf <- all_tsne
 #' startCluster<-"Cluster1"; endCluster<-"Cluster6"
 #' new_annoDf <- pseudotime_based_on_clustering(exprM, annoDf, startCluster, endCluster)
 pseudotime_based_on_clustering <- function(exprM, annoDf, startCluster, endCluster, threads=3) {

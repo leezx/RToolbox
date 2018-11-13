@@ -20,32 +20,53 @@
 #' plotting_modules_smooth_curve_across_pseudotime(exprM, annoDf, moduleDf)
 #'
 #' exprM <- exprM_all; annoDf <- new_annoDf; moduleDf <- markers; annoDf$cellGroup <- substr(rownames(annoDf), 1, 4)
-plotting_modules_smooth_curve_across_pseudotime <- function(exprM, annoDf, moduleDf) {
+#' 1. seuset_3 <- SubsetData(object = seuset, ident.use = c("Cluster1", "Cluster2", "Cluster6"))
+#' exprM <- seuset_3@scale.data
+#' all_tsne <- TSNEPlot(object = seuset_3)$data[[1]]
+#' rownames(all_tsne) <- colnames(seuset_3@data)
+#' all_tsne$cluster <- as.character(seuset_3@ident[rownames(all_tsne)])
+#' all_tsne$cellGroup <- substr(rownames(all_tsne), 1, 4)
+#' annoDf <- all_tsne
+#' startCluster <- "Cluster1"; endCluster <- "Cluster6"
+#' annoDf <- pseudotime_based_on_clustering(exprM, annoDf, startCluster, endCluster)
+#'
+#' 2. exprM <- seuset_2@scale.data
+#' all_tsne <- TSNEPlot(object = seuset_2)$data[[1]]
+#' rownames(all_tsne) <- colnames(seuset_2@data)
+#' all_tsne$cluster <- as.character(seuset_2@ident[rownames(all_tsne)])
+#' all_tsne$cellGroup <- substr(rownames(all_tsne), 1, 4)
+#' annoDf <- all_tsne
+#' startCluster <- "Cluster1"; endCluster <- "Cluster3"
+#' annoDf <- pseudotime_based_on_clustering(exprM, annoDf, startCluster, endCluster)
+#'
+plotting_modules_smooth_curve_across_pseudotime <- function(exprM, annoDf, moduleList) {
   # exprM <- exprM[,rownames(annoDf)]
-  all_modules_exprM <- exprM[markers$gene,]
+  all_modules_exprM <- exprM[unlist(moduleList, use.names=FALSE),]
   module_mean_expr <- data.frame()
-  for (cluster in unique(annoDf$cluster)) {
-    print(cluster)
-    temp_genes <- markers[markers$cluster==cluster,]$gene
+  for (i in 1:length(moduleList)) {
+    temp_genes <- moduleList[[i]]
     temp_modules_exprM_mean <- apply(all_modules_exprM[temp_genes,], 2, mean)
     module_mean_expr <- rbind(module_mean_expr, as.data.frame(t(temp_modules_exprM_mean)))
   }
-  rownames(module_mean_expr) <- unique(annoDf$cluster)
+  rownames(module_mean_expr) <- names(moduleList)
   module_mean_expr <- as.data.frame(t(module_mean_expr))
   module_mean_expr$pseudotime <- annoDf[rownames(module_mean_expr),]$pseudotime
-  module_mean_expr$cellGroup <- annoDf[rownames(module_mean_expr),]$cellGroup
+  #module_mean_expr$cellGroup <- annoDf[rownames(module_mean_expr),]$cellGroup
   # module_mean_expr$gender <- annoDf[rownames(module_mean_expr),]$gender
   #
-  module_mean_expr_melt <- melt(module_mean_expr, id.vars=c("pseudotime", "cellGroup"))
+  module_mean_expr_melt <- melt(module_mean_expr, id.vars=c("pseudotime"))
   # smooth line
-  subset1 <- subset(module_mean_expr_melt, cellGroup%in%c("ctrl", "post", "negt"))
-  subset2 <- subset(module_mean_expr_melt, cellGroup%in%c("ctrl", "kif7"))
-  ggplot(data=subset2, aes(x=pseudotime, y=value)) +
+  # subset1 <- subset(module_mean_expr_melt, cellGroup%in%c("ctrl", "post", "negt"))
+  # subset2 <- subset(module_mean_expr_melt, cellGroup%in%c("ctrl", "kif7"))
+  ggplot(data=module_mean_expr_melt, aes(x=pseudotime, y=value)) +
     # geom_point(size=0.1, alpha=0.1) +
     facet_wrap( ~ variable, ncol=1) +
     labs(x = "Pseudotime", y = "Log2(expr+1)") +
-    geom_smooth(method = 'loess', se=T, alpha=0.2, size=0.5, weight=1, span = 0.3, aes(color=cellGroup, fill=cellGroup))
+    geom_smooth(method = 'loess', se=T, alpha=0.2, size=0.5, weight=1, span = 0.3)
   # end
+  # , aes(color=cellGroup, fill=cellGroup)
+  # save 300X600
+  # plot(annoDf$pseudotime, factor(annoDf$cluster))
 }
 
 #' plotting smooth curve of different modules across pseudotime (in multiple samples)
