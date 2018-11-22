@@ -95,6 +95,46 @@ clustering_by_seurat <- function(rawCountM, clusterNum=5, colors.use=NULL, genes
   # end
 }
 
+#' supervised clustering based on distance (must have the same scale level for distance calculation)
+#'
+#' @param exprM_to_be_c raw expression matrix from 10x (can't apply to smart-seq data)
+#' @param exprM_ctrl known clustering annoDf
+#' @param annoDf known clustering annoDf
+#' @param colors.use colors used for clustering (should be more than the cluster num)
+#' @param genes genes wanted to used in staining plot (FeaturePlot)
+#' @param nCol column set in staining plot (FeaturePlot)
+#' @return a annoDf with clustering result
+#' @export
+#' @examples
+#' exprM_to_be_c <- exprM_pos_neg
+#' annoDf <- annoDf[colnames(exprM_ctrl),]
+supervised_clustering <- function(exprM_to_be_c, exprM_ctrl, annoDf) {
+  annoDf <- annoDf[colnames(exprM_ctrl),]
+  options(stringsAsFactors = F)
+  exprM_ctrl <- exprM_ctrl[,rownames(annoDf)]
+  #
+  centerM <- data.frame()
+  for (cluster in unique(annoDf$cluster)) {
+    cells <- rownames(annoDf[annoDf$cluster == cluster,])
+    centerM <- rbind(centerM, t(data.frame(apply(exprM_ctrl[,cells],1,mean))))
+  }
+  rownames(centerM) <- unique(annoDf$cluster)
+  #
+  library(pdist)
+  # better to do a dimention reduction
+  distM_merged <- pdist(t(exprM_to_be_c), centerM)
+  distM_merged <- as.matrix(distM_merged)
+  #distM_merged <- parDist(x = as.matrix(t(exprM_merged)), method = "euclidean", threads=3)
+  rownames(distM_merged) <- colnames(exprM_to_be_c)
+  colnames(distM_merged) <- rownames(centerM)
+  # assign cluster for the new cells
+  new_annoDf <- as.data.frame(apply(distM_merged,1,which.min))
+  new_annoDf$cluster <- colnames(distM_merged)[new_annoDf[,1]]
+  new_annoDf$cellGroup <- substr(rownames(new_annoDf),1,3)
+  new_annoDf[,1] <- NULL
+  new_annoDf
+}
+
 #' marker identification by seurat
 #'
 #' @param seuset a seurat object after clustering

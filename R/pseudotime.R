@@ -150,18 +150,31 @@ pseudotime_based_on_clustering2 <- function(exprM_ctrl, exprM_all, annoDf, threa
   # end
 }
 
-scale_data_by_seurat <- function(rawCountM) {
-  seuset <- CreateSeuratObject(raw.data = rawCountM, min.cells = 2, min.genes = 100)
-  # VlnPlot(object = seuset, features.plot = c("nGene", "nUMI"), nCol = 2)
-  # GenePlot(object = seuset, gene1 = "nUMI", gene2 = "nGene")
-  seuset <- FilterCells(object = seuset, subset.names = c("nUMI"))
-  # FilterCells(object, subset.names, low.thresholds, high.thresholds,cells.use = NULL)
-  seuset <- NormalizeData(object = seuset, normalization.method = "LogNormalize", scale.factor = 10000)
-  seuset <- FindVariableGenes(object = seuset, mean.function = ExpMean, dispersion.function = LogVMR, x.low.cutoff = 0.0125, x.high.cutoff = 3, y.cutoff = 0.5)
-  # length(x = seuset@var.genes)
-  seuset <- ScaleData(object = seuset, vars.to.regress = c("nUMI"))
-  seuset@scale.data
+#' normalize two pseudotime analysis, make sure the "common" are continuous, must at the beginning
+#'
+#' @param annoDf control annoDf
+#' @param annoDf2 to be aligned
+#' @param common starting Cluster
+#' @return a new normalized annoDf2
+#' @export
+#' @examples
+#' annoDf <- annoDf_glia; annoDf2 <- annoDf_neuron; common <- c("Cluster1", "Cluster4")
+normalize_two_pseudotime <- function(annoDf, annoDf2, common) {
+  #ctrl_min <- min(annoDf[annoDf$cluster %in% common,]$pseudotime)
+  ctrl_max <- max(annoDf[annoDf$cluster %in% common,]$pseudotime)
+  #obj_min <- min(annoDf2[annoDf2$cluster %in% common,]$pseudotime)
+  obj_max <- max(annoDf2[annoDf2$cluster %in% common,]$pseudotime)
+  # in
+  #bias <- obj_min - ctrl_min
+  #fold <- (obj_max)/(ctrl_max)
+  annoDf2[annoDf2$cluster %in% common,]$pseudotime <- (annoDf2[annoDf2$cluster %in% common,]$pseudotime)/obj_max*ctrl_max
+  #
+  ctrl_max_rev <- max(1-annoDf[!annoDf$cluster %in% common,]$pseudotime)
+  obj_max_rev <- max(1-annoDf2[!annoDf2$cluster %in% common,]$pseudotime)
+  annoDf2[!annoDf2$cluster %in% common,]$pseudotime <- 1-(1-annoDf2[!annoDf2$cluster %in% common,]$pseudotime)/obj_max_rev*ctrl_max_rev
+  annoDf2
 }
+
 
 #' pseudotime analysis based on clustering.
 #'

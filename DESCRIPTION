@@ -10,4 +10,4 @@ License: GPL (>= 2)
 Depends: R (>= 2.10), ggplot2, reshape2, parallelDist, pdist, Seurat, dplyr, cellrangerRkit
 LazyData: true
 Encoding: UTF-8
-RoxygenNote: 6.1.0
+RoxygenNote: 6.1.1

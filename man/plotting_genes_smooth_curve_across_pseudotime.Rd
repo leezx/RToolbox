@@ -22,6 +22,8 @@ a ggplot object
 plotting smooth curve of different modules across pseudotime (in multiple samples)
 }
 \examples{
-HH_genes <- c("Smo", "Arrb2", "Smurf1", "Btrc", "Csnk1g3", "Evc2","Spopl", "Ptch1", "Csnk1g1", "Ccnd2", "Spop", "Prkaca", "Prkacb", "Kif2a", "Gpr161", "Sufu", "Gli2", "Cul1","Csnk1g2", "Csnk1a1", "Cul3","Fbxw11", "Csnk1d","Csnk1e","Gsk3b","Kif7","Boc","Cdon","Gli3","Evc","Bcl2","Arrb1","Hhip","Gas1", "Gli1", "Dhh","Shh","Ccnd1","Smurf2")
+HH_genes <- c("Shh","Dhh","Ptch1","Smo","Cdon","Gli1","Gli2","Gli3","Hhip","Spopl","Btrc","Cul1","Cul3","Sufu","Kif7")
+HH_genes2 <- c( "Arrb2","Smurf1","Csnk1g3","Evc2","Csnk1g1","Ccnd2","Spop","Prkaca","Prkacb","Kif2a", "Gpr161","Csnk1g2","Csnk1a1","Fbxw11","Csnk1d","Csnk1e","Gsk3b","Boc","Evc","Bcl2","Arrb1","Gas1",  "Ccnd1","Smurf2")
+
 genes <- HH_genes
 }

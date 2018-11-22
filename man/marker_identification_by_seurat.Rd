@@ -24,4 +24,6 @@ marker identification by seurat
 }
 \examples{
 markers <- marker_identification_by_seurat(seuset, topNum=10, plotHeatmap=T, group.order=NULL)
+seuset_2 <- SubsetData(object = seuset, ident.use = c("Cluster1", "Cluster3"))
+markers_2 <- marker_identification_by_seurat(seuset_2)
 }

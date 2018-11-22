@@ -4,7 +4,7 @@
 \alias{plotting_modules_smooth_curve_across_pseudotime}
 \title{plotting smooth curve of different modules across pseudotime (in multiple samples)}
 \usage{
-plotting_modules_smooth_curve_across_pseudotime(exprM, annoDf, moduleDf)
+plotting_modules_smooth_curve_across_pseudotime(exprM, annoDf, moduleList)
 }
 \arguments{
 \item{exprM}{normalized expression matrix}
@@ -31,4 +31,23 @@ moduleDf <- markers
 plotting_modules_smooth_curve_across_pseudotime(exprM, annoDf, moduleDf)
 
 exprM <- exprM_all; annoDf <- new_annoDf; moduleDf <- markers; annoDf$cellGroup <- substr(rownames(annoDf), 1, 4)
+1. seuset_3 <- SubsetData(object = seuset, ident.use = c("Cluster1", "Cluster2", "Cluster6"))
+exprM <- seuset_3@scale.data
+all_tsne <- TSNEPlot(object = seuset_3)$data[[1]]
+rownames(all_tsne) <- colnames(seuset_3@data)
+all_tsne$cluster <- as.character(seuset_3@ident[rownames(all_tsne)])
+all_tsne$cellGroup <- substr(rownames(all_tsne), 1, 4)
+annoDf <- all_tsne
+startCluster <- "Cluster1"; endCluster <- "Cluster6"
+annoDf <- pseudotime_based_on_clustering(exprM, annoDf, startCluster, endCluster)
+
+2. exprM <- seuset_2@scale.data
+all_tsne <- TSNEPlot(object = seuset_2)$data[[1]]
+rownames(all_tsne) <- colnames(seuset_2@data)
+all_tsne$cluster <- as.character(seuset_2@ident[rownames(all_tsne)])
+all_tsne$cellGroup <- substr(rownames(all_tsne), 1, 4)
+annoDf <- all_tsne
+startCluster <- "Cluster1"; endCluster <- "Cluster3"
+annoDf <- pseudotime_based_on_clustering(exprM, annoDf, startCluster, endCluster)
+
 }
