@@ -6,7 +6,9 @@
 #' @export
 #' @examples
 prepare_raw_count_matrix_from_10x_data <- function(cellranger_pipestance_path) {
-  # library(cellrangerRkit)
+  # library(cellrangerRkit) # not support by official 10x
+  # pbmc33k.data <- Read10X("~/Projects/datasets/pbmc33k/filtered_gene_bc_matrices/hg19/")
+  pbmc33k  <- new("seurat", raw.data = pbmc33k.data)
   gbm <- load_cellranger_matrix(cellranger_pipestance_path)
   gbm <- gbm[!duplicated(gbm@featureData$symbol),]
   gbm
