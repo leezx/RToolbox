@@ -1,4 +1,4 @@
-#' Print "Hello world"
+#' Print "Hello world" edit in sublime, edit again
 #'
 #' This is a simple function that, by default, prints "Hello world". You can
 #' customize the text to print (using the \code{to_print} argument) and add

@@ -2,7 +2,7 @@
 % Please edit documentation in R/test.R
 \name{hello_world}
 \alias{hello_world}
-\title{Print "Hello world"}
+\title{Print "Hello world" edit in sublime, edit again}
 \usage{
 hello_world(to_print = "Hello world", excited = FALSE)
 }
