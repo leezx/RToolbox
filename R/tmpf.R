@@ -4,15 +4,16 @@
 #' @return the return object
 #' @export
 #' @examples
-#' example code
+#' example.function()
 #'
-example.function <- function(param1) {
+example.function <- function(param1=NULL) {
 	NULL
 }
 
 #' Get the genes of interested GO terms by some key words
 #' @param organism organism (hs and mm)
 #' @param keyWords keyWords (for grey function, e.g. cell cycle|DNA replication)
+#' @param returnAll if return all the GO terms
 #'
 #' @return a list with the GO terms and genes
 #' @export

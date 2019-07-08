@@ -4,7 +4,7 @@
 \alias{example.function}
 \title{description of the example function}
 \usage{
-example.function(param1)
+example.function(param1 = NULL)
 }
 \arguments{
 \item{param1}{param1}
@@ -16,6 +16,6 @@ the return object
 description of the example function
 }
 \examples{
-example code
+example.function()
 
 }
