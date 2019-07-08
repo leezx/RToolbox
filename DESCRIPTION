@@ -1,13 +1,13 @@
-Package: singleCellTools
+Package: Toolsets
 Type: Package
-Title: singleCellTools
-Version: 0.10.0
+Title: Toolsets
+Version: 1.0.0
 Date: 2018-11-01
 Author: Zhixin Li
-Maintainer: Zhixin Li <ZhixinLi@broadinstitute.org>
-Description: singleCellTools
+Maintainer: Zhixin Li <zxlee@hku.hk>
+Description: Toolsets
 License: GPL (>= 2)
-Depends: R (>= 2.10), ggplot2, reshape2, parallelDist, pdist, Seurat, dplyr
+Depends: R (>= 3.0)
 LazyData: true
 Encoding: UTF-8
 RoxygenNote: 6.1.1
