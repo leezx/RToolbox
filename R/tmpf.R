@@ -120,6 +120,12 @@ toC_get_genes_of_GO_by_keyWords <- function(organism="hs", keyWords="axon", retu
     } else {
         stop("currently only support hs and mm!")
     }
+    # EXTID2PATHID: gene->GO terms
+    # GO2ONT: type of GO terms
+    # PATHID2EXTID: GO term->genes
+    # PATHID2NAME: names of GO terms
+    # weird thing: PATHID2EXTID != PATHID2NAME
+    #######################
     returnList <- list()
     if (returnAll==T) {
         GO_DATA
