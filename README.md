@@ -1,7 +1,8 @@
 # creat a function
 - copy the template
 - add the function to tmpf.R
-- go to Rstudio and build
+- go to Rstudio and build 
+- or `Rscript -e "devtools::document();devtools::check();devtools::build()"`
 - R CMD Rd2pdf Toolsets
 - `mv Toolsets.pdf Toolsets`
 - gitpush
