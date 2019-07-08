@@ -16,15 +16,15 @@ name system:
 - toC_
 - plot_
 
-
+objective:
 - clear function
 - clear input and output
 - well documented
 - good handbook
 
+others:
 - collect R packages
 - collect useful graphs
-
 - 无需安装，随时能够调用
 - 随时生成PDF的handbook，方便查询
 - 版本管理
@@ -87,7 +87,146 @@ A: 同名的函数会覆盖，所以只能显式的使用域名。
 
 A: 不知道
 
+# script
+prepare_TPM_value_from_smart_seq_data
 
+prepare_raw_count_matrix_from_10x_data
+
+filtering_matrix
+
+normalizing_matrix
+
+batch_effect_correction
+
+
+
+feature_selection
+
+Highly_variable_genes_selection
+
+
+
+dimension_reduction_by_PCA
+
+dimension_reduction_by_diffusionMap
+
+
+
+data_transform_matrix_to_CellDataSet
+
+data_transform_matrix_to_SingleCellExperiment
+
+data_transform_matrix_to_seurat
+
+data_transform_CellDataSet_to_SingleCellExperiment
+
+data_transform_SingleCellExperiment_to_CellDataSet
+
+data_transform_mouse_ensemble_to_symbol
+
+
+
+clustering_by_SC3
+
+clustering_by_SIMLR
+
+clustering_by_seurat
+
+clustering_by_monocle
+
+
+
+marker_identification_by_seurat
+
+marker_identification_by_SC3
+
+
+
+pseudotime_based_on_clustering
+
+pseudotime_by_monocle1
+
+pseudotime_by_monocle2
+
+pseudotime_by_SLICER
+
+
+
+module_detection_by_WGCNA
+
+module_detection_by_MSIC
+
+
+
+DEG_pseudotime
+
+DEG_by_scde
+
+DEG_by_edgeR
+
+
+
+scoring_model_by_LR
+
+
+
+**dataset_human_TFs**
+
+**dataset_mouse_TFs**
+
+dataset_human_Y_chromsome_genes
+
+dataset_mouse_Y_chromsome_genes
+
+**dataset_human_to_mouse_genes**
+
+dataset_cell_cycle_genes
+
+dataset_cell_cycle_phase_genes
+
+dataset_migration_genes
+
+dataset_ENS_markers
+
+
+
+show_notes
+
+tools_study_test
+
+
+
+plotting_modules_smooth_curve_across_pseudotime
+
+plotting_violin_plot_of_markers_across_clusters_by_seurat
+
+plotting_boxplot
+
+plotting_violin_plot
+
+plotting_barplot
+
+plotting_volcano_plot
+
+plotting_heatmap
+
+
+
+**plots_collection_001**: dot plot, The `SplitDotPlotGG` function can be useful for viewing conserved cell type markers across conditions, showing both the expression level and the percentage of cells in a cluster expressing any given gene. Here we plot 2-3 strong marker genes for each of our 13 clusters. See [link](https://satijalab.org/seurat/immune_alignment.html)
+
+**plots_collection_002**: scatter plots, highlighting genes that exhibit dramatic responses to interferon stimulation. See [link](https://satijalab.org/seurat/immune_alignment.html)
+
+
+
+plots_collection_00X
+
+(Source code from CNS paper)
+
+
+
+Algorithms_collection_001
+
+Algorithms_collection_00X
 
 
 
