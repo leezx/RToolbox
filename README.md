@@ -1,14 +1,19 @@
 # creat a function
-- copy the template
-- add the function to tmpf.R
+- copy the template in tmpf.R
+- develop the new function in local env
+- add the new function to tmpf.R
+- gitdoc
+- gitpush
+
+gitdoc
 - go to Rstudio and build 
 - or `Rscript -e "devtools::document();devtools::check();devtools::build()"`
 - R CMD Rd2pdf Toolsets
 - `mv Toolsets.pdf Toolsets`
-- gitpush
 
 # summary the functions
 - move the newly functions to formal R file 
+- check the function and revise it oftenly
 
 ## prepare
 - [install tinytex](https://yihui.name/tinytex/)
