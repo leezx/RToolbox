@@ -1,12 +1,17 @@
 # creat a function
-copy the template
-edit the function
-R CMD Rd2pdf Toolsets
-gitpush
+- copy the template
+- add the function to tmpf.R
+- go to Rstudio and build
+- R CMD Rd2pdf Toolsets
+- `mv Toolsets.pdf Toolsets`
+- gitpush
+
+# summary the functions
+- move the newly functions to formal R file 
 
 ## prepare
-![install tinytex](https://yihui.name/tinytex/)
-
+- [install tinytex](https://yihui.name/tinytex/)
+- [Building R Packages Pre-Flight Check List](https://github.com/rdpeng/daprocedures/blob/master/lists/Rpackage_preflight.md)
 
 # singleCellTools
 怎么才能随时使用、学习和调试别人的代码，在充分理解之后，修改保存为自己的代码？（如果这项技能点满了，那在生信领域将大有可为！！！）
