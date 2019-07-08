@@ -5,149 +5,32 @@ my personal single cell RNA-seq analysis script R package
 
 使用和调试分开，所有代码都是想通的，核心的导向是数据；不要害怕不同工具之间的隔阂，很有可能一个函数就可以连通。
 
-# script
-prepare_TPM_value_from_smart_seq_data
-
-prepare_raw_count_matrix_from_10x_data
-
-filtering_matrix
-
-normalizing_matrix
-
-batch_effect_correction
-
-
-
-feature_selection
-
-Highly_variable_genes_selection
-
-
-
-dimension_reduction_by_PCA
-
-dimension_reduction_by_diffusionMap
-
-
-
-data_transform_matrix_to_CellDataSet
-
-data_transform_matrix_to_SingleCellExperiment
-
-data_transform_matrix_to_seurat
-
-data_transform_CellDataSet_to_SingleCellExperiment
-
-data_transform_SingleCellExperiment_to_CellDataSet
-
-data_transform_mouse_ensemble_to_symbol
-
-
-
-clustering_by_SC3
-
-clustering_by_SIMLR
-
-clustering_by_seurat
-
-clustering_by_monocle
-
-
-
-marker_identification_by_seurat
-
-marker_identification_by_SC3
-
-
-
-pseudotime_based_on_clustering
-
-pseudotime_by_monocle1
-
-pseudotime_by_monocle2
-
-pseudotime_by_SLICER
-
-
-
-module_detection_by_WGCNA
-
-module_detection_by_MSIC
-
-
-
-DEG_pseudotime
-
-DEG_by_scde
-
-DEG_by_edgeR
-
-
-
-scoring_model_by_LR
-
-
-
-**dataset_human_TFs**
-
-**dataset_mouse_TFs**
-
-dataset_human_Y_chromsome_genes
-
-dataset_mouse_Y_chromsome_genes
-
-**dataset_human_to_mouse_genes**
-
-dataset_cell_cycle_genes
-
-dataset_cell_cycle_phase_genes
-
-dataset_migration_genes
-
-dataset_ENS_markers
-
-
-
-show_notes
-
-tools_study_test
-
-
-
-plotting_modules_smooth_curve_across_pseudotime
-
-plotting_violin_plot_of_markers_across_clusters_by_seurat
-
-plotting_boxplot
-
-plotting_violin_plot
-
-plotting_barplot
-
-plotting_volcano_plot
-
-plotting_heatmap
-
-
-
-**plots_collection_001**: dot plot, The `SplitDotPlotGG` function can be useful for viewing conserved cell type markers across conditions, showing both the expression level and the percentage of cells in a cluster expressing any given gene. Here we plot 2-3 strong marker genes for each of our 13 clusters. See [link](https://satijalab.org/seurat/immune_alignment.html)
-
-**plots_collection_002**: scatter plots, highlighting genes that exhibit dramatic responses to interferon stimulation. See [link](https://satijalab.org/seurat/immune_alignment.html)
-
-
-
-plots_collection_00X
-
-(Source code from CNS paper)
-
-
-
-Algorithms_collection_001
-
-Algorithms_collection_00X
-
-
-
+# strategy
+all in one file
+
+name system:
+- prepare_
+- clustering_
+- trajectory_
+- deg_
+- toC_
+- plot_
+
+
+- clear function
+- clear input and output
+- well documented
+- good handbook
+
+- collect R packages
+- collect useful graphs
+
+- 无需安装，随时能够调用
+- 随时生成PDF的handbook，方便查询
+- 版本管理
+- 动态修改
+- 在实用性和完备性之间获得平衡，不要封装得太好，不要追求完善，最好是一个简单的功能封装成一个函数, 只有当最终封装成包时才追求完整性
+- 画图 - 功能和款式
 
 # Learning material
 
