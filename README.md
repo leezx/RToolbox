@@ -1,6 +1,4 @@
 # singleCellTools
-my personal single cell RNA-seq analysis script R package
-
 怎么才能随时使用、学习和调试别人的代码，在充分理解之后，修改保存为自己的代码？（如果这项技能点满了，那在生信领域将大有可为！！！）
 
 使用和调试分开，所有代码都是想通的，核心的导向是数据；不要害怕不同工具之间的隔阂，很有可能一个函数就可以连通。
