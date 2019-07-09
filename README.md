@@ -10,9 +10,9 @@
 - gitpush
 
 gitdoc
+- `Rscript -e "devtools::document()" && cd .. && R CMD Rd2pdf Toolsets && mv Toolsets.pdf Toolsets && cd Toolsets`
 - go to Rstudio and build 
 - or `Rscript -e "devtools::document();devtools::check();devtools::build()"`
-- `Rscript -e "devtools::document()" && cd .. && R CMD Rd2pdf Toolsets && mv Toolsets.pdf Toolsets && cd Toolsets`
 
 beauty
 - make function name shorter (. is better than _)
