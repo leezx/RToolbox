@@ -21,7 +21,9 @@ beauty
 
 # summary the functions
 - move the newly functions to formal R file 
-- check the function and revise it oftenly
+- update the function name and description
+- update the manual
+- DO NOT change the API unless you are now develop it
 
 ## prepare
 - [install tinytex](https://yihui.name/tinytex/)
