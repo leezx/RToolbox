@@ -2,7 +2,7 @@
 % Please edit documentation in R/Plot.R
 \name{plot.violin}
 \alias{plot.violin}
-\title{draw violin plot}
+\title{Draw violin plot}
 \usage{
 \method{plot}{violin}(exprData, cellAnno, genes, use, direction = "h",
   showGroup = T, groupOrder = NULL)
@@ -26,7 +26,7 @@
 a ggplot violin object
 }
 \description{
-draw violin plot
+Draw violin plot
 }
 \examples{
 options(repr.plot.width=4, repr.plot.height=9)
