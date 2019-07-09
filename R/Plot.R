@@ -111,7 +111,7 @@ plot.violin <- function(exprData, cellAnno, genes, use, direction="h", showGroup
 #' plot.dotplot.human(sce = sce_HSCR_pure, genes.plot = uniquegenes2, use="cellGroup", group.order = group.order, 
 #'           scale.min=0, scale.max=100, title="", plot.legend = T, xAngle=90)
 #'
-plot.dotplot.human <- function (sce, genes.plot, use="cellGroup2",xAngle=60, cols.use = c("lightgrey", "blue"), 
+plot.dotplot.SC3 <- function (sce, genes.plot, use="cellGroup2",xAngle=60, cols.use = c("lightgrey", "blue"), 
     col.min = -2.5, col.max = 2.5, dot.min = 0, dot.scale = 6, group.order = c(),
     scale.by = "radius", scale.min = NA, scale.max = NA, group.by, title="",
     plot.legend = FALSE, do.return = FALSE, x.lab.rot = FALSE) 
