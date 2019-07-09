@@ -14,6 +14,11 @@ gitdoc
 - R CMD Rd2pdf Toolsets
 - `mv Toolsets.pdf Toolsets`
 
+beauty
+- make function name shorter (. is better than _)
+- make the description shorter
+- word wrap for the example code
+
 # summary the functions
 - move the newly functions to formal R file 
 - check the function and revise it oftenly
