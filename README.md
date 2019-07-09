@@ -12,8 +12,7 @@
 gitdoc
 - go to Rstudio and build 
 - or `Rscript -e "devtools::document();devtools::check();devtools::build()"`
-- R CMD Rd2pdf Toolsets
-- `mv Toolsets.pdf Toolsets`
+- `Rscript -e "devtools::document()" && cd .. && R CMD Rd2pdf Toolsets && mv Toolsets.pdf Toolsets && cd Toolsets`
 
 beauty
 - make function name shorter (. is better than _)
