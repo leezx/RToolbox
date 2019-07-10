@@ -1,3 +1,39 @@
+plot.GO.barplot <- function(barplot_df) {
+  library(Hmisc)
+  library(stringr)
+  # barplot_df <- up_neurongenesis
+  # barplot_df <- intermediate
+  # barplot_df <- down_stemness
+  # barplot_df <- c5
+  colors <- brewer.pal(10,"Paired")
+  for (i in 1:dim(barplot_df)[1]) {
+    barplot_df[i,]$Description <- capitalize(as.character(barplot_df[i,]$Description))
+  }
+  # if (length(barplot_df)<2 | is.null(barplot_df)) {next}
+  barplot_df <- barplot_df[order(barplot_df$pvalue, decreasing = F),]
+  barplot_df$Description <- factor(barplot_df$Description, levels=rev(barplot_df$Description))
+  maxpvalue <- max(-log10(barplot_df$pvalue))
+  # if (length(barplot_df$Description)>20) {barplot_df <- barplot_df[1:20,]}
+  g <- ggplot(data=barplot_df, aes(x=Description, y=-log10(pvalue))) +
+  geom_bar(stat="identity", color=colors[1], fill=colors[1]) +
+  geom_text(aes(label=Count),color="black",vjust=0.4,hjust=-0.5,size=3,fontface="bold") +
+  ylim(0, maxpvalue*1.1) +
+  coord_flip() +
+  labs(x = "", y = "-Log10(P-value)", title="") + 
+  theme_bw() +
+  theme(legend.position = "none") +
+  theme(axis.text.y = element_text(size = 14, color = "black", face = "plain"), 
+    axis.text.x = element_text(size = 12, color = "black", face = "plain"),
+    axis.title =element_text(size = 15)) +
+  # axis.title = element_blank() ,plot.title = element_blank(), axis.ticks.y = element_blank(), axis.ticks.x = element_blank(), axis.text.x = element_blank(),axis.line = element_blank(),panel.border = element_blank(),
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),  plot.margin=unit(c(0,0,0,0), "cm"), panel.border = element_blank()) +
+  theme(axis.line = element_line(color = 'black')) +
+  scale_x_discrete(labels=function(x) str_wrap(x, width=25))
+  # scale_fill_manual(values=rev(colors))
+  plot(g)
+  # save, 7*3 for 4 bars; 4.5 for 6 bars
+}
+
 #' Draw violin plot
 #' @param exprData the expression matrix to be used
 #' @param cellAnno the annotation of the cells
