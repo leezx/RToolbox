@@ -30,7 +30,7 @@ plot.GO.barplot <- function(barplot_df) {
   theme(axis.line = element_line(color = 'black')) +
   scale_x_discrete(labels=function(x) str_wrap(x, width=25))
   # scale_fill_manual(values=rev(colors))
-  plot(g)
+  g
   # save, 7*3 for 4 bars; 4.5 for 6 bars
 }
 
