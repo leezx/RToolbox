@@ -1,10 +1,15 @@
+#' Draw barplot for GO dataframe
+#' @param barplot_df GO dataframe from clusterProfiler
+#'
+#' @return a ggplot barplot object
+#' @export
+#' @examples
+#' options(repr.plot.width=4, repr.plot.height=9)
+#' plot.GO.barplot(df)
+#'
 plot.GO.barplot <- function(barplot_df) {
   library(Hmisc)
   library(stringr)
-  # barplot_df <- up_neurongenesis
-  # barplot_df <- intermediate
-  # barplot_df <- down_stemness
-  # barplot_df <- c5
   colors <- brewer.pal(10,"Paired")
   for (i in 1:dim(barplot_df)[1]) {
     barplot_df[i,]$Description <- capitalize(as.character(barplot_df[i,]$Description))
@@ -31,7 +36,6 @@ plot.GO.barplot <- function(barplot_df) {
   scale_x_discrete(labels=function(x) str_wrap(x, width=25))
   # scale_fill_manual(values=rev(colors))
   g
-  # save, 7*3 for 4 bars; 4.5 for 6 bars
 }
 
 #' Draw violin plot
