@@ -166,8 +166,11 @@ plot.GO.barplot <- function(barplot_df, color="random") {
   theme(axis.text.y = element_text(size = 14, color = "black", face = "plain"), 
     axis.text.x = element_text(size = 12, color = "black", face = "plain"),
     axis.title =element_text(size = 15)) +
-  # axis.title = element_blank() ,plot.title = element_blank(), axis.ticks.y = element_blank(), axis.ticks.x = element_blank(), axis.text.x = element_blank(),axis.line = element_blank(),panel.border = element_blank(),
-  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),  plot.margin=unit(c(0,0,0,0), "cm"), panel.border = element_blank()) +
+  # axis.title = element_blank() ,plot.title = element_blank(), axis.ticks.y = element_blank(), 
+    axis.ticks.x = element_blank(), axis.text.x = element_blank(),axis.line = element_blank(),
+    panel.border = element_blank(),
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),  plot.margin=unit(c(0,0,0,0), "cm"), 
+        panel.border = element_blank()) +
   theme(axis.line = element_line(color = 'black')) +
   scale_x_discrete(labels=function(x) str_wrap(x, width=25))
   # scale_fill_manual(values=rev(colors))
