@@ -7,12 +7,12 @@
 #' options(repr.plot.width=4, repr.plot.height=9)
 #' go_list <- plot.GO.KEGG.barplot.batch(result$go_list)
 #'
-plot.GO.KEGG.barplot.batch <- function(anno_list=go_list) {
+plot.ora.GO.KEGG.barplot.batch <- function(anno_list=go_list) {
   # anno_list=kegg_list
   # colors <- c("#FB8072", "#B3DE69", "#BC80BD")
   library(ggplot2)
   library(RColorBrewer)
-  tmpcolors <- brewer.pal(9,"Set3")[1:length(anno_list)]
+  tmpcolors <- brewer.pal(12,"Set3")[1:length(anno_list)]
   nameList <- names(anno_list)
   if (is.null(nameList)) {
     nameList <- 1:length(anno_list)
