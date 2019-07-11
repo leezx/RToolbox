@@ -32,7 +32,8 @@ gsea.go.kegg.clusterProfiler <- function(geneList=DEGs_list_full, use.score="cor
 		nameList <- 1:length(geneList)
 	}
   for (i in nameList) {
-    genes <- geneList[[i]]$gene
+    # genes <- geneList[[i]]$gene
+    genes <- rownames(geneList[[i]])
     # projectName <- i
 		if (organism=="mm") {
 			library(org.Mm.eg.db) # mouse
