@@ -139,10 +139,14 @@ plot.ora.GO.KEGG.barplot.batch <- function(anno_list=go_list, type) {
 #' options(repr.plot.width=4, repr.plot.height=9)
 #' plot.GO.barplot(df)
 #'
-plot.GO.barplot <- function(barplot_df) {
+plot.GO.barplot <- function(barplot_df, color="random") {
   library(Hmisc)
   library(stringr)
-  colors <- brewer.pal(10,"Paired")
+  library(RColorBrewer)
+  if (color=="random) {
+    color <- sample(RColorBrewer::brewer.pal(12,"Set3"), 1)
+  }
+  # colors <- brewer.pal(10,"Paired")
   for (i in 1:dim(barplot_df)[1]) {
     barplot_df[i,]$Description <- capitalize(as.character(barplot_df[i,]$Description))
   }
@@ -152,7 +156,7 @@ plot.GO.barplot <- function(barplot_df) {
   maxpvalue <- max(-log10(barplot_df$pvalue))
   # if (length(barplot_df$Description)>20) {barplot_df <- barplot_df[1:20,]}
   g <- ggplot(data=barplot_df, aes(x=Description, y=-log10(pvalue))) +
-  geom_bar(stat="identity", color=colors[1], fill=colors[1]) +
+  geom_bar(stat="identity", color=color, fill=color, alpha=0.8) +
   geom_text(aes(label=Count),color="black",vjust=0.4,hjust=-0.5,size=3,fontface="bold") +
   ylim(0, maxpvalue*1.1) +
   coord_flip() +
