@@ -14,14 +14,15 @@ example.function <- function(param1=NULL) {
 #' @param geneList a gene list
 #' @param use.score the score used for the GSEA analysis
 #' @param organism organism (hs and mm)
+#' @param pvalueCutoff pvalueCutoff
 #'
 #' @return a list with GO and KEGG GSEA annotation result (clusterProfiler format)
 #' @export
 #' @examples
 #' gsea_list <- gsea.go.kegg.clusterProfiler(geneList = pheno_DEGs, use.score = "cor", organism="mm")
 #'
-gsea.go.kegg.clusterProfiler <- function(geneList=DEGs_list_full, use.score="cor", organism="hs") {
-	pAdjustMethod = "BH"; pvalueCutoff = 0.05
+gsea.go.kegg.clusterProfiler <- function(geneList=DEGs_list_full, use.score="cor", organism="hs", pvalueCutoff = 0.05) {
+  pAdjustMethod = "BH"; 
   library(clusterProfiler)
   go_list <- list()
   kegg_list <- list()
