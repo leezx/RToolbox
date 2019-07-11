@@ -143,7 +143,7 @@ plot.GO.barplot <- function(barplot_df, color="random") {
   library(Hmisc)
   library(stringr)
   library(RColorBrewer)
-  if (color=="random) {
+  if (color=="random") {
     color <- sample(brewer.pal(12, "Set3"), 1)
   }
   # colors <- brewer.pal(10,"Paired")
