@@ -107,77 +107,6 @@ ID2gene <- function(ID="4171/4175/5422/4172") {
   genes
 }
 
-go_pathway_by_clusterProfiler_human <- function(geneList=markerList) {
-  library(clusterProfiler)
-  library(org.Hs.eg.db) # human
-  # library(org.Mm.eg.db) # mouse
-  go_list <- list()
-  kegg_list <- list()
-  nameList <- names(geneList)
-  if (is.null(nameList)) {nameList <- 1:length(geneList)}
-  for (i in nameList) {
-    genes <- geneList[[i]]
-    projectName <- i
-    gene.df <- bitr(genes, fromType = "SYMBOL", toType = c("ENSEMBL", "ENTREZID"), OrgDb = org.Hs.eg.db)
-    # gene.df <- bitr(genes, fromType = "SYMBOL", toType = c("ENSEMBL", "ENTREZID"), OrgDb = org.Mm.eg.db)
-    ego <- enrichGO(gene      = gene.df$ENTREZID,
-                #universe      = genes, # SYMBOL
-                keyType       = "ENTREZID",
-                OrgDb         = org.Hs.eg.db,
-                ont           = "BP",
-                pAdjustMethod = "BH",
-                pvalueCutoff  = 0.01,
-                qvalueCutoff  = 0.05,
-                readable      = TRUE)
-    # remove duplications
-    # too slow
-    # ego <- clusterProfiler::simplify(ego, cutoff=0.7, by="p.adjust", select_fun=min)
-    # drop top 3 level
-    # ego <- dropGO(ego, level = c(1,2))
-    go_list[[i]] <- ego
-    kk <- enrichKEGG(gene = gene.df$ENTREZID, organism = 'hsa', pvalueCutoff = 0.05)
-    # kk <- enrichKEGG(gene = gene.df$ENTREZID, organism = 'mmu', pvalueCutoff = 0.05)
-    # kk$genes <- unlist(lapply(kk$geneID, ID2gene))
-    kegg_list[[i]] <- kk
-    }
-    return(list("go_list"=go_list, "kegg_list"=kegg_list))
-  }
-
-go_pathway_by_clusterProfiler_mouse <- function(geneList=markerList) {
-  library(clusterProfiler)
-  # library(org.Hs.eg.db) # human
-  library(org.Mm.eg.db) # mouse
-  go_list <- list()
-  kegg_list <- list()
-  nameList <- names(geneList)
-  if (is.null(nameList)) {nameList <- 1:length(geneList)}
-  for (i in nameList) {
-    genes <- geneList[[i]]
-    projectName <- i
-    # gene.df <- bitr(genes, fromType = "SYMBOL", toType = c("ENSEMBL", "ENTREZID"), OrgDb = org.Hs.eg.db)
-    gene.df <- bitr(genes, fromType = "SYMBOL", toType = c("ENSEMBL", "ENTREZID"), OrgDb = org.Mm.eg.db)
-    ego <- enrichGO(gene      = gene.df$ENTREZID,
-                #universe      = genes, # SYMBOL
-                keyType       = "ENTREZID",
-                OrgDb         = org.Mm.eg.db,
-                ont           = "BP",
-                pAdjustMethod = "BH",
-                pvalueCutoff  = 0.01,
-                qvalueCutoff  = 0.05,
-                readable      = TRUE)
-    # remove duplications
-    # too slow
-    # ego <- clusterProfiler::simplify(ego, cutoff=0.7, by="p.adjust", select_fun=min)
-    # drop top 3 level
-    # ego <- dropGO(ego, level = c(1,2))
-    go_list[[i]] <- ego
-    # kk <- enrichKEGG(gene = gene.df$ENTREZID, organism = 'hsa', pvalueCutoff = 0.05)
-    kk <- enrichKEGG(gene = gene.df$ENTREZID, organism = 'mmu', pvalueCutoff = 0.05)
-    kegg_list[[i]] <- kk
-    }
-    return(list("go_list"=go_list, "kegg_list"=kegg_list))
-  }
-
 gsea_by_clusterProfiler_mouse <- function(geneList=DEGs_list_full, pAdjustMethod = "BH", pvalueCutoff = 0.05) {
 #   geneList=list(DEGs_list_full[[1]])
   library(clusterProfiler)
@@ -276,59 +205,6 @@ gsea_by_clusterProfiler_human <- function(geneList=DEGs_list_full, pAdjustMethod
     gsea_list[["kegg_list"]] <- kegg_list
     gsea_list
   }
-
-draw_go_kegg_barplot_yshu <- function(anno_list=go_list) {
-  # anno_list=kegg_list
-  # colors <- c("#FB8072", "#B3DE69", "#BC80BD")
-  library(ggplot2)
-  library(RColorBrewer)
-  tmpcolors <- brewer.pal(9,"Set3")[1:length(anno_list)]
-  nameList <- names(anno_list)
-  if (is.null(nameList)) {
-    nameList <- 1:length(anno_list)
-    names(tmpcolors) <- nameList
-    }
-  j <- 0
-  merged_list <- list()
-  for (i in nameList) {
-    j <- j + 1
-    barplot_df <- anno_list[[i]]@result
-    if (length(barplot_df)<2 | is.null(barplot_df)) {next}
-    barplot_df <- barplot_df[order(barplot_df$pvalue, decreasing = F),]
-    barplot_df$Description <- factor(barplot_df$Description, levels=rev(barplot_df$Description))
-    maxpvalue <- max(-log10(barplot_df$pvalue))
-    # filter duplication
-    left_go <- c()
-    barplot_df <- barplot_df[!duplicated(barplot_df$geneID),]
-    for (one in 1:length(barplot_df$ID)) {
-      if (one ==1) {left_go <- c(left_go, one); next}
-      leftGenes <- strsplit(paste(barplot_df[left_go,]$geneID, collapse = "/"), split = "/")
-      tmpGenes <- strsplit(paste(barplot_df[one,]$geneID, collapse = "/"), split = "/")
-      if (length(intersect(leftGenes, tmpGenes))/length(tmpGenes) > 0.7) {next}
-      left_go <- c(left_go, one)
-    }
-    barplot_df <- barplot_df[left_go,]
-    #
-    if (length(barplot_df$Description)>20) {barplot_df <- barplot_df[1:20,]}
-    g <- ggplot(data=barplot_df, aes(x=Description, y=-log10(pvalue))) +
-    geom_bar(stat="identity", fill = tmpcolors[j]) +
-    geom_text(aes(label=Count),color="black",vjust=0.4,hjust=-0.5,size=3,fontface="bold") +
-    ylim(0, maxpvalue*1.1) +
-    coord_flip() +
-    labs(x = "", y = "-Log10(P-value)", title=i) + 
-    theme_bw() +
-    theme(legend.position = "none") +
-    theme(axis.text.y = element_text(size = 16, color = "black", face = "bold"), axis.text.x = element_text(size = 11, color = "black", face = "plain")) +
-    # axis.title = element_blank() ,plot.title = element_blank(), axis.ticks.y = element_blank(), axis.ticks.x = element_blank(), axis.text.x = element_blank(),axis.line = element_blank(),panel.border = element_blank(),
-    theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),  plot.margin=unit(c(0,0,0,0), "cm"), panel.border = element_blank()) +
-    theme(axis.line = element_line(color = 'black'))
-    # + scale_fill_manual(values=colorRampPalette(c("#3176e0", "#8831e0", "#e031b4"))(15))
-    plot(g)
-    # save, 700, 350
-    merged_list[[i]] <- barplot_df
-  }
-  merged_list
-}
 
 draw_single_merged_barplot_go_kegg <- function(barplot_df) {
   library(Hmisc)
