@@ -1,3 +1,65 @@
+#' Draw GO KEGG barplot for a gene list
+#' @param anno_list a gene list
+#'
+#' @return a dataframe
+#' @export
+#' @examples
+#' options(repr.plot.width=4, repr.plot.height=9)
+#' go_list <- plot.GO.KEGG.barplot.batch(result$go_list)
+#'
+plot.GO.KEGG.barplot.batch <- function(anno_list=go_list) {
+  # anno_list=kegg_list
+  # colors <- c("#FB8072", "#B3DE69", "#BC80BD")
+  library(ggplot2)
+  library(RColorBrewer)
+  tmpcolors <- brewer.pal(9,"Set3")[1:length(anno_list)]
+  nameList <- names(anno_list)
+  if (is.null(nameList)) {
+    nameList <- 1:length(anno_list)
+    names(tmpcolors) <- nameList
+    }
+  j <- 0
+  merged_list <- list()
+  for (i in nameList) {
+    j <- j + 1
+    barplot_df <- anno_list[[i]]@result
+    if (length(barplot_df)<2 | is.null(barplot_df)) {next}
+    barplot_df <- barplot_df[order(barplot_df$pvalue, decreasing = F),]
+    barplot_df$Description <- factor(barplot_df$Description, levels=rev(barplot_df$Description))
+    maxpvalue <- max(-log10(barplot_df$pvalue))
+    # filter duplication
+    left_go <- c()
+    barplot_df <- barplot_df[!duplicated(barplot_df$geneID),]
+    for (one in 1:length(barplot_df$ID)) {
+      if (one ==1) {left_go <- c(left_go, one); next}
+      leftGenes <- strsplit(paste(barplot_df[left_go,]$geneID, collapse = "/"), split = "/")
+      tmpGenes <- strsplit(paste(barplot_df[one,]$geneID, collapse = "/"), split = "/")
+      if (length(intersect(leftGenes, tmpGenes))/length(tmpGenes) > 0.7) {next}
+      left_go <- c(left_go, one)
+    }
+    barplot_df <- barplot_df[left_go,]
+    #
+    if (length(barplot_df$Description)>20) {barplot_df <- barplot_df[1:20,]}
+    g <- ggplot(data=barplot_df, aes(x=Description, y=-log10(pvalue))) +
+    geom_bar(stat="identity", fill = tmpcolors[j]) +
+    geom_text(aes(label=Count),color="black",vjust=0.4,hjust=-0.5,size=3,fontface="bold") +
+    ylim(0, maxpvalue*1.1) +
+    coord_flip() +
+    labs(x = "", y = "-Log10(P-value)", title=i) + 
+    theme_bw() +
+    theme(legend.position = "none") +
+    theme(axis.text.y = element_text(size = 16, color = "black", face = "bold"), axis.text.x = element_text(size = 11, color = "black", face = "plain")) +
+    # axis.title = element_blank() ,plot.title = element_blank(), axis.ticks.y = element_blank(), axis.ticks.x = element_blank(), axis.text.x = element_blank(),axis.line = element_blank(),panel.border = element_blank(),
+    theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),  plot.margin=unit(c(0,0,0,0), "cm"), panel.border = element_blank()) +
+    theme(axis.line = element_line(color = 'black'))
+    # + scale_fill_manual(values=colorRampPalette(c("#3176e0", "#8831e0", "#e031b4"))(15))
+    plot(g)
+    # save, 700, 350
+    merged_list[[i]] <- barplot_df
+  }
+  merged_list
+}
+
 #' Draw barplot for GO dataframe
 #' @param barplot_df GO dataframe from clusterProfiler
 #'
