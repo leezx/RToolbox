@@ -53,6 +53,7 @@ ora.go.kegg.clusterProfiler <- function(geneList=markerList, organism="hs") {
 			kegg_list[[i]] <- kk
 			} 
 		else if (organism=="hs") {
+			library(org.Hs.eg.db)
 			gene.df <- bitr(genes, fromType = "SYMBOL", toType = c("ENSEMBL", "ENTREZID"), OrgDb = org.Hs.eg.db)
 			ego <- enrichGO(gene      = gene.df$ENTREZID,
 									#universe      = genes, # SYMBOL
