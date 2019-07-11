@@ -19,7 +19,7 @@ example.function <- function(param1=NULL) {
 #' @examples
 #' result <- ora.go.kegg.clusterProfiler(geneList = new_moduleList, organism="mm")
 #'
-gsea.go.kegg.clusterProfiler <- function(geneList=DEGs_list_full, use.score="cor") {
+gsea.go.kegg.clusterProfiler <- function(geneList=DEGs_list_full, use.score="cor", organism="hs") {
 	pAdjustMethod = "BH"; pvalueCutoff = 0.05
   library(clusterProfiler)
   go_list <- list()
