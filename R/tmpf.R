@@ -10,7 +10,7 @@ example.function <- function(param1=NULL) {
 	NULL
 }
 
-#' GO KEGG GSEA analysis
+#' GSEA analysis by newest fgsea
 #' @param geneList a gene list
 #' @param use.score the score used for the GSEA analysis
 #' @param organism organism (hs and mm)
