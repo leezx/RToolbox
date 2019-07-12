@@ -98,15 +98,6 @@ go_pathway_by_clusterProfiler_human_bak <- function(geneList=markerList) {
     return(list("go_list"=go_list, "kegg_list"=kegg_list))
   }
 
-ID2gene <- function(ID="4171/4175/5422/4172") {
-  ID <- unlist(lapply(strsplit(ID, "/"), as.integer))
-  gene.df <- bitr(ID, fromType = "ENTREZID", toType = c("SYMBOL", "ENSEMBL"), OrgDb = org.Hs.eg.db)
-  gene.df <- gene.df[!duplicated(gene.df$ENTREZID),]
-  rownames(gene.df) <- gene.df$ENTREZID
-  genes <- paste(gene.df$SYMBOL, collapse ="/")
-  genes
-}
-
 draw_single_merged_barplot_go_kegg <- function(barplot_df) {
   library(Hmisc)
   # barplot_df <- up_neurongenesis
