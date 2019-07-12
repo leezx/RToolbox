@@ -4,7 +4,7 @@
 \alias{plot.GO.barplot}
 \title{Draw barplot for GO dataframe}
 \usage{
-\method{plot}{GO.barplot}(barplot_df)
+\method{plot}{GO.barplot}(barplot_df, color = "random")
 }
 \arguments{
 \item{barplot_df}{GO dataframe from clusterProfiler}

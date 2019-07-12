@@ -2,10 +2,10 @@
 % Please edit documentation in R/tmpf.R
 \name{gsea.go.kegg.clusterProfiler}
 \alias{gsea.go.kegg.clusterProfiler}
-\title{GO KEGG GSEA analysis}
+\title{GSEA analysis by newest fgsea}
 \usage{
 gsea.go.kegg.clusterProfiler(geneList = DEGs_list_full,
-  use.score = "cor", organism = "hs")
+  use.score = "cor", organism = "hs", pvalueCutoff = 0.05)
 }
 \arguments{
 \item{geneList}{a gene list}
@@ -13,12 +13,14 @@ gsea.go.kegg.clusterProfiler(geneList = DEGs_list_full,
 \item{use.score}{the score used for the GSEA analysis}
 
 \item{organism}{organism (hs and mm)}
+
+\item{pvalueCutoff}{pvalueCutoff}
 }
 \value{
 a list with GO and KEGG GSEA annotation result (clusterProfiler format)
 }
 \description{
-GO KEGG GSEA analysis
+GSEA analysis by newest fgsea
 }
 \examples{
 gsea_list <- gsea.go.kegg.clusterProfiler(geneList = pheno_DEGs, use.score = "cor", organism="mm")
