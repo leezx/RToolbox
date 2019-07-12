@@ -10,6 +10,36 @@ example.function <- function(param1=NULL) {
 	NULL
 }
 
+#' transfer the ID string to gene vector or string
+#' @param ID the ID string, like 4171/4175/5422/4172
+#' @param organism organism (hs and mm)
+#' @param returnVector return vector or string
+#'
+#' @return a transfromed gene name list or string
+#' @export
+#' @examples
+#' tmpgenes <- gsea.ID2gene("4171/4175/5422/4172", organism="hs")
+#'
+gsea.ID2gene <- function(ID, organism="hs", returnVector=T) {
+    ID <- unlist(lapply(strsplit(ID, "/"), as.integer))
+    if (organism=="hs") {
+        library(org.Hs.eg.db)
+        gene.df <- bitr(ID, fromType = "ENTREZID", toType = c("SYMBOL", "ENSEMBL"), OrgDb = org.Hs.eg.db)
+    } else if (organism=="mm") {
+        library(org.Mm.eg.db)
+        gene.df <- bitr(ID, fromType = "ENTREZID", toType = c("SYMBOL", "ENSEMBL"), OrgDb = org.Mm.eg.db)
+    } else {stop("only support hs and mm now!")}
+    
+    gene.df <- gene.df[!duplicated(gene.df$ENTREZID),]
+    rownames(gene.df) <- gene.df$ENTREZID
+    if (returnVector) {
+        return(gene.df$SYMBOL)
+    } else {
+        genes <- paste(gene.df$SYMBOL, collapse ="/")
+        genes
+    } 
+}
+
 #' GSEA analysis by newest fgsea
 #' @param geneList a gene list
 #' @param use.score the score used for the GSEA analysis
