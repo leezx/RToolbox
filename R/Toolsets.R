@@ -10,6 +10,60 @@ example.function <- function(param1=NULL) {
 	NULL
 }
 
+#' scale the matrix
+#' @param raw.data raw.data
+#' @param max.value max.value after scale
+#'
+#' @return scale.data
+#' @export
+#' @examples
+#' scale.data <- pre.scale.data(logcounts(sce_HSCR))
+#'
+pre.scale.data <- function(raw.data=logcounts(sce_HSCR), max.value=2) {
+    # max.value <- 2
+    scale.data <- t(x = scale(x = t(x = as.matrix(x = raw.data)), center = T, scale = T))
+    scale.data[is.na(scale.data)] <- 0
+    scale.data[scale.data > max.value] <- max.value
+    scale.data[scale.data < -max.value] <- -max.value
+    return(scale.data)
+}
+
+#' prepare the annotation for the pheatmap
+#' @param sce sce object
+#' @param group.order group.order
+#' @param sample.order sample.order
+#' @param Cluster the feature take as Cluster
+#' @param Sample the feature take as Sample
+#'
+#' @return anno list
+#' @export
+#' @examples
+#' options(repr.plot.width=8, repr.plot.height=7)
+#' pheatmap(scale.data[sc3_marker$name, rownames(anno$col)], cluster_rows = F, cluster_cols = F, border_color = NA,
+#'          color = colorRampPalette(c("#FF00FF","#000000","#FFFF00"))(100),
+#'          show_colnames=F, show_rownames=F, annotation_col = anno$col, annotation_colors = anno$colors)
+#'
+pre.pheatmap.anno <- function(sce=sce, group.order=group.order, sample.order=sample.order, 
+                              Cluster="impute_cluster", Sample="cellGroup") {
+    anno <- list()
+    #######
+    annotation_col <- as.data.frame(colData(sce)[,c(Cluster, Sample)])
+    colnames(annotation_col) <- c("Cluster", "Sample")
+    annotation_col$Cluster <- factor(annotation_col$Cluster, levels = group.order)
+    annotation_col$Sample <- factor(annotation_col$Sample, levels = sample.order)
+    annotation_col <- annotation_col[order(annotation_col$Cluster, decreasing = F),]
+    #######
+    annotation_colors <- list()
+    annotation_colors[["Cluster"]] <- brewer.pal(8,"Set2")[1:length(levels(annotation_col$Cluster))]
+    annotation_colors[["Sample"]] <- brewer.pal(12,"Set3")[1:length(levels(annotation_col$Sample))]
+    names(annotation_colors$Cluster) <- group.order
+    names(annotation_colors$Sample) <- sample.order
+    #######
+    anno[["col"]] <- annotation_col
+    anno[["colors"]] <- annotation_colors
+    return(anno)
+}
+
 #' transfer the ID string to gene vector or string
 #' @param ID the ID string, like 4171/4175/5422/4172
 #' @param organism organism (hs and mm)
