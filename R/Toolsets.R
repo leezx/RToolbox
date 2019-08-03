@@ -10,6 +10,29 @@ example.function <- function(param1=NULL) {
 	NULL
 }
 
+#' repeat the col or row for n times
+#' @param x x
+#' @param n n
+#'
+#' @return df
+#' @export
+#' @examples
+#' rep.df <- rep.col(all_tsne[,cluster], length(groups)) 
+rep.row<-function(x,n){
+   matrix(rep(x,each=n),nrow=n)
+}
+
+#' repeat the col or row for n times
+#' @param x x
+#' @param n n
+#'
+#' @return df
+#' @export
+#' @examples
+#' rep.df <- rep.col(all_tsne[,cluster], length(groups)) 
+rep.col<-function(x,n){
+   matrix(rep(x,each=n), ncol=n, byrow=TRUE)
+}
 
 #' for facet plot, add background point
 #' @param all_tsne all_tsne
