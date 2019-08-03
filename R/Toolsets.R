@@ -10,6 +10,42 @@ example.function <- function(param1=NULL) {
 	NULL
 }
 
+
+#' for facet plot, add background point
+#' @param all_tsne all_tsne
+#' @param cluster cluster
+#' @param group group
+#' @param cor1 x
+#' @param cor2 y
+#' @param sample.order sample.order
+#' @param group.order group.order
+#'
+#' @return a merged dataframe
+#' @export
+#' @examples
+#' merged_df <- add.background.point(all_tsne, sample.order = sample.order, group.order = group.order)
+#'
+add.background.point <- function(all_tsne, cluster="cluster", group="group", cor1="X", cor2="Y", 
+                                 sample.order, group.order) {
+    # bind_rows(replicate(3, all_tsne, simplify = F))
+    groups <- unique(as.character(all_tsne[,group]))
+    rep.df <- rep.col(all_tsne[,cluster], length(groups))
+    colnames(rep.df) <- groups
+    all_tsne_rep <- cbind(all_tsne, rep.df)
+    # print(c(cor1, cor2, groups))
+    # assign to others
+    for (i in groups) {
+        all_tsne_rep[all_tsne_rep$group!=i, i] <- "others"
+        next
+    }
+    all_tsne_rep <- all_tsne_rep[,c(cor1, cor2, groups)]
+    merged_df <- melt(all_tsne_rep, id.vars = c(cor1, cor2))
+    merged_df$variable <- factor(merged_df$variable, levels = sample.order)
+    merged_df$value <- factor(merged_df$value, levels = c(group.order, "others"))
+    merged_df <- merged_df[order(merged_df$value, decreasing = T),]
+    merged_df
+}
+
 #' scale the matrix
 #' @param raw.data raw.data
 #' @param max.value max.value after scale
