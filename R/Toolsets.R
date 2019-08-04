@@ -10,6 +10,109 @@ example.function <- function(param1=NULL) {
 	NULL
 }
 
+# scater inner function, for runPCA.detail using
+get_mat_for_reddim <- function(object, exprs_values="logcounts", feature_set=NULL, ntop=500, scale=FALSE) {
+# Picking the 'ntop' most highly variable features or just using a pre-specified set of features.
+# Also removing zero-variance columns and scaling the variance of each column.
+# Finally, transposing for downstream use (cells are now rows).
+
+    exprs_mat <- assay(object, exprs_values, withDimnames=FALSE)
+    rv <- rowVars(as.matrix(DelayedArray(as.matrix(exprs_mat))))
+
+    if (is.null(feature_set)) {
+        o <- order(rv, decreasing = TRUE)
+        feature_set <- head(o, ntop)
+    } else if (is.character(feature_set)) {
+        feature_set <- .subset2index(feature_set, object, byrow=TRUE)
+    }
+
+    exprs_to_plot <- exprs_mat[feature_set,, drop = FALSE]
+    rv <- rv[feature_set]
+
+    exprs_to_plot <- t(exprs_to_plot)
+    if (scale) {
+        exprs_to_plot <- scater:::.scale_columns(exprs_to_plot, rv)
+        rv <- rep(1, ncol(exprs_to_plot))
+    }
+
+    exprs_to_plot
+}
+
+# return the weight of each gene on each PCs
+runPCA.detail <- function (object, ncomponents = 2, method = c("prcomp", "irlba"), 
+    ntop = 500, exprs_values = "logcounts", feature_set = NULL, 
+    scale_features = TRUE, use_coldata = FALSE, selected_variables = NULL, 
+    detect_outliers = FALSE, rand_seed = NULL, ...) 
+{
+    if (use_coldata) {
+        if (is.null(selected_variables)) {
+            selected_variables <- list()
+            it <- 1L
+            for (field in c("pct_counts_in_top_100_features", 
+                "total_features_by_counts", "pct_counts_feature_control", 
+                "total_features_by_counts_feature_control", "log10_total_counts_endogenous", 
+                "log10_total_counts_feature_control")) {
+                out <- .qc_hunter(object, field, mode = "column", 
+                  error = FALSE)
+                if (!is.null(out)) {
+                  selected_variables[[it]] <- out
+                  it <- it + 1L
+                }
+            }
+        }
+        exprs_to_plot <- matrix(0, ncol(object), length(selected_variables))
+        for (it in seq_along(selected_variables)) {
+            exprs_to_plot[, it] <- .choose_vis_values(object, 
+                selected_variables[[it]], mode = "column", search = "metadata")$val
+        }
+        if (scale_features) {
+            exprs_to_plot <- scater:::.scale_columns(exprs_to_plot)
+        }
+    }
+    else {
+        exprs_to_plot <- get_mat_for_reddim(object, exprs_values = exprs_values, 
+            ntop = ntop, feature_set = feature_set, scale = scale_features)
+    }
+    if (detect_outliers && use_coldata) {
+        outliers <- mvoutlier::pcout(exprs_to_plot, makeplot = FALSE, 
+            explvar = 0.5, crit.M1 = 0.9, crit.c1 = 5, crit.M2 = 0.9, 
+            crit.c2 = 0.99, cs = 0.25, outbound = 0.05)
+        outlier <- !as.logical(outliers$wfinal01)
+        object$outlier <- outlier
+    }
+    method <- match.arg(method)
+    if (method == "prcomp") {
+        print(paste("using ", method, "...", sep=""))
+        exprs_to_plot <- as.matrix(exprs_to_plot)
+        ncomponents <- min(c(ncomponents, dim(exprs_to_plot)))
+        pca <- prcomp(exprs_to_plot, rank. = ncomponents)
+        percentVar <- pca$sdev^2
+        percentVar <- percentVar/sum(percentVar)
+    }
+    else if (method == "irlba") {
+        print(paste("using ", method, "...", sep=""))
+        if (!is.null(rand_seed)) {
+            .Deprecated(msg = "'rand.seed=' is deprecated.\nUse 'set.seed' externally instead.")
+            set.seed(rand_seed)
+        }
+        ncomponents <- min(c(ncomponents, dim(exprs_to_plot) - 
+            1L))
+        pca <- irlba::prcomp_irlba(exprs_to_plot, n = ncomponents, 
+            ...)
+        percentVar <- pca$sdev^2/sum(colVars(DelayedArray(exprs_to_plot)))
+    }
+    pcs <- pca$x
+    attr(pcs, "percentVar") <- percentVar
+    if (use_coldata) {
+        reducedDim(object, "PCA_coldata") <- pcs
+    }
+    else {
+        reducedDim(object, "PCA") <- pcs
+        # object$PCA_rotation <- pca$rotation
+    }
+    return(list(object=object, PCA_rotation=pca$rotation))
+}
+
 #' repeat the col or row for n times
 #' @param x x
 #' @param n n
