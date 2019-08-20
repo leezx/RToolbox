@@ -16,7 +16,7 @@ filter.ora.items <- function(result, filter="") {
     for (i in names(result)) {
         for (j in names(result[[i]])) {
             tmpdf <- result[[i]][[j]]@result
-            result[[i]][[j]]@result <- tmpdf[!grepl(filter, tmpdf$Description),]
+            result[[i]][[j]]@result <- tmpdf[!grepl(filter, tmpdf$Description, ignore.case=T),]
         }
     }
     result
