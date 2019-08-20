@@ -9,7 +9,7 @@
 #' go_list <- plot.gsea.GO.KEGG.barplot.batch(gsea_list$go_list, type = "GO")
 #' kegg_list <- plot.gsea.GO.KEGG.barplot.batch(gsea_list$kegg_list, type = "KEGG")
 #'
-plot.gsea.GO.KEGG.barplot.batch <- function(anno_list=gsea_list$go_list, type) {
+plot.gsea.GO.KEGG.barplot.batch <- function(anno_list=gsea_list$go_list, type, f.length=40) {
   library(ggplot2)
   library(RColorBrewer)
   tmpcolors <- brewer.pal(12,"Set3")[1:length(anno_list)]
@@ -40,7 +40,7 @@ plot.gsea.GO.KEGG.barplot.batch <- function(anno_list=gsea_list$go_list, type) {
     }
     barplot_df <- barplot_df[left_go,]
     # remove terms with too long description
-    barplot_df <- barplot_df[sapply(as.character(barplot_df$Description), nchar) < 40,]
+    barplot_df <- barplot_df[sapply(as.character(barplot_df$Description), nchar) < f.length,]
     if (length(barplot_df$Description)>20) {barplot_df <- barplot_df[1:20,]}
     ###
     g <- ggplot(data=barplot_df, aes(x=Description, y=-log10(pvalue))) +
@@ -75,7 +75,7 @@ plot.gsea.GO.KEGG.barplot.batch <- function(anno_list=gsea_list$go_list, type) {
 #' options(repr.plot.width=4, repr.plot.height=9)
 #' go_list <- plot.GO.KEGG.barplot.batch(result$go_list, type="GO")
 #'
-plot.ora.GO.KEGG.barplot.batch <- function(anno_list=go_list, type) {
+plot.ora.GO.KEGG.barplot.batch <- function(anno_list=go_list, type, f.length=40) {
   # anno_list=kegg_list
   # colors <- c("#FB8072", "#B3DE69", "#BC80BD")
   library(ggplot2)
@@ -107,7 +107,7 @@ plot.ora.GO.KEGG.barplot.batch <- function(anno_list=go_list, type) {
     }
     barplot_df <- barplot_df[left_go,]
     # remove terms with too long description
-    barplot_df <- barplot_df[sapply(as.character(barplot_df$Description), nchar) < 40,]
+    barplot_df <- barplot_df[sapply(as.character(barplot_df$Description), nchar) < f.length,]
     #
     if (length(barplot_df$Description)>20) {barplot_df <- barplot_df[1:20,]}
     g <- ggplot(data=barplot_df, aes(x=Description, y=-log10(pvalue))) +
