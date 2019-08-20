@@ -11,6 +11,7 @@ example.function <- function(param1=NULL) {
 }
 
 # remove useless items from GO/KEGG annotation
+# new.result <- filter.ora.items(result, filter = "mitochondrial|translational|riboso|Riboso")
 filter.ora.items <- function(result, filter="") {
     for (i in names(result)) {
         for (j in names(result[[i]])) {
