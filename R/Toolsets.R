@@ -10,6 +10,17 @@ example.function <- function(param1=NULL) {
 	NULL
 }
 
+# remove useless items from GO/KEGG annotation
+filter.ora.items <- function(result, filter="") {
+    for (i in names(result)) {
+        for (j in names(result[[i]])) {
+            tmpdf <- result[[i]][[j]]@result
+            result[[i]][[j]]@result <- tmpdf[!grepl(filter, tmpdf$Description),]
+        }
+    }
+    result
+}
+
 # scater inner function, for runPCA.detail using
 get_mat_for_reddim <- function(object, exprs_values="logcounts", feature_set=NULL, ntop=500, scale=FALSE) {
 # Picking the 'ntop' most highly variable features or just using a pre-specified set of features.
