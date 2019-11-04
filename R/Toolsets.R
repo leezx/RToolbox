@@ -355,6 +355,15 @@ pre.pheatmap.anno <- function(sce=sce, group.order=group.order, sample.order=sam
     return(anno)
 }
 
+# get individual genes in dataframe from clusterProfiler
+get.geneList.in.GO.dataframe <- function(GO.dataframe=p1) {
+    core_gene_set <- unique(unlist(lapply(p1$geneID, function(x) {
+        strsplit(x, split = "/")[[1]]
+    })))
+    print(length(core_gene_set))
+    return(core_gene_set)
+}
+
 #' transfer the ID string to gene vector or string
 #' @param ID the ID string, like 4171/4175/5422/4172
 #' @param organism organism (hs and mm)
