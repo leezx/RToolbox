@@ -10,6 +10,25 @@ example.function <- function(param1=NULL) {
 	NULL
 }
 
+# read the SNP annotation file from annovar software
+readInfile.annovar <- function(path, sample) {
+    IMR90 <- read.table(path, header = F, sep = "\t", stringsAsFactors = F)
+    IMR90$id <- paste(IMR90$V4, IMR90$V5, IMR90$V6, IMR90$V8, sep = ":")
+    IMR90 <- subset(IMR90, !V2 %in% c("synonymous SNV", "unknown"))
+    IMR90$sample <- sample
+    IMR90$type <- as.character(IMR90$V2)
+    IMR90$ref <- IMR90$V7
+    IMR90$alt <- IMR90$V8
+    IMR90$allele <- IMR90$V9
+    IMR90$gene <- unlist(lapply(IMR90$V3, function(x) {
+        split.list <- strsplit(x, split = ":")
+        split.list[[1]][1]
+        #length(x)
+    }))
+    IMR90 <- IMR90[,c("id", "sample", "type", "gene", "ref", "alt", "allele")]
+    IMR90
+}
+
 # get interaction of a gene list by STRING PPI database
 get_interactions_by_PPI <- function(genes, species="human") {
     all.df <- data.frame()
