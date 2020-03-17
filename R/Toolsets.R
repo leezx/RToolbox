@@ -364,6 +364,14 @@ get.geneList.in.GO.dataframe <- function(GO.dataframe=p1) {
     return(core_gene_set)
 }
 
+# a simple function to get the genes in clusterProfiler result
+# get.gene.list(neuron.pathways)
+get.gene.list <- function(clusterProfiler.result) {
+        unique(unlist(lapply(clusterProfiler.result$geneID, function(x) {
+        strsplit(x, split = "/")
+    })))
+}
+
 #' transfer the ID string to gene vector or string
 #' @param ID the ID string, like 4171/4175/5422/4172
 #' @param organism organism (hs and mm)
