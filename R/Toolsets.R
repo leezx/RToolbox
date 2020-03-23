@@ -10,6 +10,37 @@ example.function <- function(param1=NULL) {
 	NULL
 }
 
+# 1. give a gene list
+# 2. see which GO it enriched most in a dataframe from clusterProfiler
+genes_enrich_GO.result <- function(querys=querys, GO.result.df=tmp.enrich) {
+    tmp.enrich.genes <- unique(unlist(lapply(GO.result.df$geneID, function(x) {
+        strsplit(x, split = "/")
+    })))
+    total.bcg <- length(tmp.enrich.genes)
+    # total.bcg
+    querys <- querys[querys %in% tmp.enrich.genes]
+    total.query <- length(querys)
+    # total.query
+    tmp.enrich$enrich.p <- 1
+    tmp.enrich$k <- 0
+    for (i in 1:nrow(tmp.enrich)) {
+        genes.m <- tmp.enrich[i,"geneID"]
+        genes <- unique(unlist(lapply(genes.m, function(x) {
+            strsplit(x, split = "/")
+            })))
+        my.genes <- genes[genes %in% querys]
+        k <- length(my.genes)
+        M <- total.query
+        n <- length(genes)
+        N <- total.bcg
+        tmp.enrich[i,]$k <- k
+        tmp.enrich[i,]$enrich.p <- phyper(k-1, M, N-M, n, lower.tail = F)
+        # break
+    }
+    #
+    return(tmp.enrich)
+}
+
 # read the SNP annotation file from annovar software
 readInfile.annovar <- function(path, sample) {
     IMR90 <- read.table(path, header = F, sep = "\t", stringsAsFactors = F)
