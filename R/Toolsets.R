@@ -12,17 +12,23 @@ example.function <- function(param1=NULL) {
 
 # 1. give a gene list
 # 2. see which GO it enriched most in a dataframe from clusterProfiler
-genes_enrich_GO.result <- function(querys=querys, GO.result.df=tmp.enrich) {
-    tmp.enrich.genes <- unique(unlist(lapply(GO.result.df$geneID, function(x) {
+genes_enrich_GO.result <- function(querys=querys, tmp.enrich=tmp.enrich) {
+    # get the genes
+    tmp.enrich.genes <- unique(unlist(lapply(tmp.enrich$geneID, function(x) {
         strsplit(x, split = "/")
     })))
+    
     total.bcg <- length(tmp.enrich.genes)
     # total.bcg
     querys <- querys[querys %in% tmp.enrich.genes]
     total.query <- length(querys)
     # total.query
+    
     tmp.enrich$enrich.p <- 1
     tmp.enrich$k <- 0
+    tmp.enrich$query <- ""
+    
+    # see the manual in cnblog
     for (i in 1:nrow(tmp.enrich)) {
         genes.m <- tmp.enrich[i,"geneID"]
         genes <- unique(unlist(lapply(genes.m, function(x) {
@@ -35,9 +41,13 @@ genes_enrich_GO.result <- function(querys=querys, GO.result.df=tmp.enrich) {
         N <- total.bcg
         tmp.enrich[i,]$k <- k
         tmp.enrich[i,]$enrich.p <- phyper(k-1, M, N-M, n, lower.tail = F)
+        tmp.enrich[i,]$query <- paste(my.genes, collapse = "/")
         # break
     }
-    #
+    
+    # sort and filter
+    tmp.enrich <- tmp.enrich[order(tmp.enrich$enrich.p, decreasing = F),]
+    tmp.enrich <- subset(tmp.enrich, k>0)
     return(tmp.enrich)
 }
 
