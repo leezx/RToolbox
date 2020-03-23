@@ -396,8 +396,8 @@ pre.pheatmap.anno <- function(sce=sce, group.order=group.order, sample.order=sam
     return(anno)
 }
 
-# get individual genes in dataframe from clusterProfiler
-get.geneList.in.GO.dataframe <- function(GO.dataframe=p1) {
+# get genes in dataframe from clusterProfiler result
+geneIDtoGeneList <- function(p1=p1) {
     core_gene_set <- unique(unlist(lapply(p1$geneID, function(x) {
         strsplit(x, split = "/")[[1]]
     })))
