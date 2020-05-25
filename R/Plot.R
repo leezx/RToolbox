@@ -139,7 +139,7 @@ plot.ora.GO.KEGG.barplot.batch <- function(anno_list=go_list, type, f.length=40)
 #' options(repr.plot.width=4, repr.plot.height=9)
 #' plot.GO.barplot(df)
 #'
-plot.GO.barplot <- function(barplot_df, color="random") {
+plot.GO.barplot2 <- function(barplot_df, color="random") {
   library(Hmisc)
   library(stringr)
   library(RColorBrewer)
@@ -177,6 +177,56 @@ plot.GO.barplot <- function(barplot_df, color="random") {
   g
 }
 
+plot.GO.barplot <- function (barplot_df, color = "random") 
+{
+    #barplot_df <- tmp.GO.sub
+    #color = brewer.pal(8,"Set2")[2]
+
+    #
+    library(Hmisc)
+    library(stringr)
+    library(RColorBrewer)
+    if (color == "random") {
+        color <- sample(brewer.pal(12, "Set3"), 1)
+    }
+    for (i in 1:dim(barplot_df)[1]) {
+        barplot_df[i, ]$Description <- capitalize(as.character(barplot_df[i, 
+            ]$Description))
+    }
+
+    barplot_df$Description2 <- paste(barplot_df$Description," (", barplot_df$Count, ")", sep = "")
+
+        barplot_df <- barplot_df[order(barplot_df$pvalue, decreasing = F), 
+            ]
+        barplot_df$Description2 <- factor(barplot_df$Description2, 
+            levels = rev(barplot_df$Description2))
+        maxpvalue <- max(-log10(barplot_df$pvalue))
+
+    maxpvalue*1.1
+
+    #options(repr.plot.width=7, repr.plot.height=4)
+
+    #color = brewer.pal(8,"Set2")[2]
+
+    g <- ggplot(data = barplot_df, aes(x = Description2, y = -log10(pvalue))) + 
+        geom_bar(stat = "identity", color = color, fill = color, alpha = 0.8, width=.5) + 
+        #geom_text(aes(label = Count), color = "black", 
+        #    vjust = 0.4, hjust = -0.5, size = 3, fontface = "bold") + 
+        #ylim(0, maxpvalue * 1.1) + 
+        coord_flip() + labs(x = "", 
+        y = "-Log10(P-value)", title = "") + theme_bw() + 
+        theme(legend.position = "none") + 
+        theme(axis.text.y = element_text(size = 14, color = "black", 
+            face = "plain"), axis.text.x = element_text(size = 12, 
+            color = "black", face = "plain"), axis.title = element_text(size = 15)) + 
+        theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), 
+            plot.margin = unit(c(0, 0, 0, 0), "cm"), panel.border = element_blank()) + 
+        theme(axis.line = element_line(color = "black")) + 
+        scale_x_discrete(labels = function(x) str_wrap(x, width = 55), expand = c(0.07, 0)) +
+        scale_y_continuous(limits = c(0, maxpvalue*1.1), breaks = seq(0, maxpvalue*1.2, by = 3), expand = c(0, 0))
+    g
+}
+                   
 #' Draw violin plot
 #' @param exprData the expression matrix to be used
 #' @param cellAnno the annotation of the cells
