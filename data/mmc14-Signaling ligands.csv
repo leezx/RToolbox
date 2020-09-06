@@ -1,0 +1,263 @@
+﻿Gene,fullName,Annotation
+Sema3c,semaphorin 3C,S11vsW11
+D17Wsu104,"DNA segment, Chr 17, Wayne St",S11vsS15
+Efnb2,ephrin B2,S11vsS15
+Gdf10,growth differentiation factor 10,S11vsS15
+Igf1,insulin-like growth factor 1,S11vsS15
+Mdk,midkine,S11vsS15
+Mstn,myostatin,S11vsS15
+Pdgfc,"platelet-derived growth factor, C",S11vsS15
+Sema3d,semaphorin 3D,S11vsS15
+Gdf10,growth differentiation factor 10,W11vsS11
+Bmp1,bone morphogenetic protein 1,W11vsW15
+Cxcl12,chemokine (C-X-C motif) ligand,W11vsW15
+Dll3,delta-like 3 (Drosophila),W11vsW15
+Efna4,ephrin A4,W11vsW15
+Efnb2,ephrin B2,W11vsW15
+Gdf10,growth differentiation factor 10,W11vsW15
+Gdf11,growth differentiation factor 11,W11vsW15
+Igf1,insulin-like growth factor 1,W11vsW15
+Jag1,jagged 1,W11vsW15
+Mdk,midkine,W11vsW15
+Mia1,melanoma inhibitory activity 1,W11vsW15
+Mstn,myostatin,W11vsW15
+Pdgfc,"platelet-derived growth factor, C",W11vsW15
+Sema3d,semaphorin 3D,W11vsW15
+Wnt2b,wingless related MMTV integrat,W11vsW15
+Wnt5a,wingless-related MMTV integrat,W11vsW15
+Ctgf,connective tissue growth factor,S15vsW15
+Dll3,delta-like 3 (Drosophila),S15vsW15
+Fgf7,fibroblast growth factor 7,S15vsW15
+Jag1,jagged 1,S15vsW15
+Mdk,midkine,S15vsW15
+Tgfb2,"transforming growth factor, beta ",S15vsW15
+Ctgf,connective tissue growth factor,S15vsS11
+Efna5,ephrin A5,S15vsS11
+Fgf7,fibroblast growth factor 7,S15vsS11
+Fgf12,fibroblast growth factor 12,S15vsS11
+Fgf13,fibroblast growth factor 13,S15vsS11
+Fgf14,fibroblast growth factor 14,S15vsS11
+Fgf2,fibroblast growth factor 2,S15vsS11
+Hdgfrp3,hepatoma-derived growth facto,S15vsS11
+Inha,inhibin alpha,S15vsS11
+Nrg1,neuregulin 1,S15vsS11
+Nrg3,neuregulin 3,S15vsS11
+Ntng1,netrin G1,S15vsS11
+Ogn,osteoglycin,S15vsS11
+Pdgfa,"platelet derived growth factor, a",S15vsS11
+Pdgfb,similar to platelet-derived growt,S15vsS11
+Pdgfd,"platelet-derived growth factor,",S15vsS11
+Pgf,placental growth factor,S15vsS11
+Ptn,pleiotrophin,S15vsS11
+Sema3c,semaphorin 3C,S15vsS11
+Sema3e,semaphorin 3E,S15vsS11
+Sema4d,semaphorin 4D,S15vsS11
+Sema4g,semaphorin 4G,S15vsS11
+Sema6a,semaphorin 6A,S15vsS11
+Sema6d,semaphorin 6D,S15vsS11
+Slit1,slit homolog 1,S15vsS11
+Slit2,slit homolog 2,S15vsS11
+Tgfb2,"transforming growth factor, bet",S15vsS11
+Efnb3,ephrin B3,W15vsS15
+Nrg1,neuregulin 1,W15vsS15
+Nrg3,neuregulin 3,W15vsS15
+Ntng1,netrin G1,W15vsS15
+Sema3d,Semaphorin 3D,W15vsS15
+Sema4g,Semaphorin 4G,W15vsS15
+Sema6a,Semaphorin 6A,W15vsS15
+Sema6d,Semaphorin 6D,W15vsS15
+Slit2,Slit homolog 2,W15vsS15
+Ctgf,connective tissue growth factor,W15vsW11
+Efna5,ephrin A5,W15vsW11
+Efnb3,ephrin B3,W15vsW11
+Fgf1,fibroblast growth factor 1,W15vsW11
+Fgf11,fibroblast growth factor 11,W15vsW11
+Fgf12,fibroblast growth factor 12,W15vsW11
+Fgf13,fibroblast growth factor 13,W15vsW11
+Fgf14,fibroblast growth factor 14,W15vsW11
+Fgf9,fibroblast growth factor 9,W15vsW11
+Gdf5,growth differentiation factor 5,W15vsW11
+Hdgfrp3,hepatoma-derived growth facto,W15vsW11
+Inha,inhibin alpha,W15vsW11
+Nrg1,neuregulin 1,W15vsW11
+Nrg3,neuregulin 3,W15vsW11
+Ntng1,netrin G1,W15vsW11
+Pdgfa,"platelet derived growth factor, a",W15vsW11
+Ptn,pleiotrophin,W15vsW11
+Sema3c,semaphorin 3C,W15vsW11
+Sema3e,semaphorin 3E,W15vsW11
+Sema4d,semaphorin 4D,W15vsW11
+Sema4f,semaphorin 4F,W15vsW11
+Sema4g,semaphorin 4G,W15vsW11
+Sema6a,semaphorin 6A,W15vsW11
+Sema6d,semaphorin 6D,W15vsW11
+Slit1,slit homolog 1,W15vsW11
+Slit2,slit homolog 2,W15vsW11
+Bmp7,bone morphogenetic protein 7,S11vsC11
+Dll1,delta-like 1,S11vsC11
+Dll3,delta-like 3,S11vsC11
+Fgf13,fibroblast growth factor 13,S11vsC11
+Fgf7,fibroblast growth factor 7,S11vsC11
+Gpi1,glucose phosphate isomerase 1,S11vsC11
+Nrg3,neuregulin 3,S11vsC11
+Rabep1,"rabaptin, RAB GTPase binding eff ",S11vsC11
+Sema3b,semaphorin 3B,S11vsC11
+Sema3c,semaphorin 3C,S11vsC11
+Sema3d,semaphorin 3D,S11vsC11
+Sema4d,semaphorin 4D,S11vsC11
+Slit3,slit homolog 3,S11vsC11
+Tgfb2,"transforming growth factor, beta ",S11vsC11
+Bmp15,bone morphogenetic protein 15,S15vsC15
+Bmp7,bone morphogenetic protein 7,S15vsC15
+Ctgf,connective tissue growth factor,S15vsC15
+Dhh,desert hedgehog,S15vsC15
+Dll1,delta-like 1 (Drosophila),S15vsC15
+Dll3,delta-like 3 (Drosophila),S15vsC15
+Fgf12,fibroblast growth factor 12,S15vsC15
+Fgf13,fibroblast growth factor 13,S15vsC15
+Gdf3,growth differentiation factor 3,S15vsC15
+Gpi1,glucose phosphate isomerase 1,S15vsC15
+Nrg3,neuregulin 3,S15vsC15
+Ntn4,netrin 4,S15vsC15
+Ntng1,netrin G1,S15vsC15
+Pdgfb,similar to platelet-derived growt,S15vsC15
+Rabep1,"rabaptin, RAB GTPase binding ef",S15vsC15
+Sema3b,semaphorin 3B,S15vsC15
+Sema3c,semaphorin 3C,S15vsC15
+Sema4d,semaphorin 4D,S15vsC15
+Sema4f,semaphorin 4F,S15vsC15
+Slit1,slit homolog 1,S15vsC15
+Slit3,slit homolog 2,S15vsC15
+Tgfb2,"transforming growth factor, bet",S15vsC15
+Bmp7,bone morphogenetic protein 7,W11vsC11
+Dll1,delta-like 1 (Drosophila),W11vsC11
+Dll3,delta-like 3 (Drosophila),W11vsC11
+Fgf13,fibroblast growth factor 13,W11vsC11
+Fgf7,fibroblast growth factor 7,W11vsC11
+Gdf10,growth differentiation factor 10,W11vsC11
+Gpi1,glucose phosphate isomerase 1,W11vsC11
+Mstn,myostatin,W11vsC11
+Sema3b,semaphorin 3B,W11vsC11
+Sema3d,semaphorin 3D,W11vsC11
+Slit3,slit homolog 3,W11vsC11
+Tgfb2,"transforming growth factor, beta ",W11vsC11
+Bmp7,bone morphogenetic protein 7,W15vsC15
+Dll1,delta-like 1 (Drosophila),W15vsC15
+Dll3,delta-like 3 (Drosophila),W15vsC15
+Efnab3,ephrin B3,W15vsC15
+Efnb3,ephrin B3,W15vsC15
+Fgf13,fibroblast growth factor 13,W15vsC15
+Fgf14,fibroblast growth factor 14,W15vsC15
+Gpi1,glucose phosphate isomerase 1,W15vsC15
+Hdgfrp3,hepatoma-derived growth facto,W15vsC15
+Inha,inhibin alpha,W15vsC15
+Jag1,jagged 1,W15vsC15
+Jag2,jagged 2,W15vsC15
+Nrg1,neuregulin 1,W15vsC15
+Nrg3,neuregulin 3,W15vsC15
+Ntn4,netrin 4,W15vsC15
+Ntng1,netrin G1,W15vsC15
+Pdgfb,similar to platelet-derived growt,W15vsC15
+Rabep1,"rabaptin, RAB GTPase binding ef",W15vsC15
+Sema3b,semaphorin 3B,W15vsC15
+Sema3c,semaphorin 3C,W15vsC15
+Sema4d,semaphorin 4D,W15vsC15
+Sema4f,semaphorin 4F,W15vsC15
+Sema4g,semaphorin 4G,W15vsC15
+Slit1,slit homolog 1,W15vsC15
+Slit3,slit homolog 3,W15vsC15
+Tgfb2,"transforming growth factor, bet",W15vsC15
+Amelx,amelogenin X chromosome,C11vsW11
+Bmp4,bone morphogenetic protein 4,C11vsW11
+Bmp5,bone morphogenetic protein 5,C11vsW11
+Csf1,colony stimulating factor 1 (macr ,C11vsW11
+Cxcl12,chemokine (C-X-C motif) ligand 1 ,C11vsW11
+Edn1,endothelin 1,C11vsW11
+Edn3,endothelin 3,C11vsW11
+Efnb2,ephrin B2,C11vsW11
+Fgf10,fibroblast growth factor 10,C11vsW11
+Fgf9,fibroblast growth factor 9,C11vsW11
+Gdf6,growth differentiation factor 6,C11vsW11
+Gdnf,glial cell line derived neurotrophi ,C11vsW11
+Gmfg,"similar to Chain A, Crystal Structu",C11vsW11
+Hdgf,hepatoma-derived growth factor ,C11vsW11
+Hdgfrp3,hepatoma-derived growth factor ,C11vsW11
+Hgf,hepatocyte growth factor,C11vsW11
+Igf1,insulin-like growth factor 1,C11vsW11
+Igf2,insulin-like growth factor 2,C11vsW11
+Inhba,inhibin beta-A,C11vsW11
+Kitl,kit ligand,C11vsW11
+Mdk,midkine,C11vsW11
+Nrg1,neuregulin 1,C11vsW11
+Ntf3,neurotrophin 3,C11vsW11
+Ntng1,netrin G1,C11vsW11
+Pdgfc,"platelet-derived growth factor, C ",C11vsW11
+Pdgfd,"platelet-derived growth factor, D ",C11vsW11
+Pgf,placental growth factor,C11vsW11
+Ptn,pleiotrophin,C11vsW11
+Sema3a,semaphorin 3A,C11vsW11
+Sema3f,semaphorin 3F,C11vsW11
+Sema5a,semaphorin 5A,C11vsW11
+Sema6a,semaphorin 6A,C11vsW11
+Sema6d,semaphorin 6D,C11vsW11
+Slit2,slit homolog 2,C11vsW11
+Tgfb1,"transforming growth factor, beta ",C11vsW11
+Tgfb3,"transforming growth factor, beta ",C11vsW11
+Vegfc,vascular endothelial growth facto,C11vsW11
+Wnt11,wingless-related MMTV integrati ,C11vsW11
+Wnt2b,wingless related MMTV integrati ,C11vsW11
+Wnt4,wingless-related MMTV integrati ,C11vsW11
+Wnt5a,wingless-related MMTV integrati ,C11vsW11
+Wnt5b,wingless-related MMTV integrati ,C11vsW11
+Amelx,amelogenin X chromosome,C15vsW15
+Bmp1,bone morphogenetic protein 1,C15vsW15
+Bmp2,bone morphogenetic protein 2,C15vsW15
+Bmp4,bone morphogenetic protein 4,C15vsW15
+Bmp5,bone morphogenetic protein 5,C15vsW15
+Bmp6,bone morphogenetic protein 6,C15vsW15
+Clec11a,"C-type lectin domain family 11,",C15vsW15
+Csf1,colony stimulating factor 1 (mac,C15vsW15
+Cxcl12,chemokine (C-X-C motif) ligand,C15vsW15
+Edn3,endothelin 3,C15vsW15
+Efna1,ephrin A1,C15vsW15
+Efnb1,ephrin B1,C15vsW15
+Fgf10,fibroblast growth factor 10,C15vsW15
+Fgf18,fibroblast growth factor 18,C15vsW15
+Fgf2,fibroblast growth factor 2,C15vsW15
+Fgf7,fibroblast growth factor 7,C15vsW15
+Fgf9,fibroblast growth factor 9,C15vsW15
+Figf,c-fos induced growth factor,C15vsW15
+Gdf10,growth differentiation factor 10,C15vsW15
+Gdf6,growth differentiation factor 6,C15vsW15
+Gdnf,glial cell line derived neurotroph,C15vsW15
+Gmfg,"similar to Chain A, Crystal Struct",C15vsW15
+Hdgf,hepatoma-derived growth facto,C15vsW15
+Hgf,hepatocyte growth factor,C15vsW15
+Igf1,insulin-like growth factor 1,C15vsW15
+Igf2,insulin-like growth factor 2,C15vsW15
+Il1b,interleukin 1 beta,C15vsW15
+Il6,interleukin 6,C15vsW15
+Inhba,inhibin beta-A,C15vsW15
+Jag1,jagged 1,C15vsW15
+Kitl,kit ligand,C15vsW15
+Mdk,midkine,C15vsW15
+Ngf,nerve growth factor,C15vsW15
+Ntf3,neurotrophin 3,C15vsW15
+Ntf5,neurotrophin 5,C15vsW15
+Ogn,osteoglycin,C15vsW15
+Pdgfc,"platelet-derived growth factor, C",C15vsW15
+Pgf,placental growth factor,C15vsW15
+Ptn,pleiotrophin,C15vsW15
+Sema3a,semaphorin 3A,C15vsW15
+Sema3e,semaphorin 3E,C15vsW15
+Sema3f,semaphorin 3F,C15vsW15
+Sema5a,semaphorin 5A,C15vsW15
+Sema5b,semaphorin 5B,C15vsW15
+Sema6d,semaphorin 6D,C15vsW15
+Tgfb1,"transforming growth factor, bet",C15vsW15
+Tgfb3,"transforming growth factor, bet",C15vsW15
+Vegfc,vascular endothelial growth fact,C15vsW15
+Wnt2b,wingless related MMTV integrat,C15vsW15
+Wnt4,wingless-related MMTV integrat,C15vsW15
+Wnt5a,wingless-related MMTV integrat,C15vsW15
+Wnt5b,wingless-related MMTV integrat,C15vsW15

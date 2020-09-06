@@ -1,0 +1,1188 @@
+﻿Gene,fullName,Annotation
+Eda2r,ectodysplasin A2 isoform receptor,S11vsW11
+Antxr1,anthrax toxin receptor 1,S11vsS15
+Ednra,endothelin receptor type A,S11vsS15
+Epha3,Eph receptor A3,S11vsS15
+Fkbp4,FK506 binding protein 4,S11vsS15
+Fzd7,frizzled homolog 7 (Drosophila,S11vsS15
+Gabra3,gamma-aminobutyric acid (GA,S11vsS15
+Ghr,growth hormone receptor,S11vsS15
+Gpr50,G-protein-coupled receptor 50,S11vsS15
+Gprc5c,"G protein-coupled receptor, fa",S11vsS15
+Grb10,growth factor receptor bound,S11vsS15
+Hmmr,hyaluronan mediated motility r,S11vsS15
+Hyal2,hyaluronoglucosaminidase 2,S11vsS15
+Itga4,integrin alpha 4,S11vsS15
+Itga8,integrin alpha 8,S11vsS15
+Itga9,integrin alpha 9,S11vsS15
+Itpr1,"inositol 1,4,5-triphosphate rece",S11vsS15
+Jmjd6,jumonji domain containing 6,S11vsS15
+Lbr,lamin B receptor,S11vsS15
+Ly75,lymphocyte antigen 75,S11vsS15
+Notch3,Notch gene homolog 3 (Drosop,S11vsS15
+Npr3,natriuretic peptide receptor 3,S11vsS15
+Nr1h5,"nuclear receptor subfamily 1, g",S11vsS15
+Nr2f1,"nuclear receptor subfamily 2, g",S11vsS15
+Nr2f2,similar to COUP-TFI; nuclear re,S11vsS15
+Nrip1,nuclear receptor interacting pr,S11vsS15
+Nrp1,neuropilin 1,S11vsS15
+Olfr543,olfactory receptor 543,S11vsS15
+Opn3,opsin 3,S11vsS15
+Pdgfra,platelet derived growth factor,S11vsS15
+Phb2,prohibitin 2,S11vsS15
+Plxna4,plexin A4,S11vsS15
+Ptch1,patched homolog 1,S11vsS15
+Ptpn1,"protein tyrosine phosphatase,",S11vsS15
+Ptprk,"protein tyrosine phosphatase,",S11vsS15
+Ret,ret proto-oncogene,S11vsS15
+Robo1,roundabout homolog 1 (Droso,S11vsS15
+Rtn4rl1,reticulon 4 receptor-like 1,S11vsS15
+Scarb1,"scavenger receptor class B, me",S11vsS15
+Sigmar1,sigma non-opioid intracellular,S11vsS15
+Tas2r137,"taste receptor, type 2, membe",S11vsS15
+Tfrc,transferrin receptor,S11vsS15
+Tomm22,predicted gene 12906; predicte,S11vsS15
+Traf4,TNF receptor associated factor,S11vsS15
+Trip13,thyroid hormone receptor inte,S11vsS15
+Unc5c,unc-5 homolog C (C. elegans),S11vsS15
+Epha3,Eph receptor A3,W11vsS11
+Gabra3,gamma-aminobutyric acid (GABA) A r ,W11vsS11
+Npr3,natriuretic peptide receptor 3,W11vsS11
+Nr2f1,"nuclear receptor subfamily 2, group F ",W11vsS11
+Slitrk2,"SLIT and NTRK-like family, member",W11vsS11
+Antxr1,anthrax toxin receptor 1,W11vsW15
+Bai1,brain-specific angiogenesis inh,W11vsW15
+Cd200r2,Cd200 receptor 2; CD200 recep,W11vsW15
+Celsr1,"cadherin, EGF LAG seven-pass",W11vsW15
+Edaradd,EDAR (ectodysplasin-A recepto,W11vsW15
+Ednra,endothelin receptor type A,W11vsW15
+Epha3,Eph receptor A3,W11vsW15
+Ephb4,Eph receptor B4,W11vsW15
+Erbb2,v-erb-b2 erythroblastic leukem,W11vsW15
+Erbb3,v-erb-b2 erythroblastic leukem,W11vsW15
+F2r,coagulation factor II (thrombin,W11vsW15
+Fkbp4,FK506 binding protein 4,W11vsW15
+Fzd2,frizzled homolog 2 (Drosophila,W11vsW15
+Fzd7,frizzled homolog 7 (Drosophila,W11vsW15
+Gabra3,gamma-aminobutyric acid (GA,W11vsW15
+Gabra4,gamma-aminobutyric acid (GA,W11vsW15
+Gfra3,glial cell line derived neurotrop,W11vsW15
+Git1,G protein-coupled receptor kin,W11vsW15
+Gpr124,G protein-coupled receptor 12,W11vsW15
+Gpr125,G protein-coupled receptor 12,W11vsW15
+Gpr4,G protein-coupled receptor 4,W11vsW15
+Gprc5b,"G protein-coupled receptor, fa",W11vsW15
+Gprc5c,"G protein-coupled receptor, fa",W11vsW15
+Grb10,growth factor receptor bound,W11vsW15
+Grk6,G protein-coupled receptor kin,W11vsW15
+Hmmr,hyaluronan mediated motility r,W11vsW15
+Hyal2,hyaluronoglucosaminidase 2,W11vsW15
+Ifnar2,interferon (alpha and beta) rec,W11vsW15
+Ifngr1,interferon gamma receptor 1,W11vsW15
+Igf2r,insulin-like growth factor 2 rec,W11vsW15
+Il1rap,interleukin 1 receptor accessor,W11vsW15
+Il1rl2,interleukin 1 receptor-like 2,W11vsW15
+Itga4,integrin alpha 4,W11vsW15
+Itga5,integrin alpha 5 (fibronectin re,W11vsW15
+Itga6,integrin alpha 6,W11vsW15
+Itga9,integrin alpha 9,W11vsW15
+Itgav,integrin alpha V,W11vsW15
+Itgb5,integrin beta 5,W11vsW15
+Itpr1,"inositol 1,4,5-triphosphate rece",W11vsW15
+Jmjd6,jumonji domain containing 6,W11vsW15
+Klra5,"killer cell lectin-like receptor, s",W11vsW15
+Lbr,lamin B receptor,W11vsW15
+Lpar3,lysophosphatidic acid receptor,W11vsW15
+Lphn2,latrophilin 2,W11vsW15
+Lrp4,low density lipoprotein recepto,W11vsW15
+Lrp5,low density lipoprotein recepto,W11vsW15
+Ly75,lymphocyte antigen 75,W11vsW15
+M6pr,mannose-6-phosphate recepto,W11vsW15
+Mertk,c-mer proto-oncogene tyrosine,W11vsW15
+Mrgprb2,"MAS-related GPR, member B2",W11vsW15
+Notch2,Notch gene homolog 2 (Drosop,W11vsW15
+Notch3,Notch gene homolog 3 (Drosop,W11vsW15
+Npr3,natriuretic peptide receptor 3,W11vsW15
+Nr2f1,"nuclear receptor subfamily 2, g",W11vsW15
+Nr2f2,similar to COUP-TFI; nuclear re,W11vsW15
+Nr2f6,"nuclear receptor subfamily 2, g",W11vsW15
+Nrip1,nuclear receptor interacting pr,W11vsW15
+Nrp1,neuropilin 1,W11vsW15
+Ogfr,opioid growth factor receptor,W11vsW15
+Olfr1134,olfactory receptor 1134,W11vsW15
+Olfr121,olfactory receptor 121,W11vsW15
+Olfr908,olfactory receptor 908,W11vsW15
+Opn3,opsin 3,W11vsW15
+Pdgfra,platelet derived growth factor,W11vsW15
+Phb2,prohibitin 2,W11vsW15
+Plaur,"plasminogen activator, urokina",W11vsW15
+Plxna1,plexin A1,W11vsW15
+Ptch1,patched homolog 1,W11vsW15
+Ptk7,PTK7 protein tyrosine kinase 7,W11vsW15
+Ptpn1,"protein tyrosine phosphatase,",W11vsW15
+Ptprk,"protein tyrosine phosphatase,",W11vsW15
+Rara,"retinoic acid receptor, alpha",W11vsW15
+Ret,ret proto-oncogene,W11vsW15
+Rhbdf1,rhomboid family 1 (Drosophila,W11vsW15
+Rnf135,ring finger protein 135,W11vsW15
+Robo1,roundabout homolog 1 (Droso,W11vsW15
+Rpsa,,W11vsW15
+Rpsa,,W11vsW15
+Rtn4rl1,reticulon 4 receptor-like 1,W11vsW15
+Rxra,retinoid X receptor alpha; simil,W11vsW15
+Rxrg,retinoid X receptor gamma,W11vsW15
+Ryk,receptor-like tyrosine kinase,W11vsW15
+Scarb1,"scavenger receptor class B, me",W11vsW15
+Sigmar1,sigma non-opioid intracellular,W11vsW15
+Slc20a2,hypothetical protein LOC10004,W11vsW15
+Slitrk2,"SLIT and NTRK-like family, me",W11vsW15
+Smo,predicted gene 4066; smoothe,W11vsW15
+Sra1,steroid receptor RNA activator,W11vsW15
+Srprb,signal recognition particle rece,W11vsW15
+Strap,serine/threonine kinase recept,W11vsW15
+Tmem123,transmembrane protein 123,W11vsW15
+Tnfrsf19,tumor necrosis factor receptor,W11vsW15
+Tomm22,predicted gene 12906; predicte,W11vsW15
+Traf4,TNF receptor associated factor,W11vsW15
+Traf6,TNF receptor-associated factor,W11vsW15
+Trip13,thyroid hormone receptor inte,W11vsW15
+Trip6,thyroid hormone receptor inte,W11vsW15
+Antxr1,anthrax toxin receptor 1,S15vsW15
+Arntl,aryl hydrocarbon receptor nuclear tra,S15vsW15
+C3ar1,complement component 3a receptor ,S15vsW15
+Eda2r,ectodysplasin A2 isoform receptor   ,S15vsW15
+Epha2,Eph receptor A2,S15vsW15
+Epha4,Eph receptor A4,S15vsW15
+Epha7,Eph receptor A7,S15vsW15
+Erbb3,v-erb-b2 erythroblastic leukemia viral ,S15vsW15
+Fzd4,frizzled homolog 4 (Drosophila),S15vsW15
+Fzd6,frizzled homolog 6 (Drosophila),S15vsW15
+Fzd7,frizzled homolog 7 (Drosophila),S15vsW15
+Gab1,growth factor receptor bound protein,S15vsW15
+Gabra4,gamma-aminobutyric acid (GABA) A r ,S15vsW15
+Gfra1,glial cell line derived neurotrophic fac,S15vsW15
+Gpr124,G protein-coupled receptor 124,S15vsW15
+Gpr125,G protein-coupled receptor 125,S15vsW15
+Gpr126,G protein-coupled receptor 126,S15vsW15
+Gprc5b,"G protein-coupled receptor, family C, ",S15vsW15
+Grb10,growth factor receptor bound protein,S15vsW15
+Grik3,"glutamate receptor, ionotropic, kaina ",S15vsW15
+Hmmr,hyaluronan mediated motility recepto,S15vsW15
+Igf2r,insulin-like growth factor 2 receptor  ,S15vsW15
+Il1rap,interleukin 1 receptor accessory prot ,S15vsW15
+Il1rl2,interleukin 1 receptor-like 2,S15vsW15
+Irs1,insulin receptor substrate 1,S15vsW15
+Itga2,integrin alpha 2,S15vsW15
+Itga6,integrin alpha 6,S15vsW15
+Itgav,integrin alpha V,S15vsW15
+Itgb5,integrin beta 5,S15vsW15
+Kdr,kinase insert domain protein recepto ,S15vsW15
+Lphn2,latrophilin 2,S15vsW15
+Mertk,c-mer proto-oncogene tyrosine kinas ,S15vsW15
+Mrc1,"mannose receptor, C type 1",S15vsW15
+Notch2,Notch gene homolog 2 (Drosophila)  ,S15vsW15
+Nr2f1,"nuclear receptor subfamily 2, group F ",S15vsW15
+Nr2f2,similar to COUP-TFI; nuclear receptor ,S15vsW15
+Nr4a1,"nuclear receptor subfamily 4, group A",S15vsW15
+Ogfr,opioid growth factor receptor,S15vsW15
+Olfr1318,olfactory receptor 1318,S15vsW15
+Olfr908,olfactory receptor 908,S15vsW15
+P2rx7,"purinergic receptor P2X, ligand-gated ",S15vsW15
+Phb2,prohibitin 2,S15vsW15
+Ptgfrn,prostaglandin F2 receptor negative re,S15vsW15
+Ptk7,PTK7 protein tyrosine kinase 7,S15vsW15
+Robo1,roundabout homolog 1 (Drosophila)  ,S15vsW15
+Ror1,receptor tyrosine kinase-like orphan r,S15vsW15
+Rpsa,predicted gene 9323; predicted gene ,S15vsW15
+Ryk,receptor-like tyrosine kinase,S15vsW15
+Slitrk2,"SLIT and NTRK-like family, member 2 ",S15vsW15
+Srprb,"signal recognition particle receptor, B ",S15vsW15
+Stab2,similar to FEX2; stabilin 2,S15vsW15
+Tmem123,transmembrane protein 123,S15vsW15
+Tnfrsf10b,tumor necrosis factor receptor superf,S15vsW15
+Tnfrsf12a,tumor necrosis factor receptor superf,S15vsW15
+Tnfrsf19,tumor necrosis factor receptor superf,S15vsW15
+Trip13,thyroid hormone receptor interactor ,S15vsW15
+Abcc9,"ATP-binding cassette, sub-fami",S15vsS11
+Acvr1,"activin A receptor, type 1",S15vsS11
+Adam22,a disintegrin and metallopeptid,S15vsS11
+Adcyap1r1,adenylate cyclase activating po,S15vsS11
+Agtr1a,"angiotensin II receptor, type 1a",S15vsS11
+Ahr,aryl-hydrocarbon receptor,S15vsS11
+Amfr,autocrine motility factor recep,S15vsS11
+Arntl,aryl hydrocarbon receptor nucl,S15vsS11
+Atrn,attractin,S15vsS11
+Avpr1a,arginine vasopressin receptor 1,S15vsS11
+Bai2,brain-specific angiogenesis inh,S15vsS11
+Bai3,brain-specific angiogenesis inh,S15vsS11
+Bmpr2,bone morphogenic protein rec,S15vsS11
+Calcrl,calcitonin receptor-like,S15vsS11
+Cd36,CD36 antigen,S15vsS11
+Celsr3,"cadherin, EGF LAG seven-pass",S15vsS11
+Chrna3,"cholinergic receptor, nicotinic,",S15vsS11
+Chrna5,"cholinergic receptor, nicotinic,",S15vsS11
+Chrna7,"cholinergic receptor, nicotinic,",S15vsS11
+Chrnb2,"cholinergic receptor, nicotinic,",S15vsS11
+Chrnb4,"cholinergic receptor, nicotinic,",S15vsS11
+Clec2d,"C-type lectin domain family 2,",S15vsS11
+Cxcr4,chemokine (C-X-C motif) recep,S15vsS11
+Dner,delta/notch-like EGF-related re,S15vsS11
+Ednrb,endothelin receptor type B,S15vsS11
+Epha2,Eph receptor A2,S15vsS11
+Epha4,Eph receptor A4,S15vsS11
+Epha5,Eph receptor A5,S15vsS11
+Epha6,Eph receptor A6,S15vsS11
+Epha7,Eph receptor A7,S15vsS11
+Ephb1,Eph receptor B1,S15vsS11
+Esrrg,estrogen-related receptor gam,S15vsS11
+Fcgrt,"Fc receptor, IgG, alpha chain tr",S15vsS11
+Fzd6,frizzled homolog 6 (Drosophila,S15vsS11
+Gabbr1,gamma-aminobutyric acid (GA,S15vsS11
+Gabra4,gamma-aminobutyric acid (GA,S15vsS11
+Gabrb3,gamma-aminobutyric acid (GA,S15vsS11
+Gabrg2,gamma-aminobutyric acid (GA,S15vsS11
+Gpr126,G protein-coupled receptor 12,S15vsS11
+Gpr155,G protein-coupled receptor 15,S15vsS11
+Gpr173,G-protein coupled receptor 17,S15vsS11
+Gpr22,G protein-coupled receptor 22,S15vsS11
+Gpr37l1,G protein-coupled receptor 37,S15vsS11
+Gpr39,G protein-coupled receptor 39,S15vsS11
+Gpr56,G protein-coupled receptor 56,S15vsS11
+Gpr64,G protein-coupled receptor 64,S15vsS11
+Gpr98,G protein-coupled receptor 98,S15vsS11
+Grb14,growth factor receptor bound,S15vsS11
+Gria2,"glutamate receptor, ionotropic",S15vsS11
+Gria3,"glutamate receptor, ionotropic",S15vsS11
+Gria4,"glutamate receptor, ionotropic",S15vsS11
+Grik1,"glutamate receptor, ionotropic",S15vsS11
+Grik2,"glutamate receptor, ionotropic",S15vsS11
+Grik3,"glutamate receptor, ionotropic",S15vsS11
+Grin1,"glutamate receptor, ionotropic",S15vsS11
+Grin2b,"glutamate receptor, ionotropic",S15vsS11
+Grm7,"glutamate receptor, metabotro",S15vsS11
+Grm8,"glutamate receptor, metabotro",S15vsS11
+Htr2b,5-hydroxytryptamine (serotoni,S15vsS11
+Htr3a,5-hydroxytryptamine (serotoni,S15vsS11
+Htr4,5 hydroxytryptamine (serotoni,S15vsS11
+Ifngr2,interferon gamma receptor 2,S15vsS11
+Il13ra1,"interleukin 13 receptor, alpha 1",S15vsS11
+Il17rd,interleukin 17 receptor D,S15vsS11
+Il1rapl1,interleukin 1 receptor accessor,S15vsS11
+Il6st,interleukin 6 signal transducer,S15vsS11
+Irs1,insulin receptor substrate 1,S15vsS11
+Itga1,integrin alpha 1,S15vsS11
+Itga2,integrin alpha 2,S15vsS11
+Itgb3,integrin beta 3,S15vsS11
+Lgr5,leucine rich repeat containing,S15vsS11
+Lifr,leukemia inhibitory factor rece,S15vsS11
+Lphn1,latrophilin 1,S15vsS11
+Lphn2,latrophilin 2,S15vsS11
+Lrp11,low density lipoprotein recepto,S15vsS11
+Mfsd6,major facilitator superfamily do,S15vsS11
+Mmd2,monocyte to macrophage diffe,S15vsS11
+Notch2,Notch gene homolog 2 (Drosop,S15vsS11
+Npr2,natriuretic peptide receptor 2,S15vsS11
+Npy1r,neuropeptide Y receptor Y1,S15vsS11
+Npy2r,neuropeptide Y receptor Y2,S15vsS11
+Nr1d2,"nuclear receptor subfamily 1, g",S15vsS11
+Nr1h4,"nuclear receptor subfamily 1, g",S15vsS11
+Nr2c2,"nuclear receptor subfamily 2, g",S15vsS11
+Nr3c1,"nuclear receptor subfamily 3, g",S15vsS11
+Nr4a1,"nuclear receptor subfamily 4, g",S15vsS11
+Nr4a2,"nuclear receptor subfamily 4, g",S15vsS11
+Olfr1316,olfactory receptor 1316,S15vsS11
+Olfr1318,olfactory receptor 1318,S15vsS11
+Olfr1402,olfactory receptor 1402,S15vsS11
+P2rx7,"purinergic receptor P2X, ligand",S15vsS11
+P2ry1,"purinergic receptor P2Y, G-pro",S15vsS11
+Paqr8,progestin and adipoQ receptor,S15vsS11
+Pcdha10,,S15vsS11
+Plxna2,plexin A2,S15vsS11
+Plxna3,plexin A3,S15vsS11
+Plxnb1,plexin B1,S15vsS11
+Plxnb3,plexin B3,S15vsS11
+Ptger4,prostaglandin E receptor 4 (sub,S15vsS11
+Ptpn3,"protein tyrosine phosphatase,",S15vsS11
+Ptprj,"protein tyrosine phosphatase,",S15vsS11
+Ptprn2,"protein tyrosine phosphatase,",S15vsS11
+Ptprr,"protein tyrosine phosphatase,",S15vsS11
+Ptprs,"protein tyrosine phosphatase,",S15vsS11
+Ptprz1,"protein tyrosine phosphatase,",S15vsS11
+Ramp1,receptor (calcitonin) activity m,S15vsS11
+Rarb,"retinoic acid receptor, beta",S15vsS11
+Robo2,roundabout homolog 2 (Droso,S15vsS11
+Rora,RAR-related orphan receptor a,S15vsS11
+Rorc,RAR-related orphan receptor g,S15vsS11
+Ryr2,"ryanodine receptor 2, cardiac",S15vsS11
+S1pr3,sphingosine-1-phosphate recep,S15vsS11
+Slc22a17,solute carrier family 22 (organi,S15vsS11
+Slitrk1,"SLIT and NTRK-like family, me",S15vsS11
+Slitrk2,"SLIT and NTRK-like family, me",S15vsS11
+Slitrk3,"SLIT and NTRK-like family, me",S15vsS11
+Sorl1,similar to sortilin-related recep,S15vsS11
+Sort1,sortilin 1,S15vsS11
+Sv2a,synaptic vesicle glycoprotein 2,S15vsS11
+Sv2b,synaptic vesicle glycoprotein 2,S15vsS11
+Sv2c,synaptic vesicle glycoprotein 2,S15vsS11
+Tacr3,tachykinin receptor 3,S15vsS11
+Tas2r143,"taste receptor, type 2, membe",S15vsS11
+Thra,thyroid hormone receptor alph,S15vsS11
+Tnfrsf12a,tumor necrosis factor receptor,S15vsS11
+Traf5,TNF receptor-associated factor,S15vsS11
+Trpc1,transient receptor potential ca,S15vsS11
+Trpc6,transient receptor potential ca,S15vsS11
+Trpm3,transient receptor potential ca,S15vsS11
+Trpv3,transient receptor potential ca,S15vsS11
+Unc5d,unc-5 homolog D (C. elegans),S15vsS11
+Vldlr,very low density lipoprotein re,S15vsS11
+Xpr1,xenotropic and polytropic retro,S15vsS11
+Adam22,a disintegrin and metallopeptidase do,W15vsS15
+Adra2a,"adrenergic receptor, alpha 2a",W15vsS15
+Alk,anaplastic lymphoma kinase,W15vsS15
+Avpr1a,arginine vasopressin receptor 1A,W15vsS15
+Bai3,brain-specific angiogenesis inhibitor 3,W15vsS15
+Bmpr1b,bone morphogenetic protein recepto ,W15vsS15
+Calcrl,calcitonin receptor-like,W15vsS15
+Celsr3,"cadherin, EGF LAG seven-pass G-type ",W15vsS15
+Chrna3,"cholinergic receptor, nicotinic, alpha ",W15vsS15
+Chrna5,"cholinergic receptor, nicotinic, alpha ",W15vsS15
+Cnr1,cannabinoid receptor 1 (brain),W15vsS15
+Cxadr,coxsackie virus and adenovirus recep ,W15vsS15
+Cxcr4,chemokine (C-X-C motif) receptor 4,W15vsS15
+Cxcr7,chemokine (C-X-C motif) receptor 7,W15vsS15
+Darc,"Duffy blood group, chemokine recept ",W15vsS15
+Dcc,deleted in colorectal carcinoma,W15vsS15
+Dner,delta/notch-like EGF-related receptor,W15vsS15
+Epha5,Eph receptor A5,W15vsS15
+Epha6,Eph receptor A6,W15vsS15
+Gabbr1,gamma-aminobutyric acid (GABA) B r ,W15vsS15
+Gabra3,gamma-aminobutyric acid (GABA) A r ,W15vsS15
+Gabrb3,gamma-aminobutyric acid (GABA) A r ,W15vsS15
+Gabrg2,gamma-aminobutyric acid (GABA) A r ,W15vsS15
+Galr2,galanin receptor 2,W15vsS15
+Gfra2,glial cell line derived neurotrophic fac,W15vsS15
+Glp1r,glucagon-like peptide 1 receptor; sim ,W15vsS15
+Gpr155,G protein-coupled receptor 155,W15vsS15
+Gpr158,G protein-coupled receptor 158,W15vsS15
+Gpr64,G protein-coupled receptor 64,W15vsS15
+Gpr85,G protein-coupled receptor 85,W15vsS15
+Gria1,"glutamate receptor, ionotropic, AMP ",W15vsS15
+Gria2,"glutamate receptor, ionotropic, AMP ",W15vsS15
+Grik1,"glutamate receptor, ionotropic, kaina ",W15vsS15
+Grin1,"glutamate receptor, ionotropic, NMD ",W15vsS15
+Grm7,"glutamate receptor, metabotropic 7",W15vsS15
+Htr1d,5-hydroxytryptamine (serotonin) rece,W15vsS15
+Htr2b,5-hydroxytryptamine (serotonin) rece,W15vsS15
+Htr3b,5-hydroxytryptamine (serotonin) rece,W15vsS15
+Htr4,5 hydroxytryptamine (serotonin) rece,W15vsS15
+Il13ra1,"interleukin 13 receptor, alpha 1",W15vsS15
+Itga3,integrin alpha 3,W15vsS15
+Lcor,ligand dependent nuclear receptor co,W15vsS15
+Lpar4,lysophosphatidic acid receptor 4,W15vsS15
+Lrp11,low density lipoprotein receptor-relat,W15vsS15
+Lrp1b,low density lipoprotein-related protei,W15vsS15
+Ltk,leukocyte tyrosine kinase,W15vsS15
+Npr2,natriuretic peptide receptor 2,W15vsS15
+Npy1r,neuropeptide Y receptor Y1,W15vsS15
+Npy2r,neuropeptide Y receptor Y2,W15vsS15
+Nrp2,neuropilin 2,W15vsS15
+Ntrk3,"neurotrophic tyrosine kinase, recepto",W15vsS15
+Olfr1382,olfactory receptor 1382,W15vsS15
+Olfr191,olfactory receptor 191,W15vsS15
+Olfr264,olfactory receptor 264; olfactory rece ,W15vsS15
+Oprm1,"opioid receptor, mu 1",W15vsS15
+Pcdha10,similar to protocadherin; protocadhe ,W15vsS15
+Pgr,progesterone receptor,W15vsS15
+Plxna3,plexin A3,W15vsS15
+Plxna4,plexin A4,W15vsS15
+Plxnc1,plexin C1; similar to plexin C1,W15vsS15
+Prokr1,prokineticin receptor 1,W15vsS15
+Pth2r,parathyroid hormone 2 receptor,W15vsS15
+Ptprg,"protein tyrosine phosphatase, recept ",W15vsS15
+Ptprn,"protein tyrosine phosphatase, recept ",W15vsS15
+Ptprn2,"protein tyrosine phosphatase, recept ",W15vsS15
+Ptpro,"protein tyrosine phosphatase, non-re ",W15vsS15
+Ptprr,"protein tyrosine phosphatase, recept ",W15vsS15
+Ramp1,receptor (calcitonin) activity modifyin ,W15vsS15
+Robo2,roundabout homolog 2 (Drosophila)  ,W15vsS15
+Ryr2,"ryanodine receptor 2, cardiac",W15vsS15
+Ryr3,ryanodine receptor 3,W15vsS15
+Slitrk3,"SLIT and NTRK-like family, member 3 ",W15vsS15
+Sorl1,"similar to sortilin-related receptor, LD",W15vsS15
+Sv2a,synaptic vesicle glycoprotein 2 a,W15vsS15
+Sv2c,synaptic vesicle glycoprotein 2c,W15vsS15
+Taar1,trace amine-associated receptor 1,W15vsS15
+Thra,thyroid hormone receptor alpha; simi,W15vsS15
+Tnfrsf18,tumor necrosis factor receptor superf,W15vsS15
+Trpc4,transient receptor potential cation ch ,W15vsS15
+Trpc6,transient receptor potential cation ch ,W15vsS15
+Tyro3,similar to Rse; TYRO3 protein tyrosine,W15vsS15
+Unc5c,unc-5 homolog C (C. elegans),W15vsS15
+Unc5d,unc-5 homolog D (C. elegans),W15vsS15
+Vldlr,very low density lipoprotein receptor ,W15vsS15
+Vmn2r29,"vomeronasal 2, receptor, pseudogene",W15vsS15
+Xpr1,xenotropic and polytropic retrovirus r,W15vsS15
+Abcc9,"ATP-binding cassette, sub-fami",W15vsW11
+Acvr2a,activin receptor IIA,W15vsW11
+Adam22,a disintegrin and metallopeptid,W15vsW11
+Adcyap1r1,adenylate cyclase activating po,W15vsW11
+Adra2a,"adrenergic receptor, alpha 2a",W15vsW11
+Agtr1a,"angiotensin II receptor, type 1a",W15vsW11
+Ahr,aryl-hydrocarbon receptor,W15vsW11
+Amfr,autocrine motility factor recep,W15vsW11
+Ar,androgen receptor,W15vsW11
+Atp6ap2,"ATPase, H+ transporting, lysoso",W15vsW11
+Atrn,attractin,W15vsW11
+Avpr1a,arginine vasopressin receptor 1,W15vsW11
+Bai2,brain-specific angiogenesis inh,W15vsW11
+Bai3,brain-specific angiogenesis inh,W15vsW11
+Bmpr1b,bone morphogenetic protein r,W15vsW11
+Bmpr2,bone morphogenic protein rec,W15vsW11
+Calcrl,calcitonin receptor-like,W15vsW11
+Celsr3,"cadherin, EGF LAG seven-pass",W15vsW11
+Chrm2,"cholinergic receptor, muscarini",W15vsW11
+Chrna3,"cholinergic receptor, nicotinic,",W15vsW11
+Chrna5,"cholinergic receptor, nicotinic,",W15vsW11
+Chrna7,"cholinergic receptor, nicotinic,",W15vsW11
+Chrnb1,"cholinergic receptor, nicotinic,",W15vsW11
+Chrnb2,"cholinergic receptor, nicotinic,",W15vsW11
+Chrnb4,"cholinergic receptor, nicotinic,",W15vsW11
+Cnr1,cannabinoid receptor 1 (brain),W15vsW11
+Csf2ra,colony stimulating factor 2 rec,W15vsW11
+Cxadr,coxsackie virus and adenovirus,W15vsW11
+Cxcr4,chemokine (C-X-C motif) recep,W15vsW11
+Cxcr7,chemokine (C-X-C motif) recep,W15vsW11
+Darc,"Duffy blood group, chemokine",W15vsW11
+Dner,delta/notch-like EGF-related re,W15vsW11
+Dpp4,dipeptidylpeptidase 4,W15vsW11
+Ednrb,endothelin receptor type B,W15vsW11
+Epha4,Eph receptor A4,W15vsW11
+Epha5,Eph receptor A5,W15vsW11
+Epha6,Eph receptor A6,W15vsW11
+Ephb1,Eph receptor B1,W15vsW11
+Esrrg,estrogen-related receptor gam,W15vsW11
+Ffar3,free fatty acid receptor 3,W15vsW11
+Gab2,growth factor receptor bound,W15vsW11
+Gabbr1,gamma-aminobutyric acid (GA,W15vsW11
+Gabrb2,gamma-aminobutyric acid (GA,W15vsW11
+Gabrb3,gamma-aminobutyric acid (GA,W15vsW11
+Gabrg2,gamma-aminobutyric acid (GA,W15vsW11
+Galr1,galanin receptor 1,W15vsW11
+Gfra2,glial cell line derived neurotrop,W15vsW11
+Glp1r,glucagon-like peptide 1 recept,W15vsW11
+Gpr126,G protein-coupled receptor 12,W15vsW11
+Gpr128,G protein-coupled receptor 12,W15vsW11
+Gpr137c,G protein-coupled receptor 13,W15vsW11
+Gpr155,G protein-coupled receptor 15,W15vsW11
+Gpr158,G protein-coupled receptor 15,W15vsW11
+Gpr165,G protein-coupled receptor 16,W15vsW11
+Gpr173,G-protein coupled receptor 17,W15vsW11
+Gpr176,G protein-coupled receptor 17,W15vsW11
+Gpr22,G protein-coupled receptor 22,W15vsW11
+Gpr56,G protein-coupled receptor 56,W15vsW11
+Gpr64,G protein-coupled receptor 64,W15vsW11
+Gpr75,G protein-coupled receptor 75,W15vsW11
+Gpr85,G protein-coupled receptor 85,W15vsW11
+Gpr98,G protein-coupled receptor 98,W15vsW11
+Grb14,growth factor receptor bound,W15vsW11
+Gria1,"glutamate receptor, ionotropic",W15vsW11
+Gria2,"glutamate receptor, ionotropic",W15vsW11
+Gria3,"glutamate receptor, ionotropic",W15vsW11
+Gria4,"glutamate receptor, ionotropic",W15vsW11
+Grid1,"glutamate receptor, ionotropic",W15vsW11
+Grik1,"glutamate receptor, ionotropic",W15vsW11
+Grik2,"glutamate receptor, ionotropic",W15vsW11
+Grik4,"glutamate receptor, ionotropic",W15vsW11
+Grin1,"glutamate receptor, ionotropic",W15vsW11
+Grin2b,"glutamate receptor, ionotropic",W15vsW11
+Grm1,similar to metabotropic glutam,W15vsW11
+Grm7,"glutamate receptor, metabotro",W15vsW11
+Htr1d,5-hydroxytryptamine (serotoni,W15vsW11
+Htr2b,5-hydroxytryptamine (serotoni,W15vsW11
+Htr3a,5-hydroxytryptamine (serotoni,W15vsW11
+Htr3b,5-hydroxytryptamine (serotoni,W15vsW11
+Htr4,5 hydroxytryptamine (serotoni,W15vsW11
+Ifngr2,interferon gamma receptor 2,W15vsW11
+Il13ra1,"interleukin 13 receptor, alpha 1",W15vsW11
+Il17rd,interleukin 17 receptor D,W15vsW11
+Il1rapl1,interleukin 1 receptor accessor,W15vsW11
+Il1rapl2,interleukin 1 receptor accessor,W15vsW11
+Il4ra,"interleukin 4 receptor, alpha",W15vsW11
+Insr,insulin receptor,W15vsW11
+Itga1,integrin alpha 1,W15vsW11
+Itga2,integrin alpha 2,W15vsW11
+Itga3,integrin alpha 3,W15vsW11
+Itgb3,integrin beta 3,W15vsW11
+Kit,kit oncogene,W15vsW11
+Lcor,ligand dependent nuclear rece,W15vsW11
+Lgr5,leucine rich repeat containing,W15vsW11
+Lmbr1,limb region 1,W15vsW11
+Lpar4,lysophosphatidic acid receptor,W15vsW11
+Lphn1,latrophilin 1,W15vsW11
+Lphn2,latrophilin 2,W15vsW11
+Lphn3,latrophilin 3,W15vsW11
+Lrp11,low density lipoprotein recepto,W15vsW11
+Lrp1b,low density lipoprotein-related,W15vsW11
+Ltk,leukocyte tyrosine kinase,W15vsW11
+Mfsd6,major facilitator superfamily do,W15vsW11
+Mmd2,monocyte to macrophage diffe,W15vsW11
+Mrgprg,"MAS-related GPR, member G",W15vsW11
+Mst1r,macrophage stimulating 1 rece,W15vsW11
+Ncor1,nuclear receptor co-repressor,W15vsW11
+Npr2,natriuretic peptide receptor 2,W15vsW11
+Npy1r,neuropeptide Y receptor Y1,W15vsW11
+Npy2r,neuropeptide Y receptor Y2,W15vsW11
+Nr1d2,"nuclear receptor subfamily 1, g",W15vsW11
+Nr2c2,"nuclear receptor subfamily 2, g",W15vsW11
+Nr3c1,"nuclear receptor subfamily 3, g",W15vsW11
+Nr4a1,"nuclear receptor subfamily 4, g",W15vsW11
+Nr6a1,"nuclear receptor subfamily 6, g",W15vsW11
+Nrp2,neuropilin 2,W15vsW11
+Ntrk3,"neurotrophic tyrosine kinase, r",W15vsW11
+Olfr1042,olfactory receptor 1042,W15vsW11
+Olfr1043,olfactory receptor 1043,W15vsW11
+Olfr1138,olfactory receptor 1138,W15vsW11
+Olfr1361,olfactory receptor 1361,W15vsW11
+Olfr159,olfactory receptor 159,W15vsW11
+Olfr288,olfactory receptor 288; olfacto,W15vsW11
+Olfr78,olfactory receptor 78,W15vsW11
+Olfr938,olfactory receptor 938,W15vsW11
+Oprl1,opioid receptor-like 1,W15vsW11
+Oprm1,"opioid receptor, mu 1",W15vsW11
+P2rx7,"purinergic receptor P2X, ligand",W15vsW11
+P2ry6,"pyrimidinergic receptor P2Y, G",W15vsW11
+Paqr8,progestin and adipoQ receptor,W15vsW11
+Pcdha10,,W15vsW11
+Pgr,progesterone receptor,W15vsW11
+Plxna2,plexin A2,W15vsW11
+Plxna3,plexin A3,W15vsW11
+Plxnb3,plexin B3,W15vsW11
+Plxnc1,plexin C1; similar to plexin C1,W15vsW11
+Prokr1,prokineticin receptor 1,W15vsW11
+Ptger3,prostaglandin E receptor 3 (sub,W15vsW11
+Ptger4,prostaglandin E receptor 4 (sub,W15vsW11
+Ptgir,prostaglandin I receptor (IP),W15vsW11
+Ptpn3,"protein tyrosine phosphatase,",W15vsW11
+Ptprb,"protein tyrosine phosphatase,",W15vsW11
+Ptprg,"protein tyrosine phosphatase,",W15vsW11
+Ptprj,"protein tyrosine phosphatase,",W15vsW11
+Ptprn,"protein tyrosine phosphatase,",W15vsW11
+Ptprn2,"protein tyrosine phosphatase,",W15vsW11
+Ptpro,"protein tyrosine phosphatase,",W15vsW11
+Ptprr,"protein tyrosine phosphatase,",W15vsW11
+Ptprs,"protein tyrosine phosphatase,",W15vsW11
+Ptprt,"protein tyrosine phosphatase,",W15vsW11
+Ptprz1,"protein tyrosine phosphatase,",W15vsW11
+Ramp1,receptor (calcitonin) activity m,W15vsW11
+Rarb,"retinoic acid receptor, beta",W15vsW11
+Reep5,receptor accessory protein 5,W15vsW11
+Robo2,roundabout homolog 2 (Droso,W15vsW11
+Rora,RAR-related orphan receptor a,W15vsW11
+Rorc,RAR-related orphan receptor g,W15vsW11
+Ryr2,"ryanodine receptor 2, cardiac",W15vsW11
+Ryr3,ryanodine receptor 3,W15vsW11
+Sctr,secretin receptor; similar to Sc,W15vsW11
+Slitrk1,"SLIT and NTRK-like family, me",W15vsW11
+Slitrk3,"SLIT and NTRK-like family, me",W15vsW11
+Sorl1,similar to sortilin-related recep,W15vsW11
+Sstr4,somatostatin receptor 4,W15vsW11
+Sv2a,synaptic vesicle glycoprotein 2,W15vsW11
+Sv2b,synaptic vesicle glycoprotein 2,W15vsW11
+Sv2c,synaptic vesicle glycoprotein 2,W15vsW11
+Taar1,trace amine-associated recepto,W15vsW11
+Tacr3,tachykinin receptor 3,W15vsW11
+Tas2r143,"taste receptor, type 2, membe",W15vsW11
+Thra,thyroid hormone receptor alph,W15vsW11
+Tnfrsf21,tumor necrosis factor receptor,W15vsW11
+Tnfsf18,tumor necrosis factor (ligand) s,W15vsW11
+Trem2,triggering receptor expressed o,W15vsW11
+Trpc1,transient receptor potential ca,W15vsW11
+Trpc4,transient receptor potential ca,W15vsW11
+Trpc6,transient receptor potential ca,W15vsW11
+Trpc7,transient receptor potential ca,W15vsW11
+Trpm3,transient receptor potential ca,W15vsW11
+Tyro3,similar to Rse; TYRO3 protein t,W15vsW11
+Unc5a,unc-5 homolog A (C. elegans),W15vsW11
+Unc5d,unc-5 homolog D (C. elegans),W15vsW11
+Vldlr,very low density lipoprotein re,W15vsW11
+Vmn2r29,,W15vsW11
+Vmn2r81,"vomeronasal 2, receptor 81; vo",W15vsW11
+Xpr1,xenotropic and polytropic retro,W15vsW11
+Acvr1,"activin A receptor, type",S11vsC11
+Adam22,a disintegrin and metallopeptidase do,S11vsC11
+Adcyap1r1,adenylate cyclase activating polypept ,S11vsC11
+Agtr2,"angiotensin II receptor, type 2",S11vsC11
+Ahr,aryl-hydrocarbon receptor,S11vsC11
+Alk,anaplastic lymphoma kinase,S11vsC11
+Arntl,aryl hydrocarbon receptor nuclear tra,S11vsC11
+Bai1,brain-specific angiogenesis inhibitor 1,S11vsC11
+Bai3,brain-specific angiogenesis inhibitor 3,S11vsC11
+Celsr2,"cadherin, EGF LAG seven-pass G-type ",S11vsC11
+Celsr3,"cadherin, EGF LAG seven-pass G-type ",S11vsC11
+Chrna3,"cholinergic receptor, nicotinic, alpha ",S11vsC11
+Chrna4,"cholinergic receptor, nicotinic, alpha ",S11vsC11
+Chrna5,"cholinergic receptor, nicotinic, alpha ",S11vsC11
+Chrnb2,"cholinergic receptor, nicotinic, beta p ",S11vsC11
+Chrnb4,"cholinergic receptor, nicotinic, beta p ",S11vsC11
+Cnr1,cannabinoid receptor 1 (brain),S11vsC11
+Dcc,deleted in colorectal carcinoma,S11vsC11
+Dear1,dual endothelin 1/angiotensin II rece ,S11vsC11
+Eda2r,ectodysplasin A2 isoform receptor   ,S11vsC11
+Ednrb,endothelin receptor type B,S11vsC11
+Epha3,Eph receptor A3,S11vsC11
+Ephb2,Eph receptor B2,S11vsC11
+Erbb3,v-erb-b2 erythroblastic leukemia viral ,S11vsC11
+Fkbp4,FK506 binding protein 4,S11vsC11
+Fzd3,frizzled homolog 3 (Drosophila),S11vsC11
+Gab1,growth factor receptor bound protein,S11vsC11
+Gab2,growth factor receptor bound protein,S11vsC11
+Gabrb3,gamma-aminobutyric acid (GABA) A r ,S11vsC11
+Gabrg2,gamma-aminobutyric acid (GABA) A r ,S11vsC11
+Gfra1,glial cell line derived neurotrophic fac,S11vsC11
+Gfra2,glial cell line derived neurotrophic fac,S11vsC11
+Gfra3,glial cell line derived neurotrophic fac,S11vsC11
+Git1,G protein-coupled receptor kinase-int,S11vsC11
+Gpr125,G protein-coupled receptor 125,S11vsC11
+Gpr126,G protein-coupled receptor 126,S11vsC11
+Gpr17,G protein-coupled receptor 17,S11vsC11
+Gpr19,G protein-coupled receptor 19,S11vsC11
+Gprc5b,"G protein-coupled receptor, family C, ",S11vsC11
+Grb10,growth factor receptor bound protein,S11vsC11
+Gria2,"glutamate receptor, ionotropic, AMP ",S11vsC11
+Gria4,"glutamate receptor, ionotropic, AMP ",S11vsC11
+Grik2,"glutamate receptor, ionotropic, kaina ",S11vsC11
+Grik3,"glutamate receptor, ionotropic, kaina ",S11vsC11
+Htr3b,5-hydroxytryptamine (serotonin) rece,S11vsC11
+Igf1r,insulin-like growth factor I receptor  ,S11vsC11
+Igsf11,"immunoglobulin superfamily, membe",S11vsC11
+Il1rap,interleukin 1 receptor accessory prot ,S11vsC11
+Il1rl2,interleukin 1 receptor-like 2,S11vsC11
+Itga4,integrin alpha 4,S11vsC11
+Itga6,integrin alpha 6,S11vsC11
+Jmjd6,jumonji domain containing 6,S11vsC11
+Ldlrad3,low density lipoprotein receptor class,S11vsC11
+Lpar3,lysophosphatidic acid receptor 3,S11vsC11
+Lrp11,low density lipoprotein receptor-relat,S11vsC11
+Lrp5,low density lipoprotein receptor-relat,S11vsC11
+Mfsd6,major facilitator superfamily domain ,S11vsC11
+Ngfr,nerve growth factor receptor (TNFR s ,S11vsC11
+Notch1,Notch gene homolog 1 (Drosophila)  ,S11vsC11
+Notch2,Notch gene homolog 2 (Drosophila)  ,S11vsC11
+Nr2c2ap,nuclear receptor 2C2-associated prot ,S11vsC11
+Nr4a1,"nuclear receptor subfamily 4, group A",S11vsC11
+Nrp1,neuropilin 1,S11vsC11
+Olfr1043,olfactory receptor 1043,S11vsC11
+Olfr382,olfactory receptor 382,S11vsC11
+P2rx4,"purinergic receptor P2X, ligand-gated ",S11vsC11
+Phb2,prohibitin 2,S11vsC11
+Plxna4,plexin A4,S11vsC11
+Ptpn1,"protein tyrosine phosphatase, non-re ",S11vsC11
+Ptpn9,"protein tyrosine phosphatase, non-re ",S11vsC11
+Ptprg,"protein tyrosine phosphatase, recept ",S11vsC11
+Ptprj,"protein tyrosine phosphatase, recept ",S11vsC11
+Ptprm,"protein tyrosine phosphatase, recept ",S11vsC11
+Ptprn,"protein tyrosine phosphatase, recept ",S11vsC11
+Ptprn2,"protein tyrosine phosphatase, recept ",S11vsC11
+Ptpro,"protein tyrosine phosphatase, non-re ",S11vsC11
+Ptprz1,"protein tyrosine phosphatase, recept ",S11vsC11
+Ramp3,receptor (calcitonin) activity modifyin ,S11vsC11
+Rara,"retinoic acid receptor, alpha",S11vsC11
+Rarb,"retinoic acid receptor, beta",S11vsC11
+Ret,ret proto-oncogene,S11vsC11
+Rhbdf1,rhomboid family 1 (Drosophila),S11vsC11
+Rpsa,predicted gene 9323; predicted gene ,S11vsC11
+Rtn4rl1,reticulon 4 receptor-like 1,S11vsC11
+Scarb1,"scavenger receptor class B, member ",S11vsC11
+Scarb2,"scavenger receptor class B, member 2",S11vsC11
+Sigmar1,sigma non-opioid intracellular recept ,S11vsC11
+Slc7a1,solute carrier family 7 (cationic amino,S11vsC11
+Slitrk2,"SLIT and NTRK-like family, member 2 ",S11vsC11
+Sort1,sortilin 1,S11vsC11
+Srprb,"signal recognition particle receptor, B ",S11vsC11
+Strap,serine/threonine kinase receptor asso,S11vsC11
+Sv2c,synaptic vesicle glycoprotein 2c,S11vsC11
+Tlr3,toll-like receptor 3,S11vsC11
+Tmem123,transmembrane protein 123,S11vsC11
+Tnfrsf21,tumor necrosis factor receptor superf,S11vsC11
+Traf4,TNF receptor associated factor 4,S11vsC11
+Acvr1b,"activin A receptor, type 1B",S15vsC15
+Acvr2a,activin receptor IIA,S15vsC15
+Adam22,a disintegrin and metallopeptid,S15vsC15
+Adcyap1r1,adenylate cyclase activating po,S15vsC15
+Agtr1a,"angiotensin II receptor, type 1a",S15vsC15
+Alk,anaplastic lymphoma kinase,S15vsC15
+Arntl,aryl hydrocarbon receptor nucl,S15vsC15
+Atrn,attractin,S15vsC15
+Bai3,brain-specific angiogenesis inh,S15vsC15
+Celsr2,"cadherin, EGF LAG seven-pass",S15vsC15
+Celsr3,"cadherin, EGF LAG seven-pass",S15vsC15
+Chrna3,"cholinergic receptor, nicotinic,",S15vsC15
+Chrna4,"cholinergic receptor, nicotinic,",S15vsC15
+Chrna5,"cholinergic receptor, nicotinic,",S15vsC15
+Chrna6,"cholinergic receptor, nicotinic,",S15vsC15
+Chrna7,"cholinergic receptor, nicotinic,",S15vsC15
+Chrnb2,"cholinergic receptor, nicotinic,",S15vsC15
+Chrnb4,"cholinergic receptor, nicotinic,",S15vsC15
+Cnr1,cannabinoid receptor 1 (brain),S15vsC15
+Darc,"Duffy blood group, chemokine",S15vsC15
+Dcc,deleted in colorectal carcinoma,S15vsC15
+Dear1,dual endothelin 1/angiotensin,S15vsC15
+Dgcr2,DiGeorge syndrome critical reg,S15vsC15
+Dner,delta/notch-like EGF-related re,S15vsC15
+Eda2r,ectodysplasin A2 isoform recep,S15vsC15
+Ednrb,endothelin receptor type B,S15vsC15
+Epha10,Eph receptor A10,S15vsC15
+Epha6,Eph receptor A6,S15vsC15
+Erbb3,v-erb-b2 erythroblastic leukem,S15vsC15
+Ffar3,free fatty acid receptor 3,S15vsC15
+Fkbp4,FK506 binding protein 4,S15vsC15
+Fzd3,frizzled homolog 3 (Drosophila,S15vsC15
+Fzd6,frizzled homolog 6 (Drosophila,S15vsC15
+Gab1,growth factor receptor bound,S15vsC15
+Gab2,growth factor receptor bound,S15vsC15
+Gabra6,gamma-aminobutyric acid (GA,S15vsC15
+Gabrb3,gamma-aminobutyric acid (GA,S15vsC15
+Gabrg2,gamma-aminobutyric acid (GA,S15vsC15
+Gfra1,glial cell line derived neurotrop,S15vsC15
+Gfra2,glial cell line derived neurotrop,S15vsC15
+Gfra3,glial cell line derived neurotrop,S15vsC15
+Git1,G protein-coupled receptor kin,S15vsC15
+Gpr125,G protein-coupled receptor 12,S15vsC15
+Gpr126,G protein-coupled receptor 12,S15vsC15
+Gpr137c,G protein-coupled receptor 13,S15vsC15
+Gpr155,G protein-coupled receptor 15,S15vsC15
+Gpr158,G protein-coupled receptor 15,S15vsC15
+Gpr17,G protein-coupled receptor 17,S15vsC15
+Gpr173,G-protein coupled receptor 17,S15vsC15
+Gpr19,G protein-coupled receptor 19,S15vsC15
+Gpr22,G protein-coupled receptor 22,S15vsC15
+Gpr37l1,G protein-coupled receptor 37,S15vsC15
+Gpr56,G protein-coupled receptor 56,S15vsC15
+Gpr75,G protein-coupled receptor 75,S15vsC15
+Gpr85,G protein-coupled receptor 85,S15vsC15
+Gpr98,G protein-coupled receptor 98,S15vsC15
+Gprc5b,"G protein-coupled receptor, fa",S15vsC15
+Gria2,"glutamate receptor, ionotropic",S15vsC15
+Gria4,"glutamate receptor, ionotropic",S15vsC15
+Grid2,"glutamate receptor, ionotropic",S15vsC15
+Grik2,"glutamate receptor, ionotropic",S15vsC15
+Grik3,"glutamate receptor, ionotropic",S15vsC15
+Grik5,"glutamate receptor, ionotropic",S15vsC15
+Grin1,"glutamate receptor, ionotropic",S15vsC15
+Grin2b,"glutamate receptor, ionotropic",S15vsC15
+Grlf1,glucocorticoid receptor DNA bi,S15vsC15
+Grm1,similar to metabotropic glutam,S15vsC15
+H2-Ke2,H2-K region expressed gene 2,S15vsC15
+Hrh3,histamine receptor H3,S15vsC15
+Htr2b,5-hydroxytryptamine (serotoni,S15vsC15
+Htr3a,5-hydroxytryptamine (serotoni,S15vsC15
+Htr3b,5-hydroxytryptamine (serotoni,S15vsC15
+Htr4,5 hydroxytryptamine (serotoni,S15vsC15
+Igf1r,insulin-like growth factor I rece,S15vsC15
+Igsf11,"immunoglobulin superfamily, m",S15vsC15
+Il17rd,interleukin 17 receptor D,S15vsC15
+Il1rap,interleukin 1 receptor accessor,S15vsC15
+Insr,insulin receptor,S15vsC15
+Irs1,insulin receptor substrate 1,S15vsC15
+Itga2,integrin alpha 2,S15vsC15
+Itga6,integrin alpha 6,S15vsC15
+Lcor,ligand dependent nuclear rece,S15vsC15
+Lpar3,lysophosphatidic acid receptor,S15vsC15
+Lrp11,low density lipoprotein recepto,S15vsC15
+Lrp12,low density lipoprotein-related,S15vsC15
+Lrp8,low density lipoprotein recepto,S15vsC15
+Lsr,lipolysis stimulated lipoprotein,S15vsC15
+Mfsd6,major facilitator superfamily do,S15vsC15
+Mmd2,monocyte to macrophage diffe,S15vsC15
+Ms4a15,membrane-spanning 4-domain,S15vsC15
+Mtvr2,mammary tumor virus recepto,S15vsC15
+Neto2,neuropilin (NRP) and tolloid (TL,S15vsC15
+Ngfr,nerve growth factor receptor (,S15vsC15
+Notch1,Notch gene homolog 1 (Drosop,S15vsC15
+Npc1,Niemann Pick type C1,S15vsC15
+Npy2r,neuropeptide Y receptor Y2,S15vsC15
+Nr1d2,"nuclear receptor subfamily 1, g",S15vsC15
+Nr2c1,"nuclear receptor subfamily 2, g",S15vsC15
+Nr2c2,"nuclear receptor subfamily 2, g",S15vsC15
+Nr6a1,"nuclear receptor subfamily 6, g",S15vsC15
+Olfr1015,olfactory receptor 1015,S15vsC15
+Olfr1045,olfactory receptor 1045,S15vsC15
+Olfr105,olfactory receptor 105,S15vsC15
+Olfr1157,olfactory receptor 1157,S15vsC15
+Olfr123,olfactory receptor 123,S15vsC15
+Olfr1262,olfactory receptor 1262,S15vsC15
+Olfr1318,olfactory receptor 1318,S15vsC15
+Olfr1392,olfactory receptor 1392,S15vsC15
+Olfr1402,olfactory receptor 1402,S15vsC15
+Olfr1416,olfactory receptor 1416,S15vsC15
+Olfr161,olfactory receptor 161,S15vsC15
+Olfr382,olfactory receptor 382,S15vsC15
+Olfr39,olfactory receptor 39,S15vsC15
+Olfr420,olfactory receptor 420,S15vsC15
+Olfr50,olfactory receptor 50,S15vsC15
+Olfr521,olfactory receptor 521,S15vsC15
+Olfr63,olfactory receptor 63,S15vsC15
+Olfr66,similar to MOR 5beta1; olfacto,S15vsC15
+Olfr695,olfactory receptor 695,S15vsC15
+Olfr824,olfactory receptor 824,S15vsC15
+Olfr914,olfactory receptor 914,S15vsC15
+Olfr958,olfactory receptor 958,S15vsC15
+Olfr963,olfactory receptor 963,S15vsC15
+Opn1mw,"opsin 1 (cone pigments), mediu",S15vsC15
+Opn3,opsin 3,S15vsC15
+Oprl1,opioid receptor-like 1,S15vsC15
+Oprm1,"opioid receptor, mu 1",S15vsC15
+P2rx3,"purinergic receptor P2X, ligand",S15vsC15
+P2rx7,"purinergic receptor P2X, ligand",S15vsC15
+Paqr3,progestin and adipoQ receptor,S15vsC15
+Pcdha10,,S15vsC15
+Pgrmc1,progesterone receptor membr,S15vsC15
+Phb2,prohibitin 2,S15vsC15
+Plxna2,plexin A2,S15vsC15
+Plxna3,plexin A3,S15vsC15
+Plxna4,plexin A4,S15vsC15
+Plxnb1,plexin B1,S15vsC15
+Plxnb3,plexin B3,S15vsC15
+Pnrc1,proline-rich nuclear receptor c,S15vsC15
+Prokr2,prokineticin receptor 2,S15vsC15
+Ptpn1,"protein tyrosine phosphatase,",S15vsC15
+Ptpn12,"protein tyrosine phosphatase,",S15vsC15
+Ptpn9,"protein tyrosine phosphatase,",S15vsC15
+Ptprj,"protein tyrosine phosphatase,",S15vsC15
+Ptprm,"protein tyrosine phosphatase,",S15vsC15
+Ptprn,"protein tyrosine phosphatase,",S15vsC15
+Ptprn2,"protein tyrosine phosphatase,",S15vsC15
+Ptpro,"protein tyrosine phosphatase,",S15vsC15
+Ptprr,"protein tyrosine phosphatase,",S15vsC15
+Ptprz1,"protein tyrosine phosphatase,",S15vsC15
+Ramp3,receptor (calcitonin) activity m,S15vsC15
+Rara,"retinoic acid receptor, alpha",S15vsC15
+Rarb,"retinoic acid receptor, beta",S15vsC15
+Ret,ret proto-oncogene,S15vsC15
+Scarb2,"scavenger receptor class B, me",S15vsC15
+Slc20a1,"solute carrier family 20, memb",S15vsC15
+Slc22a17,solute carrier family 22 (organi,S15vsC15
+Slitrk1,"SLIT and NTRK-like family, me",S15vsC15
+Slitrk2,"SLIT and NTRK-like family, me",S15vsC15
+Slitrk3,"SLIT and NTRK-like family, me",S15vsC15
+Sort1,sortilin 1,S15vsC15
+Sra1,steroid receptor RNA activator,S15vsC15
+Sstr1,somatostatin receptor 1,S15vsC15
+Sstr2,somatostatin receptor 2,S15vsC15
+Stab2,similar to FEX2; stabilin 2,S15vsC15
+Strap,serine/threonine kinase recept,S15vsC15
+Sv2c,synaptic vesicle glycoprotein 2,S15vsC15
+Tacr3,tachykinin receptor 3,S15vsC15
+Tgfbrap1,"transforming growth factor, be",S15vsC15
+Tlr3,toll-like receptor 3,S15vsC15
+Tnfrsf21,tumor necrosis factor receptor,S15vsC15
+Tnfrsf8,tumor necrosis factor receptor,S15vsC15
+Traf4,TNF receptor associated factor,S15vsC15
+Trpc7,transient receptor potential ca,S15vsC15
+Trpm3,transient receptor potential ca,S15vsC15
+Tyro3,similar to Rse; TYRO3 protein t,S15vsC15
+Xpr1,xenotropic and polytropic retro,S15vsC15
+Acvr1,"activin A receptor, type 1",W11vsC11
+Adcyap1r1,adenylate cyclase activating polypept ,W11vsC11
+Adrbk1,"adrenergic receptor kinase, beta 1",W11vsC11
+Agtr2,"angiotensin II receptor, type 2",W11vsC11
+Ahr,aryl-hydrocarbon receptor,W11vsC11
+Alk,anaplastic lymphoma kinase,W11vsC11
+Arntl,aryl hydrocarbon receptor nuclear tra,W11vsC11
+Bai1,brain-specific angiogenesis inhibitor 1,W11vsC11
+Bai3,brain-specific angiogenesis inhibitor 3Atrn,W11vsC11
+Celsr1,"cadherin, EGF LAG seven-pass G-type ",W11vsC11
+Celsr2,"cadherin, EGF LAG seven-pass G-type ",W11vsC11
+Celsr3,"cadherin, EGF LAG seven-pass G-type ",W11vsC11
+Chrna3,"cholinergic receptor, nicotinic, alpha ",W11vsC11
+Chrna4,"cholinergic receptor, nicotinic, alpha ",W11vsC11
+Chrna5,"cholinergic receptor, nicotinic, alpha ",W11vsC11
+Chrnb2,"cholinergic receptor, nicotinic, beta p ",W11vsC11
+Chrnb4,"cholinergic receptor, nicotinic, beta p ",W11vsC11
+Cnr1,cannabinoid receptor 1 (brain),W11vsC11
+Dcc,deleted in colorectal carcinoma,W11vsC11
+Ddr1,"discoidin domain receptor family, me ",W11vsC11
+Dear1,dual endothelin 1/angiotensin II rece ,W11vsC11
+Edaradd,EDAR (ectodysplasin-A receptor)-asso,W11vsC11
+Ednrb,endothelin receptor type B,W11vsC11
+Epha3,Eph receptor A3,W11vsC11
+Ephb2,Eph receptor B2,W11vsC11
+Erbb3,v-erb-b2 erythroblastic leukemia viral ,W11vsC11
+Fzd3,frizzled homolog 3 (Drosophila),W11vsC11
+Gab1,growth factor receptor bound protein,W11vsC11
+Gab2,growth factor receptor bound protein,W11vsC11
+Gabra3,gamma-aminobutyric acid (GABA) A r ,W11vsC11
+Gabrb3,gamma-aminobutyric acid (GABA) A r ,W11vsC11
+Gabrg2,gamma-aminobutyric acid (GABA) A r ,W11vsC11
+Gfra1,glial cell line derived neurotrophic fac,W11vsC11
+Gfra2,glial cell line derived neurotrophic fac,W11vsC11
+Gfra3,glial cell line derived neurotrophic fac,W11vsC11
+Git1,G protein-coupled receptor kinase-int,W11vsC11
+Gpr125,G protein-coupled receptor 125,W11vsC11
+Gpr126,G protein-coupled receptor 126,W11vsC11
+Gpr17,G protein-coupled receptor 17,W11vsC11
+Gpr19,G protein-coupled receptor 19,W11vsC11
+Gpr37,G protein-coupled receptor 37,W11vsC11
+Gpr39,G protein-coupled receptor 39,W11vsC11
+Gprc5b,"G protein-coupled receptor, family C, ",W11vsC11
+Grb10,growth factor receptor bound protein,W11vsC11
+Gria2,"glutamate receptor, ionotropic, AMP ",W11vsC11
+Gria4,"glutamate receptor, ionotropic, AMP ",W11vsC11
+Grid2,"glutamate receptor, ionotropic, delta ",W11vsC11
+Grik2,"glutamate receptor, ionotropic, kaina ",W11vsC11
+Grik3,"glutamate receptor, ionotropic, kaina ",W11vsC11
+Grk4,G protein-coupled receptor kinase 4,W11vsC11
+Htr3b,5-hydroxytryptamine (serotonin) rece,W11vsC11
+Igf1r,insulin-like growth factor I receptor  ,W11vsC11
+Igsf11,"immunoglobulin superfamily, membe",W11vsC11
+Il1rap,interleukin 1 receptor accessory prot ,W11vsC11
+Il1rl2,interleukin 1 receptor-like 2,W11vsC11
+Insr,insulin receptor,W11vsC11
+Itga4,integrin alpha 4,W11vsC11
+Itga6,integrin alpha 6,W11vsC11
+Itgav,integrin alpha V,W11vsC11
+Jmjd6,jumonji domain containing 6,W11vsC11
+Lpar3,lysophosphatidic acid receptor 3,W11vsC11
+Lrp11,low density lipoprotein receptor-relat,W11vsC11
+Lrp4,low density lipoprotein receptor-relat,W11vsC11
+Lrp5,low density lipoprotein receptor-relat,W11vsC11
+Lrp8,low density lipoprotein receptor-relat,W11vsC11
+Mfsd6,major facilitator superfamily domain ,W11vsC11
+Ngfr,nerve growth factor receptor (TNFR s ,W11vsC11
+Nisch,nischarin,W11vsC11
+Notch1,Notch gene homolog 1 (Drosophila)  ,W11vsC11
+Notch2,Notch gene homolog 2 (Drosophila)  ,W11vsC11
+Npr3,natriuretic peptide receptor 3,W11vsC11
+Nr4a1,"nuclear receptor subfamily 4, group A",W11vsC11
+Nr4a2,"nuclear receptor subfamily 4, group A",W11vsC11
+Nrip1,nuclear receptor interacting protein 1,W11vsC11
+Nrp1,neuropilin 1,W11vsC11
+Ogfr,opioid growth factor receptor,W11vsC11
+Olfr847,olfactory receptor 847,W11vsC11
+Olfr908,olfactory receptor 908,W11vsC11
+P2rx4,"purinergic receptor P2X, ligand-gated ",W11vsC11
+Phb2,prohibitin 2,W11vsC11
+Plxna4,plexin A4,W11vsC11
+Plxnb1,plexin B1,W11vsC11
+Ptpn1,"protein tyrosine phosphatase, non-re ",W11vsC11
+Ptpn9,"protein tyrosine phosphatase, non-re ",W11vsC11
+Ptprf,"protein tyrosine phosphatase, recept ",W11vsC11
+Ptprj,"protein tyrosine phosphatase, recept ",W11vsC11
+Ptprm,"protein tyrosine phosphatase, recept ",W11vsC11
+Ptprn,"protein tyrosine phosphatase, recept ",W11vsC11
+Ptpro,"protein tyrosine phosphatase, non-re ",W11vsC11
+Ptprz1,"protein tyrosine phosphatase, recept ",W11vsC11
+Ramp3,receptor (calcitonin) activity modifyin ,W11vsC11
+Rara,"retinoic acid receptor, alpha",W11vsC11
+Rarb,"retinoic acid receptor, beta",W11vsC11
+Ret,ret proto-oncogene,W11vsC11
+Rhbdf1,rhomboid family 1 (Drosophila),W11vsC11
+Rtn4rl1,reticulon 4 receptor-like 1,W11vsC11
+Rxra,retinoid X receptor alpha; similar to r ,W11vsC11
+Rxrg,retinoid X receptor gamma,W11vsC11
+Scarb2,"scavenger receptor class B, member 2",W11vsC11
+Sigmar1,sigma non-opioid intracellular recept ,W11vsC11
+Slc7a1,solute carrier family 7 (cationic amino,W11vsC11
+Slitrk2,"SLIT and NTRK-like family, member 2 ",W11vsC11
+Sort1,sortilin 1,W11vsC11
+Sstr2,somatostatin receptor 2,W11vsC11
+Sv2c,synaptic vesicle glycoprotein 2c,W11vsC11
+Tgfbrap1,"transforming growth factor, beta rece",W11vsC11
+Tlr3,toll-like receptor 3,W11vsC11
+Tmem123,transmembrane protein 123,W11vsC11
+Tnfrsf21,tumor necrosis factor receptor superf,W11vsC11
+Traf4,TNF receptor associated factor 4,W11vsC11
+Acvr1b,"activin A receptor, type 1B",W15vsC15
+Acvr2a,activin receptor IIA,W15vsC15
+Adam22,a disintegrin and metallopeptid,W15vsC15
+Adcyap1r1,adenylate cyclase activating po,W15vsC15
+Adra2a,"adrenergic receptor, alpha 2a",W15vsC15
+Agtr1a,"angiotensin II receptor, type 1a",W15vsC15
+Alk,anaplastic lymphoma kinase,W15vsC15
+Arntl,aryl hydrocarbon receptor nucl,W15vsC15
+attractin,,W15vsC15
+Bai3,brain-specific angiogenesis inh,W15vsC15
+Bdkrb2,"bradykinin receptor, beta 2",W15vsC15
+Bmpr1b,bone morphogenetic protein r,W15vsC15
+Celsr2,"cadherin, EGF LAG seven-pass",W15vsC15
+Celsr3,"cadherin, EGF LAG seven-pass",W15vsC15
+Chrna3,"cholinergic receptor, nicotinic,",W15vsC15
+Chrna4,"cholinergic receptor, nicotinic,",W15vsC15
+Chrna5,"cholinergic receptor, nicotinic,",W15vsC15
+Chrna7,"cholinergic receptor, nicotinic,",W15vsC15
+Chrnb2,"cholinergic receptor, nicotinic,",W15vsC15
+Chrnb4,"cholinergic receptor, nicotinic,",W15vsC15
+Cnr1,cannabinoid receptor 1 (brain),W15vsC15
+Cxcr4,chemokine (C-X-C motif) recep,W15vsC15
+Darc,"Duffy blood group, chemokine",W15vsC15
+Dcc,deleted in colorectal carcinoma,W15vsC15
+Ddr1,discoidin domain receptor fam,W15vsC15
+Dear1,dual endothelin 1/angiotensin,W15vsC15
+Dner,delta/notch-like EGF-related re,W15vsC15
+Ednrb,endothelin receptor type B,W15vsC15
+Epha10,Eph receptor A10,W15vsC15
+Epha5,Eph receptor A5,W15vsC15
+Epha6,Eph receptor A6,W15vsC15
+Erbb3,v-erb-b2 erythroblastic leukem,W15vsC15
+Erbb4,v-erb-a erythroblastic leukemia,W15vsC15
+Ffar3,free fatty acid receptor 3,W15vsC15
+Fpr-rs3,"formyl peptide receptor, relate",W15vsC15
+Fzd3,frizzled homolog 3 (Drosophila,W15vsC15
+Gab2,growth factor receptor bound,W15vsC15
+Gabbr1,gamma-aminobutyric acid (GA,W15vsC15
+Gabrb3,gamma-aminobutyric acid (GA,W15vsC15
+Gabrg2,gamma-aminobutyric acid (GA,W15vsC15
+Gabrr3,gamma-aminobutyric acid (GA,W15vsC15
+Galr1,galanin receptor 1,W15vsC15
+Galr2,galanin receptor 2,W15vsC15
+Gfra1,glial cell line derived neurotrop,W15vsC15
+Gfra2,glial cell line derived neurotrop,W15vsC15
+Glp1r,glucagon-like peptide 1 recept,W15vsC15
+Gpr111,G protein-coupled receptor 11,W15vsC15
+Gpr125,G protein-coupled receptor 12,W15vsC15
+Gpr126,G protein-coupled receptor 12,W15vsC15
+Gpr135,G protein-coupled receptor 13,W15vsC15
+Gpr137c,G protein-coupled receptor 13,W15vsC15
+Gpr155,G protein-coupled receptor 15,W15vsC15
+Gpr156,G protein-coupled receptor 15,W15vsC15
+Gpr158,G protein-coupled receptor 15,W15vsC15
+Gpr165,G protein-coupled receptor 16,W15vsC15
+Gpr17,G protein-coupled receptor 17,W15vsC15
+Gpr173,G-protein coupled receptor 17,W15vsC15
+Gpr19,G protein-coupled receptor 19,W15vsC15
+Gpr22,G protein-coupled receptor 22,W15vsC15
+Gpr37l1,G protein-coupled receptor 37,W15vsC15
+Gpr39,G protein-coupled receptor 39,W15vsC15
+Gpr56,G protein-coupled receptor 56,W15vsC15
+Gpr75,G protein-coupled receptor 75,W15vsC15
+Gpr85,G protein-coupled receptor 85,W15vsC15
+Gpr98,G protein-coupled receptor 98,W15vsC15
+Grb14,growth factor receptor bound,W15vsC15
+Gria1,"glutamate receptor, ionotropic",W15vsC15
+Gria2,"glutamate receptor, ionotropic",W15vsC15
+Gria4,"glutamate receptor, ionotropic",W15vsC15
+Grid1,"glutamate receptor, ionotropic",W15vsC15
+Grid2,"glutamate receptor, ionotropic",W15vsC15
+Grik1,"glutamate receptor, ionotropic",W15vsC15
+Grik2,"glutamate receptor, ionotropic",W15vsC15
+Grik3,"glutamate receptor, ionotropic",W15vsC15
+Grik5,"glutamate receptor, ionotropic",W15vsC15
+Grin1,"glutamate receptor, ionotropic",W15vsC15
+Grin2b,"glutamate receptor, ionotropic",W15vsC15
+Grlf1,glucocorticoid receptor DNA bi,W15vsC15
+Grm1,similar to metabotropic glutam,W15vsC15
+Grm7,"glutamate receptor, metabotro",W15vsC15
+Htr2b,5-hydroxytryptamine (serotoni,W15vsC15
+Htr3a,5-hydroxytryptamine (serotoni,W15vsC15
+Htr3b,5-hydroxytryptamine (serotoni,W15vsC15
+Htr4,5 hydroxytryptamine (serotoni,W15vsC15
+Igf1r,insulin-like growth factor I rece,W15vsC15
+Igsf11,"immunoglobulin superfamily, m",W15vsC15
+Il17rd,interleukin 17 receptor D,W15vsC15
+Il17rd,interleukin 17 receptor D,W15vsC15
+Il1rap,interleukin 1 receptor accessor,W15vsC15
+Il1rapl1,interleukin 1 receptor accessor,W15vsC15
+Insr,insulin receptor,W15vsC15
+Itga2,integrin alpha 2,W15vsC15
+Itga6,integrin alpha 6,W15vsC15
+Lcor,ligand dependent nuclear rece,W15vsC15
+Lmbr1l,limb region 1 like,W15vsC15
+Lpar3,lysophosphatidic acid receptor,W15vsC15
+Lpar4,lysophosphatidic acid receptor,W15vsC15
+Lphn1,latrophilin 1,W15vsC15
+Lrp11,low density lipoprotein recepto,W15vsC15
+Lrp1b,low density lipoprotein-related,W15vsC15
+Lrp8,low density lipoprotein recepto,W15vsC15
+Ltk,leukocyte tyrosine kinase,W15vsC15
+Mfsd6,major facilitator superfamily do,W15vsC15
+Mmd2,monocyte to macrophage diffe,W15vsC15
+Mrgpre,"MAS-related GPR, member E",W15vsC15
+Mrgprg,"MAS-related GPR, member G",W15vsC15
+Myh7b,"myosin, heavy chain 7B, cardia",W15vsC15
+Neto2,neuropilin (NRP) and tolloid (TL,W15vsC15
+Ngfr,nerve growth factor receptor (,W15vsC15
+Npy1r,neuropeptide Y receptor Y1,W15vsC15
+Npy2r,neuropeptide Y receptor Y2,W15vsC15
+Npy5r,neuropeptide Y receptor Y5,W15vsC15
+Nr1d2,"nuclear receptor subfamily 1, g",W15vsC15
+Nr2c1,"nuclear receptor subfamily 2, g",W15vsC15
+Nr2c2,"nuclear receptor subfamily 2, g",W15vsC15
+Nr6a1,"nuclear receptor subfamily 6, g",W15vsC15
+Olfr1043,olfactory receptor 1043,W15vsC15
+Olfr1157,olfactory receptor 1157,W15vsC15
+Olfr1272,olfactory receptor 1273; olfact,W15vsC15
+Olfr1349,olfactory receptor 1349,W15vsC15
+Olfr1382,olfactory receptor 1382,W15vsC15
+Olfr1389,olfactory receptor 1389,W15vsC15
+Olfr288,olfactory receptor 288; olfacto,W15vsC15
+Olfr39,olfactory receptor 39,W15vsC15
+Olfr503,olfactory receptor 503; olfacto,W15vsC15
+Olfr521,olfactory receptor 521,W15vsC15
+Olfr60,olfactory receptor 60,W15vsC15
+Olfr63,olfactory receptor 63,W15vsC15
+Olfr695,olfactory receptor 695,W15vsC15
+Olfr78,olfactory receptor 78,W15vsC15
+Olfr914,olfactory receptor 914,W15vsC15
+Olfr963,olfactory receptor 963,W15vsC15
+Olfr967,olfactory receptor 967,W15vsC15
+Olfr975,olfactory receptor 975,W15vsC15
+Oprl1,opioid receptor-like 1,W15vsC15
+Oprm1,"opioid receptor, mu 1",W15vsC15
+Oxtr,oxytocin receptor,W15vsC15
+P2rx3,"purinergic receptor P2X, ligand",W15vsC15
+Paqr3,progestin and adipoQ receptor,W15vsC15
+Paqr9,progestin and adipoQ receptor,W15vsC15
+Pcdha10,,W15vsC15
+Pgr,progesterone receptor,W15vsC15
+Pgrmc1,progesterone receptor membr,W15vsC15
+Plxna2,plexin A2,W15vsC15
+Plxna3,plexin A3,W15vsC15
+Plxna4,plexin A4,W15vsC15
+Plxnb1,plexin B1,W15vsC15
+Plxnb3,plexin B3,W15vsC15
+Ppyr1,pancreatic polypeptide recepto,W15vsC15
+Prokr2,prokineticin receptor 2,W15vsC15
+Pth2r,parathyroid hormone 2 recept,W15vsC15
+Ptpn1,"protein tyrosine phosphatase,",W15vsC15
+Ptpn12,"protein tyrosine phosphatase,",W15vsC15
+Ptpn3,"protein tyrosine phosphatase,",W15vsC15
+Ptpn9,"protein tyrosine phosphatase,",W15vsC15
+Ptprg,"protein tyrosine phosphatase,",W15vsC15
+Ptprj,"protein tyrosine phosphatase,",W15vsC15
+Ptprm,"protein tyrosine phosphatase,",W15vsC15
+Ptprn,"protein tyrosine phosphatase,",W15vsC15
+Ptprn2,"protein tyrosine phosphatase,",W15vsC15
+Ptpro,"protein tyrosine phosphatase,",W15vsC15
+Ptprr,"protein tyrosine phosphatase,",W15vsC15
+Ptprs,"protein tyrosine phosphatase,",W15vsC15
+Ptprz1,"protein tyrosine phosphatase,",W15vsC15
+Ramp3,receptor (calcitonin) activity m,W15vsC15
+Rarb,"retinoic acid receptor, beta",W15vsC15
+Ret,ret proto-oncogene,W15vsC15
+Rrh,retinal pigment epithelium der,W15vsC15
+Scarb2,"scavenger receptor class B, me",W15vsC15
+Slc20a1,"solute carrier family 20, memb",W15vsC15
+Slitrk1,"SLIT and NTRK-like family, me",W15vsC15
+Slitrk2,"SLIT and NTRK-like family, me",W15vsC15
+Slitrk3,"SLIT and NTRK-like family, me",W15vsC15
+Sorl1,similar to sortilin-related recep,W15vsC15
+Sort1,sortilin 1,W15vsC15
+Sstr1,somatostatin receptor 1,W15vsC15
+Sstr2,somatostatin receptor 2,W15vsC15
+Stra6,stimulated by retinoic acid gen,W15vsC15
+Sv2a,synaptic vesicle glycoprotein 2,W15vsC15
+Sv2c,synaptic vesicle glycoprotein 2,W15vsC15
+Taar1,trace amine-associated recepto,W15vsC15
+Taar2,trace amine-associated recepto,W15vsC15
+Tacr3,tachykinin receptor 3,W15vsC15
+Tas2r134,"taste receptor, type 2, membe",W15vsC15
+Tnfrsf21,tumor necrosis factor receptor,W15vsC15
+Traf4,TNF receptor associated factor,W15vsC15
+Trpc6,transient receptor potential ca,W15vsC15
+Trpc7,transient receptor potential ca,W15vsC15
+Trpm3,transient receptor potential ca,W15vsC15
+Tyro3,similar to Rse; TYRO3 protein t,W15vsC15
+Unc5a,unc-5 homolog A (C. elegans),W15vsC15
+Unc5d,unc-5 homolog D (C. elegans),W15vsC15
+Vmn2r81,"vomeronasal 2, receptor 81; vo",W15vsC15
+Xpr1,xenotropic and polytropic retro,W15vsC15
