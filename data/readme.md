@@ -1,4 +1,4 @@
-# common used data
+# commonly used data
 
 ## all mouse genes
 - gene.anno.mm10.3.0.0.csv - 提取自10x的gtf文件
