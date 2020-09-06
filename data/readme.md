@@ -12,6 +12,7 @@
 - method 2: http://211.67.31.242/HumanTFDB/#!/download
 - method 3: Transcription factors were identified using GO terms transcription factor activity (GO:0000989), and regulation of transcription, DNA dependent (GO:0006355).
 - 文章的数据，pdf转Excel，mmc13-Transcription Factors.csv
+- 问题：human和mouse严格意义mapping的TF只有1000个，各自有600个左右的unique TF，查一下为什么map不上！！！
 
 ```r
 # human TF v1
