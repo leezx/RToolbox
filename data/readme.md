@@ -14,11 +14,18 @@
 - 文章的数据，pdf转Excel，mmc13-Transcription Factors.csv
 
 ```r
-#
-hTFs <- read.csv("http://humantfs.ccbr.utoronto.ca/download/v_1.01/DatabaseExtract_v_1.01.csv", header = T)
-#
-hTFs <- read.csv("http://bioinfo.life.hust.edu.cn/static/AnimalTFDB3/download/Homo_sapiens_TF", header = T, sep="\t")
+# human TF v1
+hTFs1 <- read.csv("http://humantfs.ccbr.utoronto.ca/download/v_1.01/DatabaseExtract_v_1.01.csv", header = T)
+hTFs1 <- hTFs1[!duplicated(hTFs1$HGNC.symbol),]
+dim(hTFs1)
+# human TF v2
+hTFs2 <- read.csv("http://bioinfo.life.hust.edu.cn/static/AnimalTFDB3/download/Homo_sapiens_TF", header = T, sep="\t")
+hTFs2 <- hTFs2[!duplicated(hTFs2$Symbol),]
+dim(hTFs2)
+# human TF coFactors
 hTF_coFs <- read.csv("http://bioinfo.life.hust.edu.cn/static/AnimalTFDB3/download/Homo_sapiens_TF_cofactors", header = T, sep="\t")
+hTF_coFs <- hTF_coFs[!duplicated(hTF_coFs$Symbol),]
+dim(hTF_coFs)
 ```
 
 ## all mouse and human signaling factors
