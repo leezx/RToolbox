@@ -11,6 +11,7 @@
 - method 1: [The Human Transcription Factors](http://humantfs.ccbr.utoronto.ca/), This website contains the catalog of 1639 known and likely human TFs and their motifs (version 1.01).
 - method 2: http://211.67.31.242/HumanTFDB/#!/download
 - method 3: Transcription factors were identified using GO terms transcription factor activity (GO:0000989), and regulation of transcription, DNA dependent (GO:0006355).
+- 文章的数据，pdf转Excel，mmc13-Transcription Factors.csv
 
 ```r
 #
@@ -22,10 +23,11 @@ hTF_coFs <- read.csv("http://bioinfo.life.hust.edu.cn/static/AnimalTFDB3/downloa
 
 ## all mouse and human signaling factors
 - Signaling factors were identified from the terms growth factor (Panther MF00019) and secreted (SP_PIR_KEYWORDS). Semaphorins and Slit proteins were identified manually and added to the lists.
+- 文章的数据，pdf转Excel，mmc14-Signaling ligands.csv
 
 ## all mouse and human receptors
 - Receptors were identified from the annotation terms receptor (SP_PIR_KEYWORDS) and receptor activity (GO:0004872). The combined lists of genes were manually screened to remove wrongly annotated genes.
-
+- 文章的数据，pdf转Excel，mmc15-Signaling Receptors.csv
 
 
 参考：
