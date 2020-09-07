@@ -10,7 +10,7 @@ example.function <- function(param1=NULL) {
 	NULL
 }
 
-# a revised version of plot_cell_trajectory in monocle package
+# a modified version of plot_cell_trajectory function in monocle package
 # add use.cells, you can remove any cells in the plot, eg.sampling cells
 plot_cell_trajectory2 <- function (cds, x = 1, y = 2, color_by = "State", show_tree = TRUE, use.cells,
     show_backbone = TRUE, backbone_color = "black", markers = NULL, 
