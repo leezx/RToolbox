@@ -20,6 +20,7 @@ plot_cell_trajectory2 <- function (cds, x = 1, y = 2, color_by = "State", show_t
     theta = 0, ...) 
 {
     library(tibble)
+    library(dplyr)
     source("https://raw.githubusercontent.com/cole-trapnell-lab/monocle-release/d8940700e70689ebc2dc6c7c4d5929a27f2de5e2/R/plotting.R")
     requireNamespace("igraph")
     gene_short_name <- NA
