@@ -10,6 +10,47 @@ example.function <- function(param1=NULL) {
 	NULL
 }
 
+lm_eqn_coef_p <- function (df) 
+{
+    #### calculate the slope and p-value for simple linear regression ####
+    # use example: project/scPipeline/fancy_analysis/mouse_human_comparison_ctrl.ipynb
+    lmp <- function (modelobject) {
+        # get p value of a lm model
+        if (class(modelobject) != "lm") stop("Not an object of class 'lm' ")
+        f <- summary(modelobject)$fstatistic
+        p <- pf(f[1],f[2],f[3],lower.tail=F)
+        attributes(p) <- NULL
+        return(p)
+    }
+    #
+    df$y <- df$value
+    df$x <- df$percentage
+    m = lm(y ~ x, df)
+    p.raw <- lmp(m)
+    if (is.na(lmp(m))) 
+        p.raw <- 1
+    p <- signif(p.raw, 3)
+    #     if (p.raw < 0.05) {
+    #         p <- "p-value < 0.05 **"
+    #     }
+    #     else {
+    #         p1 <- format(as.double(p.raw), digits = 2)
+    #         p <- paste("p-value =", p1)
+    #     }
+    eq <- paste("Slope = ", format(as.double(coef(m)[2]), digits = 2), 
+        "\n", "P-value = ", p, sep = "")
+    # as.character(eq)
+    return(c(as.double(coef(m)[2]), p.raw, as.character(eq)))
+}
+
+reRange.pseudotime <- function(cellOrder) {
+    # make the pseudotime smooth 0-1
+    cellOrder <- cellOrder[order(cellOrder$percentage, decreasing = F),]
+    cellOrder$percentage.bak <- cellOrder$percentage
+    cellOrder$percentage <- seq(0, 1, length.out = nrow(cellOrder))
+    cellOrder
+}
+
 # a modified version of plot_cell_trajectory function in monocle package
 # add use.cells, you can remove any cells in the plot, eg.sampling cells
 plot_cell_trajectory2 <- function (cds, x = 1, y = 2, color_by = "State", show_tree = TRUE, use.cells,
