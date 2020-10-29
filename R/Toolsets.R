@@ -10,6 +10,22 @@ example.function <- function(param1=NULL) {
 	NULL
 }
 
+simple.enrichment.analysis <- function(k,n,M,N) {
+    # see clusterProfiler
+    # GeneRatio：k/n [n is the number of query genes, k is the genes in this pathways]
+    # BgRatio: M/N [M is the number of this pathway, N is total background genes]
+    args.df <- data.frame(numWdrawn=k-1, ## White balls drawn
+                  numW=M,        ## White balls
+                  numB=N-M,      ## Black balls
+                  numDrawn=n)    ## balls drawn
+    ##
+    ## calcute pvalues based on hypergeometric model
+    pvalues <- apply(args.df, 1, function(n)
+                 phyper(n[1], n[2], n[3], n[4], lower.tail=FALSE)
+                 )
+    pvalues
+}
+
 lm_eqn_coef_p <- function (df) 
 {
     #### calculate the slope and p-value for simple linear regression ####
