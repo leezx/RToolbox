@@ -12,7 +12,7 @@
 plot.gsea.GO.KEGG.barplot.batch <- function(anno_list=gsea_list$go_list, type, f.length=40) {
   library(ggplot2)
   library(RColorBrewer)
-  tmpcolors <- brewer.pal(12,"Set3")[1:length(anno_list)]
+  tmpcolors <- c(brewer.pal(12,"Set3"), brewer.pal(9,"Set1"))[1:length(anno_list)]
   nameList <- names(anno_list)
   if (is.null(nameList)) {
     nameList <- 1:length(anno_list)
