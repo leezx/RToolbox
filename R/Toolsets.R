@@ -12,6 +12,7 @@ example.function <- function(param1=NULL) {
 
 # get genes from GO terms
 get_GO_data <- function(OrgDb, ont, keytype) {
+    library(GO.db)
     library(DOSE)
     library(GOSemSim)
     library(clusterProfiler)
@@ -96,12 +97,13 @@ get_GOTERM <- function() {
     if (exists("GOTERM.df", envir = GOTERM_Env)) {
         GOTERM.df <- get("GOTERM.df", envir=GOTERM_Env)
     } else {
-        GOTERM.df <- toTable(GOTERM)
+        GOTERM.df <- toTable(GO.db::GOTERM)
         assign("GOTERM.df", GOTERM.df, envir = GOTERM_Env)
     }
     return(GOTERM.df)
 }
 
+# do enrichment analysis manually
 simple.enrichment.analysis <- function(k,n,M,N) {
     # see clusterProfiler
     # GeneRatio：k/n [n is the number of query genes, k is the genes in this pathways]
