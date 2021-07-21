@@ -4,7 +4,7 @@
 # monocle2
 # add API: use.cells = NULL
 # function: subset the cells in the point
-#
+# example: scPipeline/human/Human-Organoid/Comparison_public_all/imputation_PHOX2B_pos.ipynb
 plot_cell_trajectory.zx <- function (cds, x = 1, y = 2, color_by = "State", use.cells = NULL,
     show_backbone = TRUE, backbone_color = "black", markers = NULL, show_tree = TRUE, 
     use_color_gradient = FALSE, markers_linear = FALSE, show_cell_names = FALSE, 
