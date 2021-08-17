@@ -413,8 +413,8 @@ MX <- function(reverse = F) {
       theme_void() +
       theme(legend.position = "none") +
       scale_x_continuous(expand = c(0.1, 0.1), limits = c(0, 5)) +
-      scale_y_continuous(expand = c(0.02, 0.02), limits = c(-0.1, 0.1)) +
-      # scale_x_reverse()
+      # scale_x_reverse() +
+      scale_y_continuous(expand = c(0.02, 0.02), limits = c(-0.1, 0.1)) 
     p1
     #
     options(repr.plot.width=2.5, repr.plot.height=1)
@@ -432,8 +432,8 @@ MX <- function(reverse = F) {
       theme_void() +
       theme(legend.position = "none") +
       scale_x_continuous(expand = c(0.1, 0.1), limits = c(0, 5))+
-      scale_y_continuous(expand = c(0.02, 0.02), limits = c(-0.1, 0.1)) +
-      # scale_x_reverse()
+      # scale_x_reverse() +
+      scale_y_continuous(expand = c(0.02, 0.02), limits = c(-0.1, 0.1))
     p2
     #
     if (reverse==F) {
