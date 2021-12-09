@@ -176,12 +176,14 @@ reRange.pseudotime <- function(cellOrder) {
 
 # a modified version of plot_cell_trajectory function in monocle package
 # add use.cells, you can remove any cells in the plot, eg.sampling cells
-plot_cell_trajectory2 <- function (cds, x = 1, y = 2, color_by = "State", show_tree = TRUE, use.cells,
-    show_backbone = TRUE, backbone_color = "black", markers = NULL, 
-    use_color_gradient = FALSE, markers_linear = FALSE, show_cell_names = FALSE, 
-    show_state_number = FALSE, cell_size = 1.5, cell_link_size = 0.75, 
-    cell_name_size = 2, state_number_size = 2.9, show_branch_points = TRUE, 
-    theta = 0, ...) 
+# error history: a safer solution might be to use dplyr::slice in case you end up needing S4Vectors 
+# for something else. Perhaps another package relies on S4Vectors or even S4Vectors::slice explicitly.
+plot_cell_trajectory2 <- function (cds, x = 1, y = 2, color_by = "State", show_tree = TRUE, 
+    use.cells, show_backbone = TRUE, backbone_color = "black", 
+    markers = NULL, use_color_gradient = FALSE, markers_linear = FALSE, 
+    show_cell_names = FALSE, show_state_number = FALSE, cell_size = 1.5, 
+    cell_link_size = 0.75, cell_name_size = 2, state_number_size = 2.9, 
+    show_branch_points = TRUE, theta = 0, ...) 
 {
     library(tibble)
     library(dplyr)
@@ -280,7 +282,8 @@ plot_cell_trajectory2 <- function (cds, x = 1, y = 2, color_by = "State", show_t
         }
     }
     else {
-        g <- ggplot(data = subset(data_df, sample_name %in% use.cells), aes(x = data_dim_1, y = data_dim_2))
+        g <- ggplot(data = subset(data_df, sample_name %in% use.cells), 
+            aes(x = data_dim_1, y = data_dim_2))
     }
     if (show_tree) {
         g <- g + geom_segment(aes_string(x = "source_prin_graph_dim_1", 
@@ -307,7 +310,7 @@ plot_cell_trajectory2 <- function (cds, x = 1, y = 2, color_by = "State", show_t
     }
     if (show_branch_points && cds@dim_reduce_type == "DDRTree") {
         mst_branch_nodes <- cds@auxOrderingData[[cds@dim_reduce_type]]$branch_points
-        branch_point_df <- ica_space_df %>% slice(match(mst_branch_nodes, 
+        branch_point_df <- ica_space_df %>% dplyr::slice(match(mst_branch_nodes, 
             sample_name)) %>% mutate(branch_point_idx = seq_len(n()))
         g <- g + geom_point(aes_string(x = "prin_graph_dim_1", 
             y = "prin_graph_dim_2"), size = 5, na.rm = TRUE, 
@@ -326,7 +329,6 @@ plot_cell_trajectory2 <- function (cds, x = 1, y = 2, color_by = "State", show_t
         legend.key.height = grid::unit(0.35, "in")) + theme(legend.key = element_blank()) + 
         theme(panel.background = element_rect(fill = "white"))
     g
-    # head(data_df)
 }
 
 # 1. give a gene list
