@@ -1,0 +1,117 @@
+﻿type,Enzyme,gene,histone_modification_site
+writer,Protein-arginine Deiminase Type-4,PADI4,"H3R8ci, H3R17ci, H4R3ci, H3R2ci, H3R26ci"
+writer,Histone-arginine Methyltransferase CARM1,PRMT4,H3R17me
+writer,Protein Arginine N-methyltransferase 1,PRMT1,"H4R3me1, H4R3me2"
+writer,Protein Arginine N-methyltransferase 2,PRMT2,H3R8me
+writer,Protein Arginine N-methyltransferase 3,PRMT3,
+writer,Protein Arginine N-methyltransferase 5,PRMT5,"H2AR3me2, H4R3me2, H3R8me2"
+writer,Protein Arginine N-methyltransferase 6,PRMT6,"H3R2me2, H3K4me2, H3K4me3, H2AR3me, H4R3me"
+writer,Protein Arginine N-methyltransferase 7,PRMT7,H4R3me2
+writer,Histone Acetyltransferase KAT2A,KAT2A,"H4K5ac, H4K8ac, H4K12ac, H4K16ac, H2BK12ac, H3K9ac, H3K14ac, H3K18ac, H3K24ac, H3K23ac, H2AK4ac, H2AK7ac, H2AK11ac, H2AK36ac, H3K56ac"
+writer,Histone Acetyltransferase KAT2B,KAT2B,"H4K5ac, H4K8ac, H4K12ac, H4K16ac, H3K9ac, H3K14ac, H3K18ac, H3K24ac, H3K23ac, H3K56ac"
+writer,Histone Acetyltransferase KAT5,KAT5,"H2AK4ac, H2AK7ac, H2AK11ac, H2AK36ac, H4K5ac, H4K8ac, H4K12ac, H4K16ac"
+writer,Histone Acetyltransferase KAT6A,KAT6A,"H4K5ac, H4K8ac, H4K12ac, H4K16ac, H3K9ac, H3K14ac, H3K18ac, H3K24ac, H3K23ac, H3K56ac"
+writer,Histone Acetyltransferase KAT6B,KAT6B,
+writer,Histone Acetyltransferase KAT7,KAT7,"H4K5ac, H4K8ac, H4K12ac, H4K16ac"
+writer,Histone Acetyltransferase KAT8,KAT8,H4K16ac
+writer,Hlcs holocarboxylase Synthetase,HLCS,H4K12bio
+writer,Histone-lysine Methyltransferase 5B,KMT5B,H4K20me3
+writer,Histone-lysine N-methyltransferase,NSD1,"H3K36me1, H4K20me"
+writer,Histone-lysine N-methyltransferase 5C,KMT5C,H4K20me3
+writer,Histone-lysine N-methyltransferase ASH1L,ASH1L,H3K36me1
+writer,Histone-lysine N-methyltransferase EHMT1,EHMT1,"H3K9me1, H3K9me2, H3K27me"
+writer,Histone-lysine N-methyltransferase EHMT2,EHMT2,"H3K9me1, H3K9me2, H3K27me"
+writer,Histone-lysine N-methyltransferase EZH1,EZH1,"H3K27me1, H3K27me2, H3K27me3"
+writer,Histone-lysine N-methyltransferase EZH2,EZH2,"H3K27me, H3K27me2, H3K27me3, H3K9me1"
+writer,Histone-lysine N-methyltransferase MLL,MLL1,"H3K4me, H4K16ac, H3K9ac, H3K9me2, H3R8me2"
+writer,Histone-lysine N-methyltransferase MLL2,MLL2,"H3K4me, H3K4me3"
+writer,Histone-lysine N-methyltransferase MLL3,MLL3,H3K4me
+writer,Histone-lysine N-methyltransferase MLL5,MLL5,"H3K4me, H3K4me2"
+writer,Histone-lysine N-methyltransferase SETD1B,SETD1B,H3K4me
+writer,Histone-lysine N-methyltransferase SETD2,SETD2,H3K36me1
+writer,Histone-lysine N-methyltransferase SETD7,SETD7,H3K4me
+writer,Histone-lysine N-methyltransferase SETDB1,SETDB1,H3K9me3
+writer,Histone-lysine N-methyltransferase SETDB2,SETDB2,H3K9me3
+writer,Histone-lysine N-methyltransferase Smyd1,SMYD1,
+writer,Histone-lysine N-methyltransferase SMYD3,SMYD3,"H3K4, H3K5m2 & 3"
+writer,Histone-lysine N-methyltransferase SUV39H1,SUV39H1,H3K9me3
+writer,Histone-lysine N-methyltransferase SUV39H2,SUV39H2,H3K9me3
+writer,"Histone-lysine N-methyltransferase, H3 Lysine-79 Specific",DOT1,"H3K79me1, H3K79me2, H3K79me3"
+writer,N-lysine Methyltransferase KMT5A,KMT5A,H4K20me1
+writer,N-lysine Methyltransferase SMYD2,SMYD2,"H3K4me, H3K36me2"
+writer,Protein Jumonji,JARID2,H3K27me
+writer,SET Domain Containing 1A (Setd1a),SETD1A,
+writer,"Dtx3l deltex 3-like, E3 Ubiquitin Ligase",DTX3L ,H4K91ub
+writer,E3 Ubiquitin-protein Ligase BRE1A,RNF20,H2BK120ub
+writer,E3 Ubiquitin-protein Ligase BRE1B,RNF40,H2BK120ub
+writer,E3 Ubiquitin-protein Ligase RING1,RING1,H2AK119ub
+writer,E3 Ubiquitin-protein Ligase RING2,RNF2,H2AK119ub
+writer,Eyes Absent Homolog 1,EYA1,H2AY142ph
+writer,Eyes Absent Homolog 2,EYA2,H2AY142ph
+writer,Eyes Absent Homolog 3,EYA3,H2AY142ph
+writer,Eyes Absent Homolog 4,EYA4,H2AY142ph
+writer,Aurora Kinase B,AURKB,"H3S10ph, H3S28ph, H3K9me3"
+writer,Aurora Kinase C,AURKC,"H3S10ph, H3S28ph"
+writer,DNA-dependent Protein Kinase Catalytic Subunit,PRKDC,H2AS139ph
+writer,Ribosomal Protein S6 Kinase Alpha-3,RPS6KA3,"H3S10ph, H2BS32ph"
+writer,Ribosomal Protein S6 Kinase Alpha-4,RPS6KA4,"H3S10ph, H3S28ph"
+writer,Ribosomal Protein S6 Kinase Alpha-5,RPS6KA5,"H2AS1ph, H3S10ph, H3S28ph"
+writer,Serine-protein Kinase ATM,ATM,H2AS139ph
+writer,Serine/threonine-protein Kinase 4,STK4,H2BS14ph
+writer,Serine/threonine-protein Kinase ATR,ATR,H2AS139ph
+writer,Serine/threonine-protein Kinase Haspin,HASPIN,H3T3ph
+writer,Serine/threonine-protein Kinase PAK 2,PAK2,H4S47ph
+writer,Tyrosine-protein Kinase BAZ1B,BAZ1B,H2AY142ph
+writer,Tyrosine-protein Kinase JAK2,JAK2,H3Y41ph
+erasers,Histone Deacetylase 1,HDAC1,"H4K5ac, H4K8ac, H4K12ac, H4K16ac, H2BK12ac, H3K9ac, H3K14ac, H3K18ac, H3K24ac, H3K23ac, H2AK4ac, H2AK7ac, H2AK11ac, H2AK36ac, H3K56ac"
+erasers,Histone Deacetylase 10,HDAC10,
+erasers,Histone Deacetylase 11,HDAC11,
+erasers,Histone Deacetylase 2,HDAC2,
+erasers,Histone Deacetylase 3,HDAC3,
+erasers,Histone Deacetylase 4,HDAC4,
+erasers,Histone Deacetylase 5,HDAC5,
+erasers,Histone Deacetylase 6,HDAC6,
+erasers,Histone Deacetylase 7,HDAC7,
+erasers,Histone Deacetylase 8,HDAC8,
+erasers,Histone Deacetylase 9,HDAC9,
+erasers,NAD-dependent Protein Deacetylase Sirtuin-1,SIRT1,"H4K16ac, H1K25ac, H3K9ac"
+erasers,NAD-dependent Protein Deacetylase Sirtuin-2,SIRT2,H3K56ac
+erasers,NAD-dependent Protein Deacetylase Sirtuin-3,SIRT3,H3K56ac
+erasers,NAD-dependent Protein Deacetylase Sirtuin-4,SIRT4,
+erasers,NAD-dependent Protein Deacetylase Sirtuin-5,SIRT5,
+erasers,NAD-dependent Protein Deacetylase Sirtuin-6,SIRT6,
+erasers,NAD-dependent Protein Deacetylase Sirtuin-7,SIRT7,
+erasers,Histone Deacetylase 1,HDAC1,"H4K5ac, H4K8ac, H4K12ac, H4K16ac, H2BK12ac, H3K9ac, H3K14ac, H3K18ac, H3K24ac, H3K23ac, H2AK4ac, H2AK7ac, H2AK11ac, H2AK36ac, H3K56ac"
+erasers,Histone Deacetylase 10,HDAC10,
+erasers,Histone Deacetylase 11,HDAC11,
+erasers,Histone Deacetylase 2,HDAC2,
+erasers,Histone Deacetylase 3,HDAC3,
+erasers,Histone Deacetylase 4,HDAC4,
+erasers,Histone Deacetylase 5,HDAC5,
+erasers,Histone Deacetylase 6,HDAC6,
+erasers,Histone Deacetylase 7,HDAC7,
+erasers,Histone Deacetylase 8,HDAC8,
+erasers,Histone Deacetylase 9,HDAC9,
+erasers,NAD-dependent Protein Deacetylase Sirtuin-1,SIRT1,"H4K16ac, H1K25ac, H3K9ac"
+erasers,NAD-dependent Protein Deacetylase Sirtuin-2,SIRT2,H3K56ac
+erasers,NAD-dependent Protein Deacetylase Sirtuin-3,SIRT3,H3K56ac
+erasers,NAD-dependent Protein Deacetylase Sirtuin-4,SIRT4,
+erasers,NAD-dependent Protein Deacetylase Sirtuin-5,SIRT5,
+erasers,NAD-dependent Protein Deacetylase Sirtuin-6,SIRT6,
+erasers,NAD-dependent Protein Deacetylase Sirtuin-7,SIRT7,
+erasers,Lysine (K)-specific Demethylase 2A,KDM2A,H3K36me2
+erasers,Lysine (K)-specific Demethylase 2B,KDM2B,H3K36me2
+erasers,Lysine (K)-specific Demethylase 4A,KDM4A,"H3K36me3, H3K9me3"
+erasers,Lysine (K)-specific Demethylase 4B,KDM4B,H3K9me3
+erasers,Lysine (K)-specific Demethylase 4C,KDM4C,H3K9me3
+erasers,Lysine (K)-specific Demethylase 4D,KDM4D ,H3K9me3
+erasers,Lysine (K)-specific Demethylase 8,KDM8,H3K36me2
+erasers,Lysine-specific Demethylase 3A,KDM3A,"H3K9me1, H3K9me2"
+erasers,Lysine-specific Demethylase 5A,KDM5A,"H3Kme2, H3K4me3"
+erasers,Lysine-specific Demethylase 5B,KDM5B,"H3K4me, H3K4me2, H3K4me3"
+erasers,Lysine-specific Demethylase 5C,KDM5C,"H3Kme2, H3K4me3"
+erasers,Lysine-specific Demethylase 6B,KDM6B,"H3K27me2, H3K27me3"
+erasers,Lysine-specific Demethylase PHF2,PHF2,H3K9me2
+erasers,Lysine-specific Histone Demethylase 1A,KDM1A,"H3K4me, H3K4me2, H3K9me1"
+erasers,PHD Finger Protein 8,PHF8 ,H4K20me1
+erasers,Ribosomal Oxygenase 1 ,RIOX1,H3K36me3
