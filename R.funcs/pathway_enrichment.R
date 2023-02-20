@@ -792,6 +792,39 @@ plot.GO.barplot.pair <- function(barplot_df, colors=1:2, width=35) {
   g
 }
 
+plot.GSEA.barplot <- function (barplot_df, color = "random", width = 40) 
+{
+    library(Hmisc)
+    library(stringr)
+    library(RColorBrewer)
+    if (color == "random") {
+        color <- sample(brewer.pal(12, "Set3"), 1)
+    }
+    for (i in 1:dim(barplot_df)[1]) {
+        barplot_df[i, ]$Description <- capitalize(as.character(barplot_df[i, 
+            ]$Description))
+    }
+    barplot_df <- barplot_df[order(barplot_df$pvalue, decreasing = F), 
+        ]
+    barplot_df$Description <- factor(barplot_df$Description, 
+        levels = rev(barplot_df$Description))
+    maxpvalue <- max(-log10(barplot_df$pvalue))
+    g <- ggplot(data = barplot_df, aes(x = Description, y = -log10(pvalue))) + 
+        geom_bar(stat = "identity", color = color, fill = color, 
+            alpha = 0.8) + geom_text(aes(label = round(NES, 2)), color = "black", 
+        vjust = 0.4, hjust = 0, size = 3, fontface = "bold") + 
+        ylim(0, maxpvalue * 1.1) + coord_flip() + labs(x = "", 
+        y = "-Log10(P-value)", title = "") + theme_bw() + theme(legend.position = "none") + 
+        theme(axis.text.y = element_text(size = 14, color = "black", 
+            face = "plain"), axis.text.x = element_text(size = 12, 
+            color = "black", face = "plain"), axis.title = element_text(size = 15)) + 
+        theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), 
+            plot.margin = unit(c(0, 0, 0, 0), "cm"), panel.border = element_blank()) + 
+        theme(axis.line = element_line(color = "black")) + scale_x_discrete(labels = function(x) str_wrap(x, 
+        width = width))
+    g
+}                     
+                     
 ID2gene <- function(ID="4171/4175/5422/4172") {
   ID <- unlist(lapply(strsplit(ID, "/"), as.integer))
   gene.df <- bitr(ID, fromType = "ENTREZID", toType = c("SYMBOL", "ENSEMBL"), OrgDb = org.Hs.eg.db)
