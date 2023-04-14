@@ -4,7 +4,11 @@ git config --global user.email "zxlee@hku.hk"
 git config --global user.name "leezx"
 
 # R
-## save to 
+## round to save CSV file size
+# can significant reduce the size of CSV file
+merged.Log2FC <- round(as.matrix(merged.Log2FC),3)
+
+## save to xlsx
 library(xlsx)
 tmp.file <- "msigdb.gsea.ApcKO.xlsx"
 write.xlsx(all.sample.NES.hallmark, file=tmp.file, sheetName="hallmark", row.names=T)
