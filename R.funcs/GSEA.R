@@ -1,4 +1,5 @@
 library(enrichplot)
+library(RColorBrewer)
 source("https://github.com/YuLab-SMU/enrichplot/raw/b6467013b88a96160253cacc7391ccfa7988ca78/R/gseaplot.R")
 
 gseaplot.zx <- function (x, geneSetID, title = "", color = "green", base_size = 11, 
