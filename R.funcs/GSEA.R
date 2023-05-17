@@ -43,7 +43,7 @@ gseaplot.zx <- function (x, geneSetID, title = "", color = "green", base_size = 
         i <- i + 1
     }
     p2 <- ggplot(gsdata, aes_(x = ~x)) + geom_linerange(aes_(ymin = ~ymin, 
-        ymax = ~ymax, color = ~Description)) + xlab(NULL) + ylab(NULL) + 
+        ymax = ~ymax, color = ~Description), size=0.05, color="black") + xlab(NULL) + ylab(NULL) +  # , alpha=0.8
         theme_classic(base_size) + theme(legend.position = "none", 
         plot.margin = margin(t = -0.1, b = 0, unit = "cm"), axis.ticks = element_blank(), 
         axis.text = element_blank(), axis.line.x = element_blank()) + 
