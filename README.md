@@ -1,3 +1,18 @@
+TF and epi regulators
+```
+hs.TFs <- read.csv("https://github.com/leezx/RToolbox/raw/master/data/Homo_sapiens_TF.txt", sep = "\t")
+hs.coTFs <- read.csv("https://github.com/leezx/RToolbox/raw/master/data/Homo_sapiens_TF_cofactors.txt", sep = "\t")
+hs.TFs <- unique(c(hs.TFs$Symbol, hs.TFs$Symbol))
+length(hs.TFs)
+
+hs.epi.reg <- read.csv("https://github.com/leezx/RToolbox/raw/master/data/KAT6A-chromatin-regulators.csv", sep = ",")
+hs.epi.reg <- unique(hs.epi.reg$Gene)
+hs.epi.reg <- hs.epi.reg[!grepl("NonTargetingControlGuide",hs.epi.reg)]
+length(hs.epi.reg)
+
+gplots::venn(list(hs.TFs=hs.TFs, hs.epi.reg=hs.epi.reg))
+```
+
 - `source("https://github.com/leezx/Toolsets/raw/master/R/Toolsets.R")`
 - `source("https://github.com/leezx/Toolsets/raw/master/R/Plot.R") `
 
