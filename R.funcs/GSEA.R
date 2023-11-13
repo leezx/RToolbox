@@ -2,7 +2,7 @@ library(enrichplot)
 library(RColorBrewer)
 source("https://github.com/YuLab-SMU/enrichplot/raw/b6467013b88a96160253cacc7391ccfa7988ca78/R/gseaplot.R")
 
-gseaplot.zx <- function (x, geneSetID, title = "", color = "green", base_size = 11, 
+gseaplot.zx <- function (x, geneSetID, title = "", color = "green", base_size = 11, line.size=0.05,
     rel_heights = c(1.5, 0.5, 1), subplots = 1:3, pvalue_table = FALSE, 
     ES_geom = "line") 
 {
@@ -43,10 +43,11 @@ gseaplot.zx <- function (x, geneSetID, title = "", color = "green", base_size = 
         i <- i + 1
     }
     p2 <- ggplot(gsdata, aes_(x = ~x)) + geom_linerange(aes_(ymin = ~ymin, 
-        ymax = ~ymax, color = ~Description), size=0.05, color="black") + xlab(NULL) + ylab(NULL) +  # , alpha=0.8
-        theme_classic(base_size) + theme(legend.position = "none", 
-        plot.margin = margin(t = -0.1, b = 0, unit = "cm"), axis.ticks = element_blank(), 
-        axis.text = element_blank(), axis.line.x = element_blank()) + 
+        ymax = ~ymax, color = ~Description), size = line.size, color = "black") + 
+        xlab(NULL) + ylab(NULL) + theme_classic(base_size) + 
+        theme(legend.position = "none", plot.margin = margin(t = -0.1, 
+            b = 0, unit = "cm"), axis.ticks = element_blank(), 
+            axis.text = element_blank(), axis.line.x = element_blank()) + 
         scale_x_continuous(expand = c(0, 0)) + scale_y_continuous(expand = c(0, 
         0))
     if (length(geneSetID) == 1) {
