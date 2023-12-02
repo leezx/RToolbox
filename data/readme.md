@@ -1,5 +1,19 @@
 # commonly used data
 
+```
+hs.TFs <- read.csv("https://github.com/leezx/RToolbox/raw/master/data/Homo_sapiens_TF.txt", sep = "\t")
+hs.coTFs <- read.csv("https://github.com/leezx/RToolbox/raw/master/data/Homo_sapiens_TF_cofactors.txt", sep = "\t")
+hs.TFs <- unique(c(hs.TFs$Symbol, hs.TFs$Symbol))
+length(hs.TFs)
+ 
+hs.epi.reg <- read.csv("https://github.com/leezx/RToolbox/raw/master/data/KAT6A-chromatin-regulators.csv", sep = ",")
+hs.epi.reg <- unique(hs.epi.reg$Gene)
+hs.epi.reg <- hs.epi.reg[!grepl("NonTargetingControlGuide",hs.epi.reg)]
+length(hs.epi.reg)
+ 
+gplots::venn(list(hs.TFs=hs.TFs, hs.epi.reg=hs.epi.reg))
+```
+
 ## all mouse genes
 - gene.anno.mm10.3.0.0.csv - 提取自10x的gtf文件
 
