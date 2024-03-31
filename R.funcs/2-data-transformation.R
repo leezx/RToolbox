@@ -22,6 +22,7 @@ add.missing.genes <- function(epxrM, all.genes) {
   colnames(add.df) <- colnames(epxrM)
   epxrM <- rbind(epxrM, add.df)
   epxrM <- epxrM[all.genes,]
+  epxrM <- epxrM[!duplicated(rownames(epxrM)),]
   epxrM <- as(epxrM, "dgCMatrix")
   return(epxrM)
 }
