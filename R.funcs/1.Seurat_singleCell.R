@@ -3,6 +3,13 @@
 getAllMarkerList.Seurat <- function(tmp.seuset, tmp.control, tmp.disease, tmp.Stem, tmp.TA, tmp.Enterocyte) {
     marker.list <- list()
     # # must have group and celltype
+    # full
+    tmp.seuset@active.ident <- factor(tmp.seuset$group)
+    normal.markers <- FindMarkers(tmp.seuset, ident.1 = tmp.control, logfc.threshold = 0, min.pct = 0)
+    crc.markers <- FindMarkers(tmp.seuset, ident.1 = tmp.disease, logfc.threshold = 0, min.pct = 0)
+    marker.list[["normal.full"]] <- normal.markers
+    marker.list[["CRC.full"]] <- crc.markers
+    #
     tmp.seuset@active.ident <- factor(tmp.seuset$celltype)
     tmp.control.seuset <- subset(tmp.seuset, group==tmp.control)
     tmp.disease.seuset <- subset(tmp.seuset, group==tmp.disease)
